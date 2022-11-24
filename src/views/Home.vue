@@ -1,5 +1,5 @@
 <template>
-<h1>主页</h1>
+<img src="../assets/R-C.jpg">
 </template>
 
 <script>

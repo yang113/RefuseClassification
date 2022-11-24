@@ -7,16 +7,29 @@ import com.example.carclub.entity.Employee;
 import com.example.carclub.entity.Money;
 import com.example.carclub.service.MoneyService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/money")
 public class MoneyController {
     @Autowired
     private MoneyService moneyService;
+
+
+    @PostMapping
+    public boolean save(@RequestBody Money money){
+        System.out.println(money.getMoney());
+        System.out.println(money.getMdate());
+        System.out.println(money.getVipnum());
+
+
+        return moneyService.saveOrUpdate(money);
+    }
+
+    @DeleteMapping("/{id}")
+    public boolean del(@PathVariable int id){
+        return moneyService.removeById(id);
+    }
 
 
     @GetMapping("/page")

@@ -37,7 +37,7 @@
               icon="el-icon-info"
               icon-color="red"
               title="您确定删除吗？"
-              @confirm="del(scope.row.enum)"
+              @confirm="del(scope.row.vipnum)"
           >
             <el-button type="danger" slot="reference">删除 <i class="el-icon-remove-outline"></i></el-button>
           </el-popconfirm>
@@ -56,15 +56,15 @@
       </el-pagination>
     </div>
     <el-dialog title="用户信息" :visible.sync="dialogFormVisible" width="30%" >
-      <el-form label-width="80px" size="small">
+      <el-form label-width="90px" size="small">
         <el-form-item label="缴费用户ID">
-          <el-input v-model="form.VIPnum" autocomplete="off"></el-input>
+          <el-input v-model="form.vipnum" autocomplete="off"></el-input>
         </el-form-item>
         <el-form-item label="缴费日期">
-          <el-input v-model="form.Mdate" autocomplete="off"></el-input>
+          <el-input v-model="form.mdate" autocomplete="off"></el-input>
         </el-form-item>
         <el-form-item label="缴费数量">
-          <el-input v-model="form.Money" autocomplete="off"></el-input>
+          <el-input v-model="form.money" autocomplete="off"></el-input>
         </el-form-item>
 
       </el-form>
@@ -108,7 +108,6 @@ export default {
           pageSize: this.pageSize,
           VIPnum:this.VIPnum,
           Mdate:this.Mdate,
-          Money:this.Money
         }
       }).then(res => {
         console.log(res)
@@ -117,32 +116,50 @@ export default {
       })
     },
     reset(){
-
+      this.VIPnum = ""
+      this.Mdate= ""
+      this.load()
     },
-    del(){
-
+    del(id){
+      request.delete("/money/"+id).then(res=>{
+        if (res) {
+          this.$message.success("删除成功")
+          this.load()
+        } else {
+          this.$message.error("删除失败")
+        }
+      })
     },
     delBatch(){
 
     },
     handleAdd(){
-
+      this.dialogFormVisible = true
+      this.form = {}
     },
     handleSelectionChange(){
-
+      this.multipleSelection = val
     },
-    handleSizeChange(){
-
+    handleSizeChange(pageSize){
+      this.pageSize = pageSize
+      this.load()
     },
-    handleCurrentChange(){
-
+    handleCurrentChange(pageNum){
+      this.pageNum = pageNum
+      this.load()
     },
     save(){
-
+      request.post("/money",this.form).then(res => {
+        if (res) {
+          console.log(res)
+          this.$message.success("保存成功")
+          this.dialogFormVisible = false
+          this.load()
+        } else {
+          this.$message.error("保存失败")
+        }
+      })
     }
-    // handleEdit(id){
-    //
-    // },
   }
 }
 </script>

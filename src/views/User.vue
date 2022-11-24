@@ -151,10 +151,6 @@ export default {
     handleSizeChange(pageSize) {
       this.pageSize = pageSize
       this.load()
-      console.log(this.pageSize)
-      console.log(this.pageSize)
-      console.log(this.pageSize)
-
     },
     handleCurrentChange(pageNum) {
       this.pageNum = pageNum
