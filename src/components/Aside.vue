@@ -25,6 +25,16 @@
       </el-menu-item-group>
       <el-menu-item index="/money">缴费管理</el-menu-item>
     </el-submenu>
+    <el-submenu index="3">
+      <template slot="title">
+        <i class="el-icon-menu"></i>
+        <span>提醒服务</span>
+      </template>
+      <el-menu-item-group>
+        <el-menu-item index="/caract">车务活动</el-menu-item>
+      </el-menu-item-group>
+      <el-menu-item index="/command">车务提醒</el-menu-item>
+    </el-submenu>
   </el-menu>
 </template>
 

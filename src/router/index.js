@@ -35,6 +35,16 @@ const routes = [
         path: '/money',
         name:'缴费管理',
         component:() => import('../views/Money')
+      },
+      {
+        path: '/caract',
+        name: '车务活动',
+        component:() => import('../views/Caract')
+      },
+      {
+        path: '/command',
+        name:'车务提醒',
+        component:() => import('../views/Command')
       }
     ]
   }
