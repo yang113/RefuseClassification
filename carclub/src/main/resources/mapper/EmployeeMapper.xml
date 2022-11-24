@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.carclub.mapper.EmployeeMapper">
+
+    <resultMap id="BaseResultMap" type="com.example.carclub.entity.Employee">
+            <id property="enum" column="Enum" jdbcType="VARCHAR"/>
+            <result property="ename" column="Ename" jdbcType="VARCHAR"/>
+            <result property="esex" column="Esex" jdbcType="VARCHAR"/>
+            <result property="eage" column="Eage" jdbcType="INTEGER"/>
+            <result property="telephone" column="Telephone" jdbcType="VARCHAR"/>
+            <result property="depnum" column="Depnum" jdbcType="VARCHAR"/>
+            <result property="epower" column="Epower" jdbcType="VARCHAR"/>
+            <result property="user" column="USER" jdbcType="VARCHAR"/>
+            <result property="password" column="PASSWORD" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        Enum,Ename,Esex,
+        Eage,Telephone,Depnum,
+        Epower,USER,PASSWORD
+    </sql>
+</mapper>

@@ -2,7 +2,7 @@
   <el-container  style="min-height: 100vh;">
     <el-aside :width="sideWidth + 'px'" style="background-color: rgb(238, 241, 246);height:100vh;
 	    box-shadow: 2px 0 6px rgb(0 21 41 / 35%);-webkit-scrollbar:none ">
-      <Easide :isCollapse="isCollapse" :logoTextshow="logoTextShow"></Easide>
+      <Aside :isCollapse="isCollapse" :logoTextshow="logoTextShow"></Aside>
     </el-aside>
 
     <el-container>
@@ -20,12 +20,12 @@
 
 <script>
 import Header from "@/components/Header";
-import Easide from "@/components/Easide";
+import Aside from "@/components/Aside";
 export default {
-  name: "HomeView",
+  name: "ManageHome",
   components:{
     Header,
-    Easide
+    Aside
   },
   data() {
     return {
