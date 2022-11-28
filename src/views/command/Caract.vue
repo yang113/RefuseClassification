@@ -3,7 +3,7 @@
   <el-row>
     <el-col :span="8">
       <el-card :body-style="{ padding: '0px' }">
-        <img src="../assets/carcat1.png" class="image">
+        <img src="../../assets/carcat1.png" class="image">
         <div style="padding: 14px;">
           <span style="text-align: center">汽车展览</span>
           <div class="bottom clearfix">
@@ -15,7 +15,7 @@
     </el-col>
     <el-col :span="8" >
       <el-card :body-style="{ padding: '0px' }" style="margin-left: 20px;">
-        <img src="../assets/carcat2.png" class="image">
+        <img src="../../assets/carcat2.png" class="image">
         <div style="padding: 14px;">
           <span>汽车免费维护</span>
           <div class="bottom clearfix">

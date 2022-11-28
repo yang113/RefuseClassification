@@ -23,8 +23,6 @@ public class MoneyController {
         System.out.println(money.getMoney());
         System.out.println(money.getMdate());
         System.out.println(money.getVipnum());
-
-
         return moneyService.saveOrUpdate(money);
     }
 
