@@ -35,6 +35,27 @@
       </el-menu-item-group>
       <el-menu-item index="/command">车务提醒</el-menu-item>
     </el-submenu>
+    <el-submenu index="4">
+      <template slot="title">
+        <i class="el-icon-menu"></i>
+        <span>统计报表</span>
+      </template>
+      <el-menu-item-group>
+        <el-menu-item index="/Traffic">服务信息</el-menu-item>
+      </el-menu-item-group>
+      <el-menu-item index="/charts">营业额统计</el-menu-item>
+    </el-submenu>
+    <el-submenu index="5">
+      <template slot="title">
+        <i class="el-icon-menu"></i>
+        <span>救援服务管理</span>
+      </template>
+      <el-menu-item-group>
+        <el-menu-item index="/maps">呼救管理</el-menu-item>
+        <el-menu-item index="/rescuerecords">救援管理</el-menu-item>
+        <el-menu-item index="5-3">救援车辆信息</el-menu-item>
+      </el-menu-item-group>
+    </el-submenu>
   </el-menu>
 </template>
 

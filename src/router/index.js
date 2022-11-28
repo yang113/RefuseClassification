@@ -45,6 +45,26 @@ const routes = [
         path: '/command',
         name:'车务提醒',
         component:() => import('../views/Command')
+      },
+      {
+        path: '/charts',
+        name:'统计报表',
+        component:() => import('../views/charts')
+      },
+      {
+        path: '/traffic',
+        name: '服务信息',
+        component:() => import('../views/Traffic')
+      },
+      {
+        path: '/maps',
+        name:'地图',
+        component:() => import('../views/maps')
+      },
+      {
+        path: '/rescuerecords',
+        name: '救援记录',
+        component:() => import('../views/RescueRecords')
       }
     ]
   }

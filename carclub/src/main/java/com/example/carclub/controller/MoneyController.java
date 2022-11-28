@@ -9,6 +9,8 @@ import com.example.carclub.service.MoneyService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 @RestController
 @RequestMapping("/money")
 public class MoneyController {
@@ -31,6 +33,10 @@ public class MoneyController {
         return moneyService.removeById(id);
     }
 
+    @GetMapping("/chart")
+    public List<Money> select(){
+        return moneyService.select();
+    }
 
     @GetMapping("/page")
     public IPage<Money> findpage(@RequestParam Integer pageNum,

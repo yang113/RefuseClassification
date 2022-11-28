@@ -1,35 +1,19 @@
 <template>
   <div>
     <div style="margin: 10px 0">
-      <el-input style="width: 200px" placeholder="请输入会员ID号" suffix-icon="el-icon-search" v-model="VIPnum"></el-input>
-      <el-input style="width: 200px" placeholder="请输入缴费日期" suffix-icon="el-icon-message" class="ml-5" v-model="Mdate"></el-input>
-      <el-button style="margin-left: 5px" type="primary" @click="load">搜索</el-button>
-      <el-button type="warning" @click="reset">重置</el-button>
-    </div>
-
-    <div style="margin: 10px 0">
-      <el-button type="primary" @click="handleAdd">新增 <i class="el-icon-circle-plus-outline"></i></el-button>
-      <el-popconfirm
-          style="margin-left: 5px"
-          confirm-button-text='确定'
-          cancel-button-text='我再想想'
-          icon="el-icon-info"
-          icon-color="red"
-          title="您确定批量删除这些数据吗？"
-          @confirm="delBatch"
-      >
-        <el-button type="danger" slot="reference">批量删除 <i class="el-icon-remove-outline"></i></el-button>
-      </el-popconfirm>
+      <el-button type="primary" @click="handleAdd" style="float: right">新增 <i class="el-icon-circle-plus-outline"></i></el-button>
     </div>
 
     <el-table :data="tableData" border stripe :header-cell-class-name="'headerBg'"  @selection-change="handleSelectionChange">
       <el-table-column type="selection" width="55"></el-table-column>
-      <el-table-column prop="vipnum" label="会员ID"></el-table-column>
-      <el-table-column prop="mdate" label="缴费日期"></el-table-column>
-      <el-table-column prop="money" label="缴费金额"></el-table-column>
+      <el-table-column prop="rescueid" label="救援编号"></el-table-column>
+      <el-table-column prop="rescuetime" label="救援地点"></el-table-column>
+      <el-table-column prop="rescueplace" label="救援状态"></el-table-column>
+      <el-table-column prop="vipnum" label="会员号"></el-table-column>
+      <el-table-column prop="carid" label="救援车辆编号"></el-table-column>
       <el-table-column label="操作"  width="200" align="center">
         <template slot-scope="scope">
-<!--          <el-button type="success" @click="handleEdit(scope.row)">编辑 <i class="el-icon-edit"></i></el-button>-->
+                    <el-button type="success" @click="handleEdit(scope.row)">编辑 <i class="el-icon-edit"></i></el-button>
           <el-popconfirm
               class="ml-5"
               confirm-button-text='确定'
@@ -37,7 +21,7 @@
               icon="el-icon-info"
               icon-color="red"
               title="您确定删除吗？"
-              @confirm="del(scope.row.vipnum)"
+              @confirm="del(scope.row.rescueid)"
           >
             <el-button type="danger" slot="reference">删除 <i class="el-icon-remove-outline"></i></el-button>
           </el-popconfirm>
@@ -57,14 +41,20 @@
     </div>
     <el-dialog title="用户信息" :visible.sync="dialogFormVisible" width="30%" >
       <el-form label-width="90px" size="small">
-        <el-form-item label="缴费用户ID">
-          <el-input v-model="form.vipnum" autocomplete="off"></el-input>
+        <el-form-item label="救援编号">
+          <el-input v-model="form.rescueid" autocomplete="off"></el-input>
         </el-form-item>
-        <el-form-item label="缴费日期">
-          <el-input v-model="form.mdate" autocomplete="off"></el-input>
+        <el-form-item label="救援时间">
+          <el-input v-model="form.rescuetime" autocomplete="off"></el-input>
         </el-form-item>
-        <el-form-item label="缴费数量">
-          <el-input v-model="form.money" autocomplete="off"></el-input>
+        <el-form-item label="救援地点">
+          <el-input v-model="form.rescueplace" autocomplete="off"></el-input>
+        </el-form-item>
+        <el-form-item label="救援状态">
+          <el-input v-model="form.rescuestatus" autocomplete="off"></el-input>
+        </el-form-item>
+        <el-form-item label="救援车辆编号">
+          <el-input v-model="form.carid" autocomplete="off"></el-input>
         </el-form-item>
 
       </el-form>
@@ -77,20 +67,22 @@
 </template>
 
 <script>
-
 import request from "@/utils/request";
 
 export default {
-  name: "Money",
+  name: "RescueRecords",
   data(){
     return{
       tableData: [],
       total: 0,
       pageNum: 1,
       pageSize: 5,
-      VIPnum:"",
-      Mdate:"",
-      Money:"",
+      rescueid:"",
+      rescuetime:"",
+      rescueplace:"",
+      rescuestatus:"",
+      vipnum:"",
+      carid:"",
       form:{},
       dialogFormVisible: false,
       multipleSelection: [],
@@ -102,7 +94,7 @@ export default {
   },
   methods:{
     load(){
-      request.get("/money/page",{
+      request.get("/rescue/page",{
         params: {
           pageNum: this.pageNum,
           pageSize: this.pageSize,
@@ -115,13 +107,8 @@ export default {
         this.total = res.total
       })
     },
-    reset(){
-      this.VIPnum = ""
-      this.Mdate= ""
-      this.load()
-    },
     del(id){
-      request.delete("/money/"+id).then(res=>{
+      request.delete("/rescue/"+id).then(res=>{
         if (res) {
           this.$message.success("删除成功")
           this.load()
@@ -147,7 +134,7 @@ export default {
     },
 
     save(){
-      request.post("/money",this.form).then(res => {
+      request.post("/rescue",this.form).then(res => {
         if (res) {
           console.log(res)
           this.$message.success("保存成功")
@@ -157,7 +144,11 @@ export default {
           this.$message.error("保存失败")
         }
       })
-    }
+    },
+    handleEdit(row) {
+      this.form = row
+      this.dialogFormVisible = true
+    },
   }
 }
 </script>

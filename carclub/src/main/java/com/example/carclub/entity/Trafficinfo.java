@@ -12,11 +12,11 @@ import lombok.Data;
 
 /**
  * 
- * @TableName command
+ * @TableName trafficinfo
  */
-@TableName(value ="command")
+@TableName(value ="trafficinfo")
 @Data
-public class Command implements Serializable {
+public class Trafficinfo implements Serializable {
     /**
      * 
      */
@@ -31,18 +31,13 @@ public class Command implements Serializable {
     /**
      * 
      */
-    private String vipnum;
-
-    /**
-     * 
-     */
     @JsonFormat(pattern = "yyyy-MM-dd",timezone="Asia/Shanghai")
-    private Date ctime;
+    private Date servetime;
 
     /**
      * 
      */
-    private String ename;
+    private String servecon;
 
     @TableField(exist = false)
     private static final long serialVersionUID = 1L;
@@ -58,12 +53,11 @@ public class Command implements Serializable {
         if (getClass() != that.getClass()) {
             return false;
         }
-        Command other = (Command) that;
+        Trafficinfo other = (Trafficinfo) that;
         return (this.getServeid() == null ? other.getServeid() == null : this.getServeid().equals(other.getServeid()))
             && (this.getServename() == null ? other.getServename() == null : this.getServename().equals(other.getServename()))
-            && (this.getVipnum() == null ? other.getVipnum() == null : this.getVipnum().equals(other.getVipnum()))
-            && (this.getCtime() == null ? other.getCtime() == null : this.getCtime().equals(other.getCtime()))
-            && (this.getEname() == null ? other.getEname() == null : this.getEname().equals(other.getEname()));
+            && (this.getServetime() == null ? other.getServetime() == null : this.getServetime().equals(other.getServetime()))
+            && (this.getServecon() == null ? other.getServecon() == null : this.getServecon().equals(other.getServecon()));
     }
 
     @Override
@@ -72,9 +66,8 @@ public class Command implements Serializable {
         int result = 1;
         result = prime * result + ((getServeid() == null) ? 0 : getServeid().hashCode());
         result = prime * result + ((getServename() == null) ? 0 : getServename().hashCode());
-        result = prime * result + ((getVipnum() == null) ? 0 : getVipnum().hashCode());
-        result = prime * result + ((getCtime() == null) ? 0 : getCtime().hashCode());
-        result = prime * result + ((getEname() == null) ? 0 : getEname().hashCode());
+        result = prime * result + ((getServetime() == null) ? 0 : getServetime().hashCode());
+        result = prime * result + ((getServecon() == null) ? 0 : getServecon().hashCode());
         return result;
     }
 
@@ -86,9 +79,8 @@ public class Command implements Serializable {
         sb.append("Hash = ").append(hashCode());
         sb.append(", serveid=").append(serveid);
         sb.append(", servename=").append(servename);
-        sb.append(", vipnum=").append(vipnum);
-        sb.append(", ctime=").append(ctime);
-        sb.append(", ename=").append(ename);
+        sb.append(", servetime=").append(servetime);
+        sb.append(", servecon=").append(servecon);
         sb.append(", serialVersionUID=").append(serialVersionUID);
         sb.append("]");
         return sb.toString();

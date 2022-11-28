@@ -3,6 +3,8 @@ package com.example.carclub.service;
 import com.example.carclub.entity.Money;
 import com.baomidou.mybatisplus.extension.service.IService;
 
+import java.util.List;
+
 /**
 * @author LENOVO
 * @description 针对表【money】的数据库操作Service
@@ -10,4 +12,5 @@ import com.baomidou.mybatisplus.extension.service.IService;
 */
 public interface MoneyService extends IService<Money> {
 
+    List<Money> select();
 }

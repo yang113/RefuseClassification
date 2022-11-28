@@ -1,9 +1,8 @@
 <template>
   <div>
     <div style="margin: 10px 0">
-      <el-input style="width: 200px" placeholder="请输入工作人员工号" suffix-icon="el-icon-search" v-model="ServeID"></el-input>
-      <el-input style="width: 200px" placeholder="请输入会员号" suffix-icon="el-icon-message" class="ml-5" v-model="VIPnum"></el-input>
-      <el-input style="width: 200px" placeholder="请输入提醒日期" suffix-icon="el-icon-message" class="ml-5" v-model="Ctime"></el-input>
+      <el-input style="width: 200px" placeholder="请输入服务编号" suffix-icon="el-icon-search" v-model="serveid"></el-input>
+      <el-input style="width: 200px" placeholder="请输入服务日期" suffix-icon="el-icon-message" class="ml-5" v-model="servetime"></el-input>
       <el-button style="margin-left: 5px" type="primary" @click="load">搜索</el-button>
       <el-button type="warning" @click="reset">重置</el-button>
     </div>
@@ -24,14 +23,13 @@
 
     <el-table :data="tableData" border stripe :header-cell-class-name="'headerBg'"  @selection-change="handleSelectionChange">
       <el-table-column type="selection" width="55"></el-table-column>
-      <el-table-column prop="serveid" label="车务ID"></el-table-column>
-      <el-table-column prop="servename" label="车务提醒"></el-table-column>
-      <el-table-column prop="vipnum" label="会员编号"></el-table-column>
-      <el-table-column prop="ctime" label="提醒日期"></el-table-column>
-      <el-table-column prop="ename" label="工作人员姓名"></el-table-column>
+      <el-table-column prop="serveid" label="服务编号"></el-table-column>
+      <el-table-column prop="servename" label="车务名称"></el-table-column>
+      <el-table-column prop="servetime" label="服务时间"></el-table-column>
+      <el-table-column prop="servecon" label="服务信息"></el-table-column>
       <el-table-column label="操作"  width="200" align="center">
         <template slot-scope="scope">
-                    <el-button type="success" @click="handleEdit(scope.row)">编辑 <i class="el-icon-edit"></i></el-button>
+<!--          <el-button type="success" @click="handleEdit(scope.row)">编辑 <i class="el-icon-edit"></i></el-button>-->
           <el-popconfirm
               class="ml-5"
               confirm-button-text='确定'
@@ -59,20 +57,24 @@
     </div>
     <el-dialog title="用户信息" :visible.sync="dialogFormVisible" width="30%" >
       <el-form label-width="90px" size="small">
-        <el-form-item label="车务ID">
+        <el-form-item label="编号">
           <el-input v-model="form.serveid" autocomplete="off"></el-input>
         </el-form-item>
-        <el-form-item label="提醒信息">
+        <el-form-item label="服务信息">
           <el-input v-model="form.servename" autocomplete="off"></el-input>
         </el-form-item>
-        <el-form-item label="会员编号">
-          <el-input v-model="form.vipnum" autocomplete="off"></el-input>
+        <el-form-item label="服务时间">
+          <el-date-picker
+              v-model="form.servetime"
+              align="right"
+              type="date"
+              style="width: 315px"
+              placeholder="选择日期"
+              :picker-options="pickerOptions">
+          </el-date-picker>
         </el-form-item>
-        <el-form-item label="提醒时间">
-          <el-input v-model="form.ctime" autocomplete="off"></el-input>
-        </el-form-item>
-        <el-form-item label="工作人员姓名">
-          <el-input v-model="form.ename" autocomplete="off"></el-input>
+        <el-form-item label="服务内容">
+          <el-input v-model="form.servecon" autocomplete="off"></el-input>
         </el-form-item>
       </el-form>
       <div slot="footer" class="dialog-footer">
@@ -87,30 +89,78 @@
 import request from "@/utils/request";
 
 export default {
-  name: "Command",
-  data(){
-    return{
+  name: "Traffic",
+  data() {
+    return {
       tableData: [],
       total: 0,
       pageNum: 1,
       pageSize: 5,
-      form:{},
+      form: {},
       dialogFormVisible: false,
       multipleSelection: [],
       headerBg: 'headerBg',
-      ServeID:"",
-      Servename:"",
-      VIPnum:"",
-      Ctime:"",
-      Ename:""
+      serveid: "",
+      servename: "",
+      servetime: "",
+      servecon: "",
+      pickerOptions: {
+        disabledDate(time) {
+          return time.getTime() > Date.now();
+        },
+        shortcuts: [{
+          text: '今天',
+          onClick(picker) {
+            picker.$emit('pick', new Date());
+          }
+        }, {
+          text: '昨天',
+          onClick(picker) {
+            const date = new Date();
+            date.setTime(date.getTime() - 3600 * 1000 * 24);
+            picker.$emit('pick', date);
+          }
+        }, {
+          text: '一周前',
+          onClick(picker) {
+            const date = new Date();
+            date.setTime(date.getTime() - 3600 * 1000 * 24 * 7);
+            picker.$emit('pick', date);
+          }
+        }]
+      }
     }
   },
   created() {
     this.load()
   },
   methods:{
+    load(){
+      request.get("/traffic/page",{
+        params: {
+          pageNum: this.pageNum,
+          pageSize: this.pageSize,
+          serveid:this.serveid,
+          servetime:this.servetime,
+        }
+      }).then(res => {
+        console.log(res)
+        this.tableData = res.records
+        this.total = res.total
+      })
+    },
+    del(id){
+      request.delete("/traffic/"+id).then(res=>{
+        if (res) {
+          this.$message.success("删除成功")
+          this.load()
+        } else {
+          this.$message.error("删除失败")
+        }
+      })
+    },
     save(){
-      request.post("/command",this.form).then(res => {
+      request.post("/traffic",this.form).then(res => {
         if (res) {
           console.log(res)
           this.$message.success("保存成功")
@@ -120,48 +170,6 @@ export default {
           this.$message.error("保存失败")
         }
       })
-    },
-    del(id) {
-      request.delete("/command/"+id).then(res=>{
-        if (res) {
-          this.$message.success("删除成功")
-          this.load()
-        } else {
-          this.$message.error("删除失败")
-        }
-      })
-    },
-    delBatch() {
-      let ids = this.multipleSelection.map(v => v.serveid)  // [{}, {}, {}] => [1,2,3]
-      console.log(ids)
-      request.post("/command/del/batch", ids).then(res => {
-        if (res) {
-          this.$message.success("批量删除成功")
-          this.load()
-        } else {
-          this.$message.error("批量删除失败")
-        }
-      })
-    },
-    load(){
-      request.get("/command/page",{
-        params: {
-          pageNum: this.pageNum,
-          pageSize: this.pageSize,
-          ServeID:this.ServeID,
-          VIPnum:this.VIPnum,
-          Cdate:this.Cdate,
-        }
-      }).then(res => {
-        console.log(res)
-        this.tableData = res.records
-        this.total = res.total
-      })
-    },
-    reset(){
-      this.ServeID=""
-      this.VIPnum=""
-      this.Ctime=""
     },
     handleAdd(){
       this.dialogFormVisible = true
@@ -184,7 +192,6 @@ export default {
       this.load()
     },
   }
-
 }
 </script>
 

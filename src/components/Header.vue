@@ -1,11 +1,14 @@
 <template>
   <div style="font-size: 12px;line-height: 60px;display: flex">
     <div style="flex: 1; font-size: 22px;" >
-      <span :class="collapseBtnClass" style="cursor: pointer" @click="collapse"></span>
-      <el-breadcrumb separator="/" style="display: inline-block; margin-left: 10px">
-        <el-breadcrumb-item :to="'/manageHome'">首页</el-breadcrumb-item>
-<!--        <el-breadcrumb-item>{{ currentPathName }}</el-breadcrumb-item>-->
-      </el-breadcrumb>
+      <div style="float: left">
+        <span :class="collapseBtnClass" style="cursor: pointer;" @click="collapse"></span>
+        <el-breadcrumb separator="/" style="display: inline-block; margin-left: 10px">
+          <el-breadcrumb-item :to="'/Home'">首页</el-breadcrumb-item>
+          <!--        <el-breadcrumb-item>{{ currentPathName }}</el-breadcrumb-item>-->
+        </el-breadcrumb>
+      </div>
+
     </div>
     <el-dropdown style="width: 100px;cursor: pointer">
       <span>王小虎</span><i class="el-icon-arrow-down" style="margin-left: 5px"></i>

@@ -6,13 +6,14 @@
 
     <resultMap id="BaseResultMap" type="com.example.carclub.entity.Command">
             <id property="serveid" column="ServeID" jdbcType="VARCHAR"/>
-            <id property="vipnum" column="VIPnum" jdbcType="VARCHAR"/>
+            <result property="servename" column="Servename" jdbcType="VARCHAR"/>
+            <result property="vipnum" column="VIPnum" jdbcType="VARCHAR"/>
             <result property="ctime" column="Ctime" jdbcType="DATE"/>
             <result property="ename" column="Ename" jdbcType="VARCHAR"/>
     </resultMap>
 
     <sql id="Base_Column_List">
-        ServeID,VIPnum,Ctime,
-        Ename
+        ServeID,Servename,VIPnum,
+        Ctime,Ename
     </sql>
 </mapper>
