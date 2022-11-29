@@ -1,9 +1,9 @@
 <template>
   <div>
     <div style="margin: 10px 0">
-      <el-input style="width: 200px" placeholder="请输入名称" suffix-icon="el-icon-search" v-model="travelid"></el-input>
-      <el-input style="width: 200px" placeholder="请输入邮箱" suffix-icon="el-icon-message" class="ml-5" v-model="vipnum"></el-input>
-      <el-input style="width: 200px" placeholder="请输入地址" suffix-icon="el-icon-position" class="ml-5" v-model="carnum"></el-input>
+      <el-input style="width: 200px" placeholder="请输入名称" suffix-icon="el-icon-search" v-model="vipnum"></el-input>
+      <el-input style="width: 200px" placeholder="请输入邮箱" suffix-icon="el-icon-message" class="ml-5" v-model="vname"></el-input>
+      <el-input style="width: 200px" placeholder="请输入地址" suffix-icon="el-icon-position" class="ml-5" v-model="vipid"></el-input>
       <el-button style="margin-left: 5px" type="primary" @click="load">搜索</el-button>
       <el-button type="warning" @click="reset">重置</el-button>
     </div>
@@ -25,12 +25,13 @@
 
     <el-table :data="tableData" border stripe :header-cell-class-name="'headerBg'"  @selection-change="handleSelectionChange">
       <el-table-column type="selection" width="55"></el-table-column>
-      <el-table-column prop="travelid" label="旅行编号" width="80"></el-table-column>
-      <el-table-column prop="vipnum" label="会员编号" width="140"></el-table-column>
-      <el-table-column prop="traveltime" label="旅行时间" width="120"></el-table-column>
-      <el-table-column prop="traveladdress" label="旅行地点" width="120"></el-table-column>
-      <el-table-column prop="travelprice" label="旅行费用"></el-table-column>
-      <el-table-column prop="carnum" label="车牌号"></el-table-column>
+      <el-table-column prop="vipnum" label="会员ID" width="80"></el-table-column>
+      <el-table-column prop="vname" label="会员姓名" width="140"></el-table-column>
+      <el-table-column prop="vsex" label="会员性别" width="120"></el-table-column>
+      <el-table-column prop="vphone" label="会员电话" width="120"></el-table-column>
+      <el-table-column prop="vrank" label="会员等级"></el-table-column>
+      <el-table-column prop="vmoney" label="会员余额"></el-table-column>
+      <el-table-column prop="vipid" label="会员身份证号"></el-table-column>
       <el-table-column label="操作"  width="200" align="center">
         <template slot-scope="scope">
           <el-button type="success" @click="handleEdit(scope.row)">编辑 <i class="el-icon-edit"></i></el-button>
@@ -41,7 +42,7 @@
               icon="el-icon-info"
               icon-color="red"
               title="您确定删除吗？"
-              @confirm="del(scope.row.travelid)"
+              @confirm="del(scope.row.vipid)"
           >
             <el-button type="danger" slot="reference">删除 <i class="el-icon-remove-outline"></i></el-button>
           </el-popconfirm>
@@ -61,30 +62,26 @@
     </div>
     <el-dialog title="用户信息" :visible.sync="dialogFormVisible" width="30%" >
       <el-form label-width="80px" size="small">
-        <el-form-item label="旅行编号">
-          <el-input v-model="form.travelid" autocomplete="off"></el-input>
-        </el-form-item>
-        <el-form-item label="会员编号">
+        <el-form-item label="会员ID">
           <el-input v-model="form.vipnum" autocomplete="off"></el-input>
         </el-form-item>
-        <el-form-item label="落户日期">
-          <el-date-picker
-              v-model="form.traveltime"
-              align="right"
-              type="date"
-              style="width: 315px"
-              placeholder="选择日期"
-              :picker-options="pickerOptions">
-          </el-date-picker>
+        <el-form-item label="会员姓名">
+          <el-input v-model="form.vname" autocomplete="off"></el-input>
         </el-form-item>
-        <el-form-item label="旅行地点">
-          <el-input v-model="form.traveladdress" autocomplete="off"></el-input>
+        <el-form-item label="会员性别">
+          <el-input v-model="form.vsex" autocomplete="off"></el-input>
         </el-form-item>
-        <el-form-item label="旅行费用">
-          <el-input v-model="form.travelprice" autocomplete="off"></el-input>
+        <el-form-item label="会员电话">
+          <el-input v-model="form.vphone" autocomplete="off"></el-input>
         </el-form-item>
-        <el-form-item label="车牌号">
-          <el-input v-model="form.carnum" autocomplete="off"></el-input>
+        <el-form-item label="会员等级">
+          <el-input v-model="form.vrank" autocomplete="off"></el-input>
+        </el-form-item>
+        <el-form-item label="会员余额">
+          <el-input v-model="form.vmoney" autocomplete="off"></el-input>
+        </el-form-item>
+        <el-form-item label="会员身份证号">
+          <el-input v-model="form.vipid" autocomplete="off"></el-input>
         </el-form-item>
       </el-form>
       <div slot="footer" class="dialog-footer">
@@ -99,19 +96,21 @@
 import request from "@/utils/request";
 
 export default {
-  name: "travellinfo",
+  name: "Vip",
   data() {
     return {
       tableData: [],
       total: 0,
       pageNum: 1,
       pageSize: 5,
-      travelid:"",
-      vipnum:"",
-      traveltime:"",
-      traveladdress:"",
-      travelprice:"",
-      carnum:"",
+      Enum:"",
+      Ename:"",
+      Esex:"",
+      Eage:"",
+      Telephone:"",
+      Depnum:"",
+      USER:"",
+      PASSWORD:"",
       form: {},
       dialogFormVisible: false,
       multipleSelection: [],
@@ -123,13 +122,13 @@ export default {
   },
   methods: {
     load() {
-      request.get("/travel/page", {
+      request.get("/vip/page", {
         params: {
           pageNum: this.pageNum,
           pageSize: this.pageSize,
-          travelid:this.travelid,
           vipnum:this.vipnum,
-          carnum:this.carnum
+          vname:this.vname,
+          vipid:this.vipid
         }
       }).then(res => {
         console.log(res)
@@ -154,9 +153,9 @@ export default {
       this.load()
     },
     reset(){
-      this.travelid = ""
       this.vipnum = ""
-      this.carnum = ""
+      this.vname = ""
+      this.vipid = ""
       this.load()
     },
     handleSelectionChange(val) {
@@ -164,9 +163,9 @@ export default {
       this.multipleSelection = val
     },
     delBatch(){
-      let ids = this.multipleSelection.map(v => v.travelid)  // [{}, {}, {}] => [1,2,3]
+      let ids = this.multipleSelection.map(v => v.vipnum)  // [{}, {}, {}] => [1,2,3]
       console.log(ids)
-      request.post("/travel/del/batch", ids).then(res => {
+      request.post("/vip/del/batch", ids).then(res => {
         if (res) {
           this.$message.success("批量删除成功")
           this.load()
@@ -176,7 +175,7 @@ export default {
       })
     },
     save(){
-      request.post("/travel",this.form).then(res => {
+      request.post("/vip",this.form).then(res => {
         if (res) {
           console.log(res)
           this.$message.success("保存成功")
@@ -188,7 +187,7 @@ export default {
       })
     },
     del(id){
-      request.delete("/travel/"+id).then(res=>{
+      request.delete("/vip/"+id).then(res=>{
         if (res) {
           this.$message.success("删除成功")
           this.load()

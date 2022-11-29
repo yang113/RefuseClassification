@@ -60,10 +60,17 @@
         <el-form-item label="缴费用户ID">
           <el-input v-model="form.vipnum" autocomplete="off"></el-input>
         </el-form-item>
-        <el-form-item label="缴费日期">
-          <el-input v-model="form.mdate" autocomplete="off"></el-input>
+        <el-form-item label="落户日期">
+          <el-date-picker
+              v-model="form.mdate"
+              align="right"
+              type="date"
+              style="width: 315px"
+              placeholder="选择日期"
+              :picker-options="pickerOptions">
+          </el-date-picker>
         </el-form-item>
-        <el-form-item label="缴费数量">
+        <el-form-item label="缴费金额">
           <el-input v-model="form.money" autocomplete="off"></el-input>
         </el-form-item>
 

@@ -57,11 +57,25 @@
         <el-form-item label="验车状态">
           <el-input v-model="form.checkstatus" autocomplete="off"></el-input>
         </el-form-item>
-        <el-form-item label="验车日期">
-          <el-input v-model="form.checktime" autocomplete="off"></el-input>
+        <el-form-item label="验车时间">
+          <el-date-picker
+              v-model="form.checktime"
+              align="right"
+              type="date"
+              style="width: 315px"
+              placeholder="选择日期"
+              :picker-options="pickerOptions">
+          </el-date-picker>
         </el-form-item>
         <el-form-item label="落户日期">
-          <el-input v-model="form.settletime" autocomplete="off"></el-input>
+          <el-date-picker
+              v-model="form.settletime"
+              align="right"
+              type="date"
+              style="width: 315px"
+              placeholder="选择日期"
+              :picker-options="pickerOptions">
+          </el-date-picker>
         </el-form-item>
         <el-form-item label="会员编号">
           <el-input v-model="form.vipnum" autocomplete="off"></el-input>

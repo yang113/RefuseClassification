@@ -1,28 +1,60 @@
 <template>
-  <el-menu :default-openeds="['1', '3']" style="height: 100%;overflow-x: hidden"
+  <el-menu :default-openeds="[]" style="height: 100%;overflow-x: hidden"
            background-color="rgb(48,65,86)"
            text-color="#fff"
            active-text-color="#ffd04b"
            :collapse-transition="false"
            :collapse="isCollapse"
+           router
   >
     <div style="height: 60px;line-height: 60px;text-align: center">
       <img src="../assets/logo.png" alt="" style="width: 20px;position: relative;top: 6px;margin-right: 5px">
-      <b style="color: white" v-show="!isCollapse">管理员后台</b>
+      <b style="color: white" v-show="!isCollapse">工作人员后台</b>
     </div>
-    <el-menu-item index="/home">
+    <el-menu-item index="/home1">
       <i class="el-icon-s-home"></i>
       <span>主页</span>
     </el-menu-item>
-    <el-submenu index="/">
+    <el-submenu index="2">
       <template slot="title">
         <i class="el-icon-menu"></i>
-        <span>系统管理</span>
+        <span>工作管理</span>
       </template>
       <el-menu-item-group>
-        <el-menu-item index="/user">用户管理</el-menu-item>
+        <el-menu-item index="/money1">缴费管理</el-menu-item>
+        <el-menu-item index="/Traffic1">服务信息</el-menu-item>
       </el-menu-item-group>
-      <el-menu-item index="2-3">喀喀喀</el-menu-item>
+    </el-submenu>
+    <el-submenu index="3">
+      <template slot="title">
+        <i class="el-icon-menu"></i>
+        <span>提醒服务</span>
+      </template>
+      <el-menu-item-group>
+        <el-menu-item index="/caract1">车务活动</el-menu-item>
+        <el-menu-item index="/command1">车务提醒</el-menu-item>
+      </el-menu-item-group>
+    </el-submenu>
+    <el-submenu index="5">
+      <template slot="title">
+        <i class="el-icon-menu"></i>
+        <span>救援管理</span>
+      </template>
+      <el-menu-item-group>
+        <el-menu-item index="/maps1">呼救管理</el-menu-item>
+        <el-menu-item index="/rescuerecords1">救援管理</el-menu-item>
+        <el-menu-item index="/carinfo1">救援车辆信息</el-menu-item>
+      </el-menu-item-group>
+    </el-submenu>
+    <el-submenu index="6">
+      <template slot="title">
+        <i class="el-icon-menu"></i>
+        <span>旅行管理</span>
+      </template>
+      <el-menu-item-group>
+        <el-menu-item index="/travel1">旅行记录</el-menu-item>
+        <el-menu-item index="/travelinfo1">旅行信息</el-menu-item>
+      </el-menu-item-group>
     </el-submenu>
   </el-menu>
 </template>

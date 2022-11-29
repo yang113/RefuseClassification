@@ -15,24 +15,34 @@
       <i class="el-icon-s-home"></i>
       <span>主页</span>
     </el-menu-item>
+    <el-submenu index="1">
+      <template slot="title">
+        <i class="el-icon-menu"></i>
+        <span>部门管理</span>
+      </template>
+      <el-menu-item-group>
+        <el-menu-item index="/User">员工管理</el-menu-item>
+      </el-menu-item-group>
+    </el-submenu>
     <el-submenu index="2">
       <template slot="title">
         <i class="el-icon-menu"></i>
         <span>系统管理</span>
       </template>
       <el-menu-item-group>
-        <el-menu-item index="/user">用户管理</el-menu-item>
+        <el-menu-item index="/Vip">会员管理</el-menu-item>
         <el-menu-item index="/money">缴费管理</el-menu-item>
       </el-menu-item-group>
     </el-submenu>
     <el-submenu index="3">
       <template slot="title">
         <i class="el-icon-menu"></i>
-        <span>提醒服务</span>
+        <span>车务管理</span>
       </template>
       <el-menu-item-group>
         <el-menu-item index="/caract">车务活动</el-menu-item>
         <el-menu-item index="/command">车务提醒</el-menu-item>
+        <el-menu-item index="/Traffic">车务待办</el-menu-item>
       </el-menu-item-group>
     </el-submenu>
     <el-submenu index="4">
@@ -41,14 +51,13 @@
         <span>统计报表</span>
       </template>
       <el-menu-item-group>
-        <el-menu-item index="/Traffic">服务信息</el-menu-item>
         <el-menu-item index="/charts">营业额统计</el-menu-item>
       </el-menu-item-group>
     </el-submenu>
     <el-submenu index="5">
       <template slot="title">
         <i class="el-icon-menu"></i>
-        <span>救援服务管理</span>
+        <span>救援管理</span>
       </template>
       <el-menu-item-group>
         <el-menu-item index="/maps">呼救管理</el-menu-item>

@@ -68,10 +68,17 @@
         <el-form-item label="会员编号">
           <el-input v-model="form.vipnum" autocomplete="off"></el-input>
         </el-form-item>
-        <el-form-item label="提醒时间">
-          <el-input v-model="form.ctime" autocomplete="off"></el-input>
+        <el-form-item label="服务时间">
+          <el-date-picker
+              v-model="form.ctime"
+              align="right"
+              type="date"
+              style="width: 315px"
+              placeholder="选择日期"
+              :picker-options="pickerOptions">
+          </el-date-picker>
         </el-form-item>
-        <el-form-item label="工作人员姓名">
+        <el-form-item label="工人姓名">
           <el-input v-model="form.ename" autocomplete="off"></el-input>
         </el-form-item>
       </el-form>

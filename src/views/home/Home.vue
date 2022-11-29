@@ -25,11 +25,41 @@ export default {
   margin: 0;
 }
 
-.el-carousel__item:nth-child(2n) {
-  background-color: #99a9bf;
+.el-carousel__item:nth-child(6n) {
+  background: url("../../assets/i1.png");
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
-.el-carousel__item:nth-child(2n+1) {
-  background-color: #d3dce6;
+.el-carousel__item:nth-child(6n+1) {
+  background: url("../../assets/i2.png");
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.el-carousel__item:nth-child(6n+2) {
+  background: url("../../assets/i3.png");
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.el-carousel__item:nth-child(6n+3) {
+  background: url("../../assets/i4.png");
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.el-carousel__item:nth-child(6n+4) {
+  background: url("../../assets/i5.png");
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.el-carousel__item:nth-child(6n+5) {
+  background: url("../../assets/i6.png");
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 </style>

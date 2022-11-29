@@ -1,5 +1,6 @@
 <template>
   <div class="wrapper">
+    <rain></rain>
     <div style="margin: 200px auto; background-color: #fff; width: 350px; height: 300px; padding: 20px; border-radius: 10px">
       <div style="margin: 20px 0; text-align: center; font-size: 24px"><b>登 录</b></div>
       <el-form :model="user" :rules="rules" ref="userForm">
@@ -13,7 +14,7 @@
           <el-radio-group v-model="radio" style="margin: 0 auto" type="flex" justify="center">
             <el-radio :label="1">工作人员</el-radio>
             <el-radio :label="2">会员</el-radio>
-            <el-radio :label="3">管理人员</el-radio>
+            <el-radio :label="3">经理</el-radio>
           </el-radio-group>
         </div>
         <el-form-item style="margin: 10px 0; text-align: right">
@@ -27,9 +28,12 @@
 
 <script>
 import request from "@/utils/request";
-
+import rain from "../rain";
 export default {
   name: "Login",
+  components:{
+    rain
+  },
   data(){
     return{
       user:{
@@ -42,25 +46,34 @@ export default {
   },
   methods:{
     login(){
-      if(this.radio === 3){
-        if(this.user.user=== "1" && this.user.password === "1"){
-          this.$message.success("管理员登陆成功")
-          this.$router.push('/manageHome')
-        }
+      if (this.user.user===""||this.user.password===""){
+        this.$message.error("请输入账户或密码")
       }
       else {
-        request.post("/login",this.user).then(res =>{
-          if(!res)
-            this.$message.error("用户名密码错误")
-          else {
-            if (this.radio === 1){
-              console.log(res)
-              this.$message.success("登陆成功")
-              this.$router.push('/employeeHome')
-            }
+        if(this.radio === 3){
+          if(this.user.user=== "1" && this.user.password === "1"){
+            this.$message.success("管理员登陆成功")
+            this.$router.push('/manageHome')
           }
-        })
+          else {
+            this.$message.error("管理员用户名密码错误")
+          }
+        }
+        else {
+          request.post("/login",this.user).then(res =>{
+            if(!res)
+              this.$message.error("用户名密码错误")
+            else {
+              if (this.radio === 1){
+                console.log(res)
+                this.$message.success("登陆成功")
+                this.$router.push('/employeeHome')
+              }
+            }
+          })
+        }
       }
+
     }
   }
 }
@@ -69,7 +82,10 @@ export default {
 <style scoped>
 .wrapper {
   height: 100vh;
-  background: silver;
+  background: url("../assets/bg1.png");
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   overflow: hidden;
 }
 </style>

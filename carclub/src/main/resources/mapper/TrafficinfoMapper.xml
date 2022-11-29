@@ -9,10 +9,11 @@
             <result property="servename" column="Servename" jdbcType="VARCHAR"/>
             <result property="servetime" column="ServeTime" jdbcType="DATE"/>
             <result property="servecon" column="Servecon" jdbcType="VARCHAR"/>
+            <result property="vipnum" column="vipnum" jdbcType="INTEGER"/>
     </resultMap>
 
     <sql id="Base_Column_List">
         ServeID,Servename,ServeTime,
-        Servecon
+        Servecon,vipnum
     </sql>
 </mapper>

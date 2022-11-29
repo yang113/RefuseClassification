@@ -44,8 +44,15 @@
         <el-form-item label="救援编号">
           <el-input v-model="form.rescueid" autocomplete="off"></el-input>
         </el-form-item>
-        <el-form-item label="救援时间">
-          <el-input v-model="form.rescuetime" autocomplete="off"></el-input>
+        <el-form-item label="落户日期">
+          <el-date-picker
+              v-model="form.rescuetime"
+              align="right"
+              type="date"
+              style="width: 315px"
+              placeholder="选择日期"
+              :picker-options="pickerOptions">
+          </el-date-picker>
         </el-form-item>
         <el-form-item label="救援地点">
           <el-input v-model="form.rescueplace" autocomplete="off"></el-input>
@@ -53,7 +60,7 @@
         <el-form-item label="救援状态">
           <el-input v-model="form.rescuestatus" autocomplete="off"></el-input>
         </el-form-item>
-        <el-form-item label="救援车辆编号">
+        <el-form-item label="救援车编号">
           <el-input v-model="form.carid" autocomplete="off"></el-input>
         </el-form-item>
 

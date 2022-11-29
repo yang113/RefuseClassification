@@ -39,6 +39,11 @@ public class Trafficinfo implements Serializable {
      */
     private String servecon;
 
+    /**
+     * 
+     */
+    private Integer vipnum;
+
     @TableField(exist = false)
     private static final long serialVersionUID = 1L;
 
@@ -57,7 +62,8 @@ public class Trafficinfo implements Serializable {
         return (this.getServeid() == null ? other.getServeid() == null : this.getServeid().equals(other.getServeid()))
             && (this.getServename() == null ? other.getServename() == null : this.getServename().equals(other.getServename()))
             && (this.getServetime() == null ? other.getServetime() == null : this.getServetime().equals(other.getServetime()))
-            && (this.getServecon() == null ? other.getServecon() == null : this.getServecon().equals(other.getServecon()));
+            && (this.getServecon() == null ? other.getServecon() == null : this.getServecon().equals(other.getServecon()))
+            && (this.getVipnum() == null ? other.getVipnum() == null : this.getVipnum().equals(other.getVipnum()));
     }
 
     @Override
@@ -68,6 +74,7 @@ public class Trafficinfo implements Serializable {
         result = prime * result + ((getServename() == null) ? 0 : getServename().hashCode());
         result = prime * result + ((getServetime() == null) ? 0 : getServetime().hashCode());
         result = prime * result + ((getServecon() == null) ? 0 : getServecon().hashCode());
+        result = prime * result + ((getVipnum() == null) ? 0 : getVipnum().hashCode());
         return result;
     }
 
@@ -81,6 +88,7 @@ public class Trafficinfo implements Serializable {
         sb.append(", servename=").append(servename);
         sb.append(", servetime=").append(servetime);
         sb.append(", servecon=").append(servecon);
+        sb.append(", vipnum=").append(vipnum);
         sb.append(", serialVersionUID=").append(serialVersionUID);
         sb.append("]");
         return sb.toString();

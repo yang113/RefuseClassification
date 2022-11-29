@@ -27,6 +27,7 @@
       <el-table-column prop="servename" label="车务名称"></el-table-column>
       <el-table-column prop="servetime" label="服务时间"></el-table-column>
       <el-table-column prop="servecon" label="服务信息"></el-table-column>
+      <el-table-column prop="vipnum" label="会员编号"></el-table-column>
       <el-table-column label="操作"  width="200" align="center">
         <template slot-scope="scope">
 <!--          <el-button type="success" @click="handleEdit(scope.row)">编辑 <i class="el-icon-edit"></i></el-button>-->
@@ -74,7 +75,15 @@
           </el-date-picker>
         </el-form-item>
         <el-form-item label="服务内容">
-          <el-input v-model="form.servecon" autocomplete="off"></el-input>
+          <el-select v-model="form.servecon" placeholder="请选择需要待办的车务" style="width: 315px">
+            <el-option label="车牌待办" value="车牌待办"></el-option>
+            <el-option label="保险待办" value="保险待办"></el-option>
+            <el-option label="验证待办" value="验证待办"></el-option>
+            <el-option label="落户待办" value="落户待办"></el-option>
+          </el-select>
+        </el-form-item>
+        <el-form-item label="会员编号">
+          <el-input v-model="form.vipnum" autocomplete="off"></el-input>
         </el-form-item>
       </el-form>
       <div slot="footer" class="dialog-footer">
@@ -104,6 +113,7 @@ export default {
       servename: "",
       servetime: "",
       servecon: "",
+      vipnum:"",
       pickerOptions: {
         disabledDate(time) {
           return time.getTime() > Date.now();
