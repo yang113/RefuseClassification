@@ -36,6 +36,11 @@ public class MoneyController {
         return moneyService.select();
     }
 
+    @PostMapping("/del/batch")
+    public boolean deleteBatch(@RequestBody List<Integer> ids){
+        return moneyService.removeByIds(ids);
+    }
+
     @GetMapping("/page")
     public IPage<Money> findpage(@RequestParam Integer pageNum,
                                     @RequestParam Integer pageSize,

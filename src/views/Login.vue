@@ -13,8 +13,8 @@
         <div type="flex">
           <el-radio-group v-model="radio" style="margin: 0 auto" type="flex" justify="center">
             <el-radio :label="1">工作人员</el-radio>
-            <el-radio :label="2">会员</el-radio>
-            <el-radio :label="3">经理</el-radio>
+            <el-radio :label="2">经理</el-radio>
+            <el-radio :label="3">系统管理员</el-radio>
           </el-radio-group>
         </div>
         <el-form-item style="margin: 10px 0; text-align: right">
@@ -50,13 +50,21 @@ export default {
         this.$message.error("请输入账户或密码")
       }
       else {
-        if(this.radio === 3){
-          if(this.user.user=== "1" && this.user.password === "1"){
-            this.$message.success("管理员登陆成功")
-            this.$router.push('/manageHome')
+        if (this.radio !== 1){
+          if(this.radio === 2){
+            if(this.user.user=== "1" && this.user.password === "1"){
+              this.$message.success("经理登陆成功")
+              this.$router.push('/manageHome')
+            }
+            else {
+              this.$message.error("管理员用户名密码错误")
+            }
           }
-          else {
-            this.$message.error("管理员用户名密码错误")
+          if (this.radio === 3){
+            if(this.user.user=== "2" && this.user.password === "2"){
+              this.$message.success("管理员登陆成功")
+              this.$router.push('/Admin')
+            }
           }
         }
         else {

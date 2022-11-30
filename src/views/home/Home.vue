@@ -1,11 +1,10 @@
 <template>
   <div>
+    <div style="">欢迎来到汽车俱乐部管理系统</div>
     <el-carousel :interval="4000" type="card" height="500px">
       <el-carousel-item v-for="item in 6" :key="item">
-        <h3 class="medium">{{ item }}</h3>
       </el-carousel-item>
     </el-carousel>
-    <div>哈啊哈哈哈哈哈</div>
   </div>
 
 </template>

@@ -30,8 +30,9 @@
         <span>系统管理</span>
       </template>
       <el-menu-item-group>
-        <el-menu-item index="/Vip">会员管理</el-menu-item>
-        <el-menu-item index="/money">缴费管理</el-menu-item>
+        <el-menu-item index="/user">用户管理</el-menu-item>
+        <el-menu-item index="/money">部门管理</el-menu-item>
+        <el-menu-item index="/helps">系统帮助</el-menu-item>
       </el-menu-item-group>
     </el-submenu>
     <el-submenu index="3">

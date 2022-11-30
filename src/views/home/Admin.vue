@@ -1,8 +1,8 @@
 <template>
   <el-container  style="min-height: 100vh;">
     <el-aside :width="sideWidth + 'px'" style="background-color: rgb(238, 241, 246);height:100vh;
-	    box-shadow: 2px 0 6px rgb(0 21 41 / 35%);-webkit-scrollbar:none ">
-      <Easide :isCollapse="isCollapse" :logoTextshow="logoTextShow"></Easide>
+	    box-shadow: 2px 0 6px rgb(0 21 41 / 35%);">
+      <Aaside :isCollapse="isCollapse" :logoTextshow="logoTextShow"></Aaside>
     </el-aside>
 
     <el-container>
@@ -19,13 +19,15 @@
 </template>
 
 <script>
+
 import Header from "@/components/Header";
-import Easide from "@/components/Easide";
+import Aaside from "@/components/Aaside";
+
 export default {
-  name: "HomeView",
+  name: "Admin",
   components:{
     Header,
-    Easide,
+    Aaside,
   },
   data() {
     return {

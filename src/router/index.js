@@ -4,6 +4,7 @@ import Login from "@/views/Login";
 import HomeView from "@/views/home/HomeView";
 import ManageHome from "@/views/home/ManageHome";
 Vue.use(VueRouter)
+import store from "@/store";
 
 const routes = [
   {
@@ -15,6 +16,7 @@ const routes = [
     path: '/employeeHome',
     name: 'HomeView',
     component: HomeView,
+    redirect:'/home1',
     children: [
       {
         path: '/home1',
@@ -70,6 +72,33 @@ const routes = [
         path: '/Vip1',
         name: '会员信息',
         component:() => import('../views/system/Vip')
+      },
+      {
+        path: '/helps1',
+        name:'帮助界面',
+        component:() => import('../views/helps')
+      }
+    ]
+  },
+  {
+    path: '/Admin',
+    name:'管理员界面',
+    component: () =>import('../views/home/Admin'),
+    children: [
+      {
+        path: '/ahome',
+        name:'主页',
+        component:() => import('../views/home/Home')
+      },
+      {
+        path: '/auser',
+        name: '用户管理',
+        component:() => import('../views/department/User')
+      },
+      {
+        path: '/depart',
+        name: '部门管理',
+        component:() => import('../views/department/department')
       }
     ]
   },
@@ -77,6 +106,7 @@ const routes = [
     path: '/manageHome',
     name: 'manage',
     component: ManageHome,
+    redirect:'/home',
     children:[
       {
         path: '/home',
@@ -142,13 +172,27 @@ const routes = [
         path: '/Vip',
         name: '会员信息',
         component:() => import('../views/system/Vip')
+      },
+      {
+        path: '/helps',
+        name:'帮助界面',
+        component:() => import('../views/helps')
       }
     ]
   }
 ]
 
 const router = new VueRouter({
+  mode: 'history',
+  base: process.env.BASE_URL,
   routes
+})
+
+// 路由守卫
+router.beforeEach((to, from, next) => {
+  localStorage.setItem("currentPathName", to.name)  // 设置当前的路由名称，为了在Header组件中去使用
+  store.commit("setPath")  // 触发store的数据更新
+  next()  // 放行路由
 })
 
 export default router
