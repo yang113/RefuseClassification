@@ -17,9 +17,8 @@
             <el-radio :label="3">系统管理员</el-radio>
           </el-radio-group>
         </div>
-        <el-form-item style="margin: 10px 0; text-align: right">
-          <el-button type="primary" size="small"  autocomplete="off" @click="login">登录</el-button>
-          <el-button type="warning" size="small"  autocomplete="off">注册</el-button>
+        <el-form-item style="margin: 10px 0; text-align: center">
+          <el-button type="primary" size="big"  autocomplete="off" @click="login">登录</el-button>
         </el-form-item>
       </el-form>
     </div>

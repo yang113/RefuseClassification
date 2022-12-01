@@ -1,7 +1,7 @@
 <template>
   <div>
     <div style="margin: 10px 0">
-      <el-button type="primary" @click="handleAdd" style="float: right">新增 <i class="el-icon-circle-plus-outline"></i></el-button>
+      <el-button type="primary" @click="handleAdd" style="float: left;margin-bottom: 40px">新增 <i class="el-icon-circle-plus-outline"></i></el-button>
     </div>
 
     <el-table :data="tableData" border stripe :header-cell-class-name="'headerBg'"  @selection-change="handleSelectionChange">
@@ -48,9 +48,8 @@
         <el-form-item label="救援时间">
           <el-date-picker
               v-model="form.rescuetime"
-              align="right"
+              align="left"
               type="date"
-              style="width: 315px"
               placeholder="选择时间">
           </el-date-picker>
         </el-form-item>
@@ -58,7 +57,11 @@
           <el-input v-model="form.rescueplace" autocomplete="off" placeholder="请输入救援地点"></el-input>
         </el-form-item>
         <el-form-item label="救援状态">
-          <el-input v-model="form.rescuestatus" autocomplete="off" placeholder="请输入救援状态"></el-input>
+          <el-select v-model="form.rescuestatus" placeholder="请选择救援状态">
+            <el-option label="已救援" value="已救援"></el-option>
+            <el-option label="救援中" value="救援中"></el-option>
+            <el-option label="呼救" value="呼救"></el-option>
+          </el-select>
         </el-form-item>
         <el-form-item label="会员编号">
           <el-input v-model="form.vipnum" autocomplete="off" placeholder="请输入会员编号"></el-input>

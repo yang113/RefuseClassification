@@ -1,9 +1,9 @@
 <template>
   <div>
     <div style="margin: 10px 0">
-      <el-input style="width: 200px" placeholder="请输入名称" suffix-icon="el-icon-search" v-model="vipnum"></el-input>
-      <el-input style="width: 200px" placeholder="请输入邮箱" suffix-icon="el-icon-message" class="ml-5" v-model="vname"></el-input>
-      <el-input style="width: 200px" placeholder="请输入地址" suffix-icon="el-icon-position" class="ml-5" v-model="vipid"></el-input>
+      <el-input style="width: 200px" placeholder="请输入vip编号" suffix-icon="el-icon-search" v-model="vipnum"></el-input>
+      <el-input style="width: 200px" placeholder="请输入vip名称" suffix-icon="el-icon-message" class="ml-5" v-model="vname"></el-input>
+      <el-input style="width: 200px" placeholder="请输入vip身份证号" suffix-icon="el-icon-position" class="ml-5" v-model="vipid"></el-input>
       <el-button style="margin-left: 5px" type="primary" @click="load">搜索</el-button>
       <el-button type="warning" @click="reset">重置</el-button>
     </div>
@@ -103,8 +103,9 @@ export default {
       total: 0,
       pageNum: 1,
       pageSize: 5,
-      Enum:"",
-      Ename:"",
+      vipnum:"",
+      vname:"",
+      vipid:"",
       Esex:"",
       Eage:"",
       Telephone:"",

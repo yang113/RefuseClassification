@@ -63,11 +63,9 @@
         <el-form-item label="落户日期">
           <el-date-picker
               v-model="form.mdate"
-              align="right"
+              align="left"
               type="date"
-              style="width: 315px"
-              placeholder="选择日期"
-              :picker-options="pickerOptions">
+              placeholder="选择日期">
           </el-date-picker>
         </el-form-item>
         <el-form-item label="缴费金额">

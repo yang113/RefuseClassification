@@ -1,8 +1,8 @@
 <template>
   <div>
     <div style="margin: 10px 0">
-      <el-input style="width: 200px" placeholder="请输入名称" suffix-icon="el-icon-search" v-model="depnum"></el-input>
-      <el-input style="width: 200px" placeholder="请输入邮箱" suffix-icon="el-icon-message" class="ml-5" v-model="minister"></el-input>
+      <el-input style="width: 200px" placeholder="请输入部门名称" suffix-icon="el-icon-search" v-model="depnum"></el-input>
+      <el-input style="width: 200px" placeholder="请输入部门经理名称" suffix-icon="el-icon-message" class="ml-5" v-model="minister"></el-input>
       <el-button style="margin-left: 5px" type="primary" @click="load">搜索</el-button>
       <el-button type="warning" @click="reset">重置</el-button>
     </div>

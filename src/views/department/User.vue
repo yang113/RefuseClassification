@@ -1,9 +1,9 @@
 <template>
   <div>
     <div style="margin: 10px 0">
-      <el-input style="width: 200px" placeholder="请输入名称" suffix-icon="el-icon-search" v-model="Ename"></el-input>
-      <el-input style="width: 200px" placeholder="请输入邮箱" suffix-icon="el-icon-message" class="ml-5" v-model="Enum"></el-input>
-      <el-input style="width: 200px" placeholder="请输入地址" suffix-icon="el-icon-position" class="ml-5" v-model="Depnum"></el-input>
+      <el-input style="width: 200px" placeholder="请输入员工名称" suffix-icon="el-icon-search" v-model="Ename"></el-input>
+      <el-input style="width: 200px" placeholder="请输入员工编号" suffix-icon="el-icon-message" class="ml-5" v-model="Enum"></el-input>
+      <el-input style="width: 200px" placeholder="请输入部门名称" suffix-icon="el-icon-position" class="ml-5" v-model="Depnum"></el-input>
       <el-button style="margin-left: 5px" type="primary" @click="load">搜索</el-button>
       <el-button type="warning" @click="reset">重置</el-button>
     </div>
@@ -30,7 +30,8 @@
       <el-table-column prop="esex" label="性别" width="120"></el-table-column>
       <el-table-column prop="eage" label="年龄" width="120"></el-table-column>
       <el-table-column prop="telephone" label="电话"></el-table-column>
-      <el-table-column prop="depnum" label="部门编号"></el-table-column>
+      <el-table-column prop="depnum" label="部门名称"></el-table-column>
+      <el-table-column prop="epower" label="员工类型"></el-table-column>
       <el-table-column prop="user" label="登录账户"></el-table-column>
       <el-table-column prop="password" label="密码"></el-table-column>
       <el-table-column label="操作"  width="200" align="center">
@@ -78,8 +79,11 @@
         <el-form-item label="电话">
           <el-input v-model="form.telephone" autocomplete="off" placeholder="请输入员工电话"></el-input>
         </el-form-item>
-        <el-form-item label="部门编号">
-          <el-input v-model="form.depnum" autocomplete="off" placeholder="请输入部门编号"></el-input>
+        <el-form-item label="部门名称">
+          <el-input v-model="form.depnum" autocomplete="off" placeholder="请输入部门名称"></el-input>
+        </el-form-item>
+        <el-form-item label="员工类型">
+          <el-input v-model="form.epower" autocomplete="off" placeholder="请输入员工类型"></el-input>
         </el-form-item>
         <el-form-item label="登录账户">
           <el-input v-model="form.user" autocomplete="off" placeholder="请输入登录账户名"></el-input>

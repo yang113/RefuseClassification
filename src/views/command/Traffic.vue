@@ -67,15 +67,14 @@
         <el-form-item label="服务时间" placeholder="请输入服务时间">
           <el-date-picker
               v-model="form.servetime"
-              align="right"
+              align="left"
               type="date"
-              style="width: 315px"
               placeholder="选择日期"
               :picker-options="pickerOptions">
           </el-date-picker>
         </el-form-item>
         <el-form-item label="服务内容">
-          <el-select v-model="form.servecon" placeholder="请选择需要待办的车务" style="width: 315px">
+          <el-select v-model="form.servecon" placeholder="请选择需要待办的车务">
             <el-option label="车牌待办" value="车牌待办"></el-option>
             <el-option label="保险待办" value="保险待办"></el-option>
             <el-option label="验证待办" value="验证待办"></el-option>

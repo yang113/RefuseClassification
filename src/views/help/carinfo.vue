@@ -60,18 +60,16 @@
         <el-form-item label="验车时间">
           <el-date-picker
               v-model="form.checktime"
-              align="right"
+              align="left"
               type="date"
-              style="width: 315px"
               placeholder="选择日期">
           </el-date-picker>
         </el-form-item>
         <el-form-item label="落户日期">
           <el-date-picker
               v-model="form.settletime"
-              align="right"
+              align="left"
               type="date"
-              style="width: 315px"
               placeholder="选择日期">
           </el-date-picker>
         </el-form-item>

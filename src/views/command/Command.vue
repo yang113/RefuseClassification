@@ -71,14 +71,13 @@
         <el-form-item label="提醒时间">
           <el-date-picker
               v-model="form.ctime"
-              align="right"
+              align="left"
               type="date"
-              style="width: 315px"
               placeholder="选择日期"
               :picker-options="pickerOptions">
           </el-date-picker>
         </el-form-item>
-        <el-form-item label="工人姓名">
+        <el-form-item label="员工姓名">
           <el-input v-model="form.ename" autocomplete="off" placeholder="请输入工人姓名"></el-input>
         </el-form-item>
       </el-form>
