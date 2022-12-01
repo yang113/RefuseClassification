@@ -46,16 +46,16 @@
     <el-dialog title="用户信息" :visible.sync="dialogFormVisible" width="30%" >
       <el-form label-width="90px" size="small">
         <el-form-item label="车牌号">
-          <el-input v-model="form.carnum" autocomplete="off"></el-input>
+          <el-input v-model="form.carnum" autocomplete="off" placeholder="请输入车牌号"></el-input>
         </el-form-item>
         <el-form-item label="保单编号">
-          <el-input v-model="form.polivynum" autocomplete="off"></el-input>
+          <el-input v-model="form.polivynum" autocomplete="off" placeholder="请输入保单编号"></el-input>
         </el-form-item>
         <el-form-item label="落户状态">
-          <el-input v-model="form.settlestatus" autocomplete="off"></el-input>
+          <el-input v-model="form.settlestatus" autocomplete="off" placeholder="请输入落户状态"></el-input>
         </el-form-item>
         <el-form-item label="验车状态">
-          <el-input v-model="form.checkstatus" autocomplete="off"></el-input>
+          <el-input v-model="form.checkstatus" autocomplete="off" placeholder="请输入验车状态"></el-input>
         </el-form-item>
         <el-form-item label="验车时间">
           <el-date-picker
@@ -63,8 +63,7 @@
               align="right"
               type="date"
               style="width: 315px"
-              placeholder="选择日期"
-              :picker-options="pickerOptions">
+              placeholder="选择日期">
           </el-date-picker>
         </el-form-item>
         <el-form-item label="落户日期">
@@ -73,20 +72,18 @@
               align="right"
               type="date"
               style="width: 315px"
-              placeholder="选择日期"
-              :picker-options="pickerOptions">
+              placeholder="选择日期">
           </el-date-picker>
         </el-form-item>
         <el-form-item label="会员编号">
-          <el-input v-model="form.vipnum" autocomplete="off"></el-input>
+          <el-input v-model="form.vipnum" autocomplete="off" placeholder="请输入会员编号"></el-input>
         </el-form-item>
         <el-form-item label="保险状态">
-          <el-input v-model="form.policystatus" autocomplete="off"></el-input>
+          <el-input v-model="form.policystatus" autocomplete="off" placeholder="请输入保险状态"></el-input>
         </el-form-item>
         <el-form-item label="车型">
-          <el-input v-model="form.cartype" autocomplete="off"></el-input>
+          <el-input v-model="form.cartype" autocomplete="off" placeholder="请输入车型"></el-input>
         </el-form-item>
-
       </el-form>
       <div slot="footer" class="dialog-footer">
         <el-button @click="dialogFormVisible = false">取 消</el-button>

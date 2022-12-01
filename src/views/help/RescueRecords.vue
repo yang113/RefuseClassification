@@ -7,10 +7,11 @@
     <el-table :data="tableData" border stripe :header-cell-class-name="'headerBg'"  @selection-change="handleSelectionChange">
       <el-table-column type="selection" width="55"></el-table-column>
       <el-table-column prop="rescueid" label="救援编号"></el-table-column>
-      <el-table-column prop="rescuetime" label="救援地点"></el-table-column>
-      <el-table-column prop="rescueplace" label="救援状态"></el-table-column>
-      <el-table-column prop="vipnum" label="会员号"></el-table-column>
-      <el-table-column prop="carid" label="救援车辆编号"></el-table-column>
+      <el-table-column prop="rescuetime" label="救援时间"></el-table-column>
+      <el-table-column prop="rescueplace" label="救援地点"></el-table-column>
+      <el-table-column prop="rescuestatus" label="救援状态"></el-table-column>
+      <el-table-column prop="vipnum" label="会员编号"></el-table-column>
+      <el-table-column prop="carid" label="救援车牌号"></el-table-column>
       <el-table-column label="操作"  width="200" align="center">
         <template slot-scope="scope">
                     <el-button type="success" @click="handleEdit(scope.row)">编辑 <i class="el-icon-edit"></i></el-button>
@@ -42,28 +43,29 @@
     <el-dialog title="用户信息" :visible.sync="dialogFormVisible" width="30%" >
       <el-form label-width="90px" size="small">
         <el-form-item label="救援编号">
-          <el-input v-model="form.rescueid" autocomplete="off"></el-input>
+          <el-input v-model="form.rescueid" autocomplete="off" placeholder="请输入救援编号"></el-input>
         </el-form-item>
-        <el-form-item label="落户日期">
+        <el-form-item label="救援时间">
           <el-date-picker
               v-model="form.rescuetime"
               align="right"
               type="date"
               style="width: 315px"
-              placeholder="选择日期"
-              :picker-options="pickerOptions">
+              placeholder="选择时间">
           </el-date-picker>
         </el-form-item>
         <el-form-item label="救援地点">
-          <el-input v-model="form.rescueplace" autocomplete="off"></el-input>
+          <el-input v-model="form.rescueplace" autocomplete="off" placeholder="请输入救援地点"></el-input>
         </el-form-item>
         <el-form-item label="救援状态">
-          <el-input v-model="form.rescuestatus" autocomplete="off"></el-input>
+          <el-input v-model="form.rescuestatus" autocomplete="off" placeholder="请输入救援状态"></el-input>
         </el-form-item>
-        <el-form-item label="救援车编号">
-          <el-input v-model="form.carid" autocomplete="off"></el-input>
+        <el-form-item label="会员编号">
+          <el-input v-model="form.vipnum" autocomplete="off" placeholder="请输入会员编号"></el-input>
         </el-form-item>
-
+        <el-form-item label="救援车牌号">
+          <el-input v-model="form.carid" autocomplete="off" placeholder="请输入救援车牌号"></el-input>
+        </el-form-item>
       </el-form>
       <div slot="footer" class="dialog-footer">
         <el-button @click="dialogFormVisible = false">取 消</el-button>
@@ -141,16 +143,23 @@ export default {
     },
 
     save(){
-      request.post("/rescue",this.form).then(res => {
-        if (res) {
-          console.log(res)
-          this.$message.success("保存成功")
-          this.dialogFormVisible = false
-          this.load()
-        } else {
-          this.$message.error("保存失败")
-        }
-      })
+      if(this.form.rescueid==null || this.form.rescuetime ==null ||
+      this.form.rescueplace == null ||this.form.rescuestatus ==null ||
+      this.form.vipnum ==null ||this.form.carid==null){
+        this.$message.error("存在必填项未填完，请填完后重新提交")
+      }
+      else {
+        request.post("/rescue",this.form).then(res => {
+          if (res) {
+            console.log(res)
+            this.$message.success("添加成功")
+            this.dialogFormVisible = false
+            this.load()
+          } else {
+            this.$message.error("保存失败")
+          }
+        })
+      }
     },
     handleEdit(row) {
       this.form = row

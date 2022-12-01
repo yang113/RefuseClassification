@@ -59,12 +59,12 @@
     <el-dialog title="用户信息" :visible.sync="dialogFormVisible" width="30%" >
       <el-form label-width="90px" size="small">
         <el-form-item label="编号">
-          <el-input v-model="form.serveid" autocomplete="off"></el-input>
+          <el-input v-model="form.serveid" autocomplete="off" placeholder="请输入服务编号"></el-input>
         </el-form-item>
-        <el-form-item label="服务信息">
-          <el-input v-model="form.servename" autocomplete="off"></el-input>
+        <el-form-item label="车务名称">
+          <el-input v-model="form.servename" autocomplete="off" placeholder="请输入车务名称"></el-input>
         </el-form-item>
-        <el-form-item label="服务时间">
+        <el-form-item label="服务时间" placeholder="请输入服务时间">
           <el-date-picker
               v-model="form.servetime"
               align="right"
@@ -83,7 +83,7 @@
           </el-select>
         </el-form-item>
         <el-form-item label="会员编号">
-          <el-input v-model="form.vipnum" autocomplete="off"></el-input>
+          <el-input v-model="form.vipnum" autocomplete="off" placeholder="请输入会员编号"></el-input>
         </el-form-item>
       </el-form>
       <div slot="footer" class="dialog-footer">
@@ -114,29 +114,29 @@ export default {
       servetime: "",
       servecon: "",
       vipnum:"",
-      pickerOptions: {
-        disabledDate(time) {
-          return time.getTime() > Date.now();
-        },
-        shortcuts: [{
-          text: '今天',
-          onClick(picker) {
-            picker.$emit('pick', new Date());
-          }
-        }, {
-          text: '昨天',
-          onClick(picker) {
-            const date = new Date();
-            date.setTime(date.getTime() - 3600 * 1000 * 24);
-            picker.$emit('pick', date);
-          }
-        }, {
-          text: '一周前',
-          onClick(picker) {
-            const date = new Date();
-            date.setTime(date.getTime() - 3600 * 1000 * 24 * 7);
-            picker.$emit('pick', date);
-          }
+         pickerOptions: {
+              disabledDate(time) {
+                return time.getTime() > Date.now();
+              },
+              shortcuts: [{
+                text: '今天',
+                onClick(picker) {
+                  picker.$emit('pick', new Date());
+                }
+              }, {
+                text: '昨天',
+                onClick(picker) {
+                  const date = new Date();
+                  date.setTime(date.getTime() - 3600 * 1000 * 24);
+                  picker.$emit('pick', date);
+                }
+              }, {
+                text: '一周前',
+                onClick(picker) {
+                  const date = new Date();
+                  date.setTime(date.getTime() - 3600 * 1000 * 24 * 7);
+                  picker.$emit('pick', date);
+                }
         }]
       }
     }

@@ -23,6 +23,7 @@
       <el-menu-item-group>
         <el-menu-item index="/money1">缴费管理</el-menu-item>
         <el-menu-item index="/Traffic1">服务信息</el-menu-item>
+        <el-menu-item index="/vip1">会员管理</el-menu-item>
         <el-menu-item index="/helps1">系统帮助</el-menu-item>
       </el-menu-item-group>
     </el-submenu>

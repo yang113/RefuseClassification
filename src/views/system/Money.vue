@@ -58,7 +58,7 @@
     <el-dialog title="用户信息" :visible.sync="dialogFormVisible" width="30%" >
       <el-form label-width="90px" size="small">
         <el-form-item label="缴费用户ID">
-          <el-input v-model="form.vipnum" autocomplete="off"></el-input>
+          <el-input v-model="form.vipnum" autocomplete="off" placeholder="请输入缴费用户ID"></el-input>
         </el-form-item>
         <el-form-item label="落户日期">
           <el-date-picker
@@ -71,7 +71,7 @@
           </el-date-picker>
         </el-form-item>
         <el-form-item label="缴费金额">
-          <el-input v-model="form.money" autocomplete="off"></el-input>
+          <el-input v-model="form.money" autocomplete="off" placeholder="请输入缴费金额"></el-input>
         </el-form-item>
 
       </el-form>

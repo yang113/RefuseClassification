@@ -27,7 +27,7 @@
       <el-table-column prop="depnum" label="部门编号"></el-table-column>
       <el-table-column prop="depname" label="部门名称"></el-table-column>
       <el-table-column prop="minister" label="经理名"></el-table-column>
-      <el-table-column prop="depnumber" label="？？？"></el-table-column>
+      <el-table-column prop="depnumber" label="部门人数"></el-table-column>
       <el-table-column label="操作"  width="200" align="center">
         <template slot-scope="scope">
           <el-button type="success" @click="handleEdit(scope.row)">编辑 <i class="el-icon-edit"></i></el-button>
@@ -59,16 +59,16 @@
     <el-dialog title="用户信息" :visible.sync="dialogFormVisible" width="30%" >
       <el-form label-width="80px" size="small">
         <el-form-item label="部门编号">
-          <el-input v-model="form.depnum" autocomplete="off"></el-input>
+          <el-input v-model="form.depnum" autocomplete="off" placeholder="请输入部门编号"></el-input>
         </el-form-item>
         <el-form-item label="部门名称">
-          <el-input v-model="form.depname" autocomplete="off"></el-input>
+          <el-input v-model="form.depname" autocomplete="off" placeholder="请输入部门名称"></el-input>
         </el-form-item>
         <el-form-item label="经理名">
-          <el-input v-model="form.minister" autocomplete="off"></el-input>
+          <el-input v-model="form.minister" autocomplete="off" placeholder="请输入经理名"></el-input>
         </el-form-item>
-        <el-form-item label="？？？">
-          <el-input v-model="form.depnumber" autocomplete="off"></el-input>
+        <el-form-item label="部门人数">
+          <el-input v-model="form.depnumber" autocomplete="off" placeholder="请输入部门人数"></el-input>
         </el-form-item>
       </el-form>
       <div slot="footer" class="dialog-footer">

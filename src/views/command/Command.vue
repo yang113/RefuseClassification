@@ -24,10 +24,10 @@
 
     <el-table :data="tableData" border stripe :header-cell-class-name="'headerBg'"  @selection-change="handleSelectionChange">
       <el-table-column type="selection" width="55"></el-table-column>
-      <el-table-column prop="serveid" label="车务ID"></el-table-column>
-      <el-table-column prop="servename" label="车务提醒"></el-table-column>
+      <el-table-column prop="serveid" label="提醒编号"></el-table-column>
+      <el-table-column prop="servename" label="提醒内容"></el-table-column>
       <el-table-column prop="vipnum" label="会员编号"></el-table-column>
-      <el-table-column prop="ctime" label="提醒日期"></el-table-column>
+      <el-table-column prop="ctime" label="提醒时间"></el-table-column>
       <el-table-column prop="ename" label="工作人员姓名"></el-table-column>
       <el-table-column label="操作"  width="200" align="center">
         <template slot-scope="scope">
@@ -59,16 +59,16 @@
     </div>
     <el-dialog title="用户信息" :visible.sync="dialogFormVisible" width="30%" >
       <el-form label-width="90px" size="small">
-        <el-form-item label="车务ID">
-          <el-input v-model="form.serveid" autocomplete="off"></el-input>
+        <el-form-item label="提醒编号">
+          <el-input v-model="form.serveid" autocomplete="off" placeholder="请输入车务ID"></el-input>
         </el-form-item>
-        <el-form-item label="提醒信息">
-          <el-input v-model="form.servename" autocomplete="off"></el-input>
+        <el-form-item label="提醒内容">
+          <el-input v-model="form.servename" autocomplete="off" placeholder="请输入提醒信息"></el-input>
         </el-form-item>
         <el-form-item label="会员编号">
-          <el-input v-model="form.vipnum" autocomplete="off"></el-input>
+          <el-input v-model="form.vipnum" autocomplete="off" placeholder="请输入会员编号"></el-input>
         </el-form-item>
-        <el-form-item label="服务时间">
+        <el-form-item label="提醒时间">
           <el-date-picker
               v-model="form.ctime"
               align="right"
@@ -79,7 +79,7 @@
           </el-date-picker>
         </el-form-item>
         <el-form-item label="工人姓名">
-          <el-input v-model="form.ename" autocomplete="off"></el-input>
+          <el-input v-model="form.ename" autocomplete="off" placeholder="请输入工人姓名"></el-input>
         </el-form-item>
       </el-form>
       <div slot="footer" class="dialog-footer">
@@ -109,7 +109,32 @@ export default {
       Servename:"",
       VIPnum:"",
       Ctime:"",
-      Ename:""
+      Ename:"",
+      pickerOptions: {
+        disabledDate(time) {
+          return time.getTime() < Date.now();
+        },
+        shortcuts: [{
+          text: '今天',
+          onClick(picker) {
+            picker.$emit('pick', new Date());
+          }
+        }, {
+          text: '明天',
+          onClick(picker) {
+            const date = new Date();
+            date.setTime(date.getTime() + 3600 * 1000 * 24);
+            picker.$emit('pick', date);
+          }
+        }, {
+          text: '一周后',
+          onClick(picker) {
+            const date = new Date();
+            date.setTime(date.getTime() + 3600 * 1000 * 24 * 7);
+            picker.$emit('pick', date);
+          }
+        }]
+      }
     }
   },
   created() {
@@ -117,16 +142,32 @@ export default {
   },
   methods:{
     save(){
-      request.post("/command",this.form).then(res => {
-        if (res) {
-          console.log(res)
-          this.$message.success("保存成功")
-          this.dialogFormVisible = false
-          this.load()
-        } else {
-          this.$message.error("保存失败")
-        }
-      })
+      if (this.form.serveid==null){
+        this.$message.error("提醒编号不能为空")
+        return
+      }
+      if (this.form.ctime==null){
+        this.$message.error("提醒时间不能为空")
+        return
+      }
+      if (this.form.vipnum==null){
+        this.$message.error("会员编号不能为空")
+        return
+      }
+      if (this.form.servename==null){
+        this.$message.error("提醒内容不能为空")
+        return
+      }
+        request.post("/command",this.form).then(res => {
+          if (res) {
+            console.log(res)
+            this.$message.success("发布成功")
+            this.dialogFormVisible = false
+            this.load()
+          } else {
+            this.$message.error("发布失败，请联系管理员")
+          }
+        })
     },
     del(id) {
       request.delete("/command/"+id).then(res=>{

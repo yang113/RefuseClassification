@@ -61,30 +61,29 @@
     </div>
     <el-dialog title="用户信息" :visible.sync="dialogFormVisible" width="30%" >
       <el-form label-width="80px" size="small">
-        <el-form-item label="旅行编号">
-          <el-input v-model="form.travelid" autocomplete="off"></el-input>
+        <el-form-item label="服务编号">
+          <el-input v-model="form.travelid" autocomplete="off" placeholder="请输入服务编号"></el-input>
         </el-form-item>
         <el-form-item label="会员编号">
-          <el-input v-model="form.vipnum" autocomplete="off"></el-input>
+          <el-input v-model="form.vipnum" autocomplete="off" placeholder="请输入会员编号"></el-input>
         </el-form-item>
-        <el-form-item label="落户日期">
+        <el-form-item label="旅行时间" placeholder="请输入旅行时间">
           <el-date-picker
               v-model="form.traveltime"
               align="right"
               type="date"
               style="width: 315px"
-              placeholder="选择日期"
-              :picker-options="pickerOptions">
+              placeholder="选择日期">
           </el-date-picker>
         </el-form-item>
         <el-form-item label="旅行地点">
-          <el-input v-model="form.traveladdress" autocomplete="off"></el-input>
+          <el-input v-model="form.traveladdress" autocomplete="off" placeholder="请输入旅行地点"></el-input>
         </el-form-item>
         <el-form-item label="旅行费用">
-          <el-input v-model="form.travelprice" autocomplete="off"></el-input>
+          <el-input v-model="form.travelprice" autocomplete="off" placeholder="请输入旅行费用"></el-input>
         </el-form-item>
         <el-form-item label="车牌号">
-          <el-input v-model="form.carnum" autocomplete="off"></el-input>
+          <el-input v-model="form.carnum" autocomplete="off" placeholder="请输入车牌号"></el-input>
         </el-form-item>
       </el-form>
       <div slot="footer" class="dialog-footer">
@@ -176,16 +175,23 @@ export default {
       })
     },
     save(){
-      request.post("/travel",this.form).then(res => {
-        if (res) {
-          console.log(res)
-          this.$message.success("保存成功")
-          this.dialogFormVisible = false
-          this.load()
-        } else {
-          this.$message.error("保存失败")
-        }
-      })
+      if (this.form.travelid==null || this.form.vipnum ==null ||
+      this.form.traveltime ==null || this.form.carnum==null){
+        this.$message.error("添加失败，请完善信息！！")
+        return
+      }
+      else{
+        request.post("/travel",this.form).then(res => {
+          if (res) {
+            console.log(res)
+            this.$message.success("保存成功")
+            this.dialogFormVisible = false
+            this.load()
+          } else {
+            this.$message.error("保存失败")
+          }
+        })
+      }
     },
     del(id){
       request.delete("/travel/"+id).then(res=>{

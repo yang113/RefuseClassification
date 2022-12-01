@@ -57,13 +57,16 @@ export default {
               this.$router.push('/manageHome')
             }
             else {
-              this.$message.error("管理员用户名密码错误")
+              this.$message.error("经理用户名密码错误")
             }
           }
           if (this.radio === 3){
             if(this.user.user=== "2" && this.user.password === "2"){
               this.$message.success("管理员登陆成功")
               this.$router.push('/Admin')
+            }
+            else{
+              this.$message.error("管理员用户名密码错误")
             }
           }
         }

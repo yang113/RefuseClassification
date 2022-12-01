@@ -64,28 +64,28 @@
     <el-dialog title="用户信息" :visible.sync="dialogFormVisible" width="30%" >
       <el-form label-width="80px" size="small">
         <el-form-item label="ID">
-          <el-input v-model="form.enum" autocomplete="off"></el-input>
+          <el-input v-model="form.enum" autocomplete="off" placeholder="请输入员工ID"></el-input>
         </el-form-item>
         <el-form-item label="员工姓名">
-          <el-input v-model="form.ename" autocomplete="off"></el-input>
+          <el-input v-model="form.ename" autocomplete="off" placeholder="请输入员工姓名"></el-input>
         </el-form-item>
         <el-form-item label="性别">
-          <el-input v-model="form.esex" autocomplete="off"></el-input>
+          <el-input v-model="form.esex" autocomplete="off" placeholder="请输入员工性别"></el-input>
         </el-form-item>
         <el-form-item label="年龄">
-          <el-input v-model="form.eage" autocomplete="off"></el-input>
+          <el-input v-model="form.eage" autocomplete="off" placeholder="请输入员工年龄"></el-input>
         </el-form-item>
         <el-form-item label="电话">
-          <el-input v-model="form.telephone" autocomplete="off"></el-input>
+          <el-input v-model="form.telephone" autocomplete="off" placeholder="请输入员工电话"></el-input>
         </el-form-item>
         <el-form-item label="部门编号">
-          <el-input v-model="form.depnum" autocomplete="off"></el-input>
+          <el-input v-model="form.depnum" autocomplete="off" placeholder="请输入部门编号"></el-input>
         </el-form-item>
         <el-form-item label="登录账户">
-          <el-input v-model="form.user" autocomplete="off"></el-input>
+          <el-input v-model="form.user" autocomplete="off" placeholder="请输入登录账户名"></el-input>
         </el-form-item>
         <el-form-item label="密码">
-          <el-input v-model="form.password" autocomplete="off"></el-input>
+          <el-input v-model="form.password" autocomplete="off" placeholder="请输入登录密码"></el-input>
         </el-form-item>
       </el-form>
       <div slot="footer" class="dialog-footer">
@@ -179,6 +179,38 @@ export default {
       })
     },
     save(){
+      if (this.form.enum == null){
+        this.$message.error("员工ID不能为空")
+        return
+      }
+      if (this.form.ename == null){
+        this.$message.error("员工姓名不能为空")
+        return
+      }
+      if (this.form.esex == null){
+        this.$message.error("员工性别不能为空")
+        return
+      }
+      if (this.form.eage == null){
+        this.$message.error("员工年龄不能为空")
+        return
+      }
+      if (this.form.telephone == null){
+        this.$message.error("员工电话不能为空")
+        return
+      }
+      if (this.form.depnum == null){
+        this.$message.error("部门编号不能为空")
+        return
+      }
+      if (this.form.user == null){
+        this.$message.error("登陆账户不能为空")
+        return
+      }
+      if (this.form.password == null){
+        this.$message.error("密码不能为空")
+        return
+      }
       request.post("/user",this.form).then(res => {
         if (res) {
           console.log(res)

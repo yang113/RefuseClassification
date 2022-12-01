@@ -63,25 +63,25 @@
     <el-dialog title="用户信息" :visible.sync="dialogFormVisible" width="30%" >
       <el-form label-width="80px" size="small">
         <el-form-item label="会员ID">
-          <el-input v-model="form.vipnum" autocomplete="off"></el-input>
+          <el-input v-model="form.vipnum" autocomplete="off" placeholder="请输入会员ID"></el-input>
         </el-form-item>
         <el-form-item label="会员姓名">
-          <el-input v-model="form.vname" autocomplete="off"></el-input>
+          <el-input v-model="form.vname" autocomplete="off" placeholder="请输入会员姓名"></el-input>
         </el-form-item>
         <el-form-item label="会员性别">
-          <el-input v-model="form.vsex" autocomplete="off"></el-input>
+          <el-input v-model="form.vsex" autocomplete="off" placeholder="请输入会员性别"></el-input>
         </el-form-item>
         <el-form-item label="会员电话">
-          <el-input v-model="form.vphone" autocomplete="off"></el-input>
+          <el-input v-model="form.vphone" autocomplete="off" placeholder="请输入会员电话"></el-input>
         </el-form-item>
         <el-form-item label="会员等级">
-          <el-input v-model="form.vrank" autocomplete="off"></el-input>
+          <el-input v-model="form.vrank" autocomplete="off" placeholder="请输入会员等级"></el-input>
         </el-form-item>
         <el-form-item label="会员余额">
-          <el-input v-model="form.vmoney" autocomplete="off"></el-input>
+          <el-input v-model="form.vmoney" autocomplete="off" placeholder="请输入会员余额"></el-input>
         </el-form-item>
-        <el-form-item label="会员身份证号">
-          <el-input v-model="form.vipid" autocomplete="off"></el-input>
+        <el-form-item label="身份证号">
+          <el-input v-model="form.vipid" autocomplete="off" placeholder="请输入会员身份证号"></el-input>
         </el-form-item>
       </el-form>
       <div slot="footer" class="dialog-footer">
