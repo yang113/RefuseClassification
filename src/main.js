@@ -8,7 +8,11 @@ import request from "@/utils/request";
 import VCharts from 'v-charts'
 import VeLine from 'v-charts/lib/line.common'
 import VueAMap from 'vue-amap';
+// 引入 echarts 插件
+import echarts from 'echarts'
 
+// 配置成全局组件
+Vue.prototype.$echarts = echarts
 Vue.use(VueAMap);
 VueAMap.initAMapApiLoader({
   key: 'your amap key',

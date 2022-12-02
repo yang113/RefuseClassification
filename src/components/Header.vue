@@ -11,10 +11,10 @@
 
     </div>
     <el-dropdown style="width: 100px;cursor: pointer">
-      <span>王小虎</span><i class="el-icon-arrow-down" style="margin-left: 5px"></i>
+      <span>{{ ename }}</span><i class="el-icon-arrow-down" style="margin-left: 5px"></i>
       <el-dropdown-menu slot="dropdown" style="width: 100px;text-align: center">
         <el-dropdown-item>个人信息</el-dropdown-item>
-        <el-dropdown-item>退出</el-dropdown-item>
+        <el-dropdown-item @click="logout">退出</el-dropdown-item>
       </el-dropdown-menu>
     </el-dropdown>
     <el-color-picker
@@ -45,6 +45,8 @@ export default {
   data(){
     return{
       theme:"#111111",
+      user:localStorage.getItem("user") ? JSON.parse(localStorage.getItem("user")) : {},
+      ename:localStorage.getItem("ename")
     }
   },
   computed: {
@@ -52,6 +54,11 @@ export default {
       return this.$store.state.currentPathName;　　//需要监听的数据
     }
   },
+  methods:{
+    logout(){
+      this.$router.push("")
+    }
+  }
 }
 </script>
 

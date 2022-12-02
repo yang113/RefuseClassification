@@ -53,6 +53,7 @@ export default {
           if(this.radio === 2){
             if(this.user.user=== "1" && this.user.password === "1"){
               this.$message.success("经理登陆成功")
+              localStorage.setItem("ename", "经理")  // 存储用户信息到浏览器
               this.$router.push('/manageHome')
             }
             else {
@@ -62,6 +63,7 @@ export default {
           if (this.radio === 3){
             if(this.user.user=== "2" && this.user.password === "2"){
               this.$message.success("管理员登陆成功")
+              localStorage.setItem("ename", "管理员")  // 存储用户信息到浏览器
               this.$router.push('/Admin')
             }
             else{
@@ -71,12 +73,14 @@ export default {
         }
         else {
           request.post("/login",this.user).then(res =>{
-            if(!res)
+            if(res.data===null)
               this.$message.error("用户名密码错误")
             else {
               if (this.radio === 1){
                 console.log(res)
                 this.$message.success("登陆成功")
+                localStorage.setItem("ename", res.data.ename)  // 存储用户信息到浏览器
+                localStorage.setItem("user", JSON.stringify(res.data))  // 存储用户信息到浏览器
                 this.$router.push('/employeeHome')
               }
             }

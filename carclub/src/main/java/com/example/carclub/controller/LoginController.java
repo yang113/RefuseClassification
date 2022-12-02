@@ -1,6 +1,8 @@
 package com.example.carclub.controller;
 
 import com.baomidou.mybatisplus.core.toolkit.StringUtils;
+import com.example.carclub.common.Constants;
+import com.example.carclub.common.Result;
 import com.example.carclub.entity.Employee;
 import com.example.carclub.entity.dto.Employeedto;
 import com.example.carclub.service.EmployeeService;
@@ -17,16 +19,17 @@ public class LoginController {
     private EmployeeService employeeService;
 
     @PostMapping("/login")
-    public boolean login(@RequestBody Employeedto employeedto){
+    public Result login(@RequestBody Employeedto employeedto){
         String username = employeedto.getUser();
         String password = employeedto.getPassword();
-        System.out.println(username+"asdasda"+password);
         if (StringUtils.isBlank(username) || StringUtils.isBlank(password)){
             System.out.println("有问题");
-            return false;
+            return Result.error(Constants.CODE_400,"参数错误");
         }
         System.out.println("执行L");
-        return employeeService.login(employeedto);
+        Employeedto dto = employeeService.login(employeedto);
+        return Result.success(dto);
+
     }
 
 }

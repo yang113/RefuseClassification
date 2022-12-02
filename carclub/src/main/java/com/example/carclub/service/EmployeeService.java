@@ -11,5 +11,5 @@ import com.example.carclub.entity.dto.Employeedto;
 */
 public interface EmployeeService extends IService<Employee> {
 
-    boolean login(Employeedto employeedto);
+    Employeedto login(Employeedto employeedto);
 }

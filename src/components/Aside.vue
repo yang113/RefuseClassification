@@ -52,7 +52,9 @@
         <span>统计报表</span>
       </template>
       <el-menu-item-group>
-        <el-menu-item index="/charts">营业额统计</el-menu-item>
+        <el-menu-item index="/charts">本月营业额统计</el-menu-item>
+        <el-menu-item index="/Mcharts">各月营业额统计</el-menu-item>
+        <el-menu-item index="/Qcharts">各季度营业额统计</el-menu-item>
       </el-menu-item-group>
     </el-submenu>
     <el-submenu index="5">

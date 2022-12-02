@@ -10,4 +10,5 @@ import lombok.NoArgsConstructor;
 public class Employeedto {
     private String user;
     private String password;
+    private String ename;
 }

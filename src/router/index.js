@@ -46,7 +46,7 @@ const routes = [
       {
         path: '/maps1',
         name:'地图',
-        component:() => import('../views/help/maps')
+        component:() => import('../views/help/map')
       },
       {
         path: '/rescuerecords1',
@@ -139,6 +139,16 @@ const routes = [
         component:() => import('../views/statistics/charts')
       },
       {
+        path: '/Qcharts',
+        name:'统计报表',
+        component:() => import('../views/statistics/Qcharts')
+      },
+      {
+        path: '/Mcharts',
+        name:'统计报表',
+        component:() => import('../views/statistics/Mcharts')
+      },
+      {
         path: '/traffic',
         name: '服务信息',
         component:() => import('../views/command/Traffic')
@@ -146,7 +156,7 @@ const routes = [
       {
         path: '/maps',
         name:'地图',
-        component:() => import('../views/help/maps')
+        component:() => import('../views/help/map')
       },
       {
         path: '/rescuerecords',

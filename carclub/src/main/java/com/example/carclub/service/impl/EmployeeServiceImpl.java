@@ -1,5 +1,6 @@
 package com.example.carclub.service.impl;
 
+import cn.hutool.core.bean.BeanUtil;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.example.carclub.entity.Employee;
@@ -18,15 +19,20 @@ public class EmployeeServiceImpl extends ServiceImpl<EmployeeMapper, Employee>
     implements EmployeeService{
 
     @Override
-    public boolean login(Employeedto employeedto) {
+    public Employeedto login(Employeedto employeedto) {
         QueryWrapper<Employee> queryWrapper = new QueryWrapper<>();
         queryWrapper.eq("USER",employeedto.getUser());
         queryWrapper.eq("PASSWORD",employeedto.getPassword());
         System.out.println(employeedto.getUser());
         System.out.println(employeedto.getPassword());
         Employee one = getOne(queryWrapper);
-        System.out.println(one);
-        return one!=null;
+        if (one!=null){
+            BeanUtil.copyProperties(one,employeedto,true);
+            System.out.println(one);
+            return employeedto;
+        }
+        else
+            return null;
     }
 }
 
