@@ -1,12 +1,10 @@
 <template>
-  <template>
-  </template>
 
 </template>
 
 <script>
 export default {
-  name: "index.vue"
+  name: "search"
 }
 </script>
 
