@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.carclub.mapper.MoneyMapper">
+
+    <resultMap id="BaseResultMap" type="com.example.carclub.entity.Money">
+            <id property="vipnum" column="VIPnum" jdbcType="VARCHAR"/>
+            <result property="mdate" column="Mdate" jdbcType="DATE"/>
+            <result property="money" column="Money" jdbcType="INTEGER"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        VIPnum,Mdate,Money
+    </sql>
+</mapper>
