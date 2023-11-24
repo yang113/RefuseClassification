@@ -102,13 +102,14 @@ export default {
   width: 100%;
 }
 .data-show{
-  width: 298px;
-  height: 80px;
+  width: 22%;
+  height:120%;
   margin-right: 20px;
   margin-left: 20px;
 }
 .data-show-detail{
   padding-top: 20px;
+  padding-bottom: 20px;
 }
 .el-statistic{
   font-weight: bold;
@@ -134,15 +135,15 @@ export default {
 }
 
 .box-card {
-  width: 800px;
-  height:550px;
+  width: 100%;
+  height:130%;
   /*height: 100%;*/
   margin-top: 20px;
   margin-left: 5px;
 }
 .search-card{
-  width: 490px;
-  height:550px;
+  width: 100%;
+  height:130%;
   margin-top: 20px;
   margin-left: 25px;
 }
@@ -157,6 +158,7 @@ export default {
   height: 40px;
   padding-top: 15px;
   font-weight: bold;
+  font-size: 20px;
 }
 
 .data-detail{

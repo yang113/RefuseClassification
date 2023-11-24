@@ -37,7 +37,7 @@
             <span style="font-weight: bold;color: #819d6a;font-size: large">垃圾详情</span>
           </div>
           <el-table
-              :data="tableData"
+              :data="filterData"
               height="445"
               border
           >
@@ -129,29 +129,38 @@ export default {
         garbage: '花草',
         way:'堆肥'
       }],
+      filterData:[],
       currentPage: 1, // 当前页数
       pageSize: 8, // 每页显示条数
-      total: 20, // 总条数（假设为100条）
+      total: '', // 总条数（假设为100条）
     }
+  },
+  mounted() {
+    this.filterData = this.tableData;
+    this.total = this.tableData.length;
   },
   methods: {
     onSubmit() {
       const { class: searchClass, min_class: searchMinClass, garbage: searchGarbage, way: searchWay } = this.searchData;
-      this.tableData = this.tableData.filter(item => {
-        return (
-            (searchClass === '' || item.class.includes(searchClass)) &&
-            (searchMinClass === '' || item.min_class.includes(searchMinClass)) &&
-            (searchGarbage === '' || item.garbage.includes(searchGarbage)) &&
-            (searchWay === '' || item.way.includes(searchWay))
-        );
-      });
-
+      if (searchClass === '' && searchMinClass === '' && searchGarbage === '' && searchWay === '') {
+        this.filterData = this.tableData; // 当所有查询条件为空时，展示所有数据
+      } else {
+        this.filterData = this.tableData.filter(item => {
+          return (
+              (searchClass === '' || item.class.includes(searchClass)) &&
+              (searchMinClass === '' || item.min_class.includes(searchMinClass)) &&
+              (searchGarbage === '' || item.garbage.includes(searchGarbage)) &&
+              (searchWay === '' || item.way.includes(searchWay))
+          );
+        });
+      }
     },
     reset(){
       this.searchData.garbage = '';
       this.searchData.class = '';
       this.searchData.min_class = '';
       this.searchData.way = '';
+      this.filterData = this.tableData;
     },
     // 处理页码改变
     handleCurrentChange(val) {
@@ -177,7 +186,15 @@ export default {
   margin-top: 18px;
 }
 .box-card{
-  height: 580px;
+  width: 100%;
+  height:690px;
+  margin-top: 10px;
+  margin-left: 10px;
 }
-
+.search-card{
+  width: 100%;
+  height:100%;
+  margin-top: 10px;
+  margin-left: 10px;
+}
 </style>

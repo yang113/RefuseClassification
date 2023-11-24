@@ -1,18 +1,17 @@
 <template>
   <div id="main" class="main">
     <el-carousel :interval="4000" type="card">
-      <el-carousel-item v-for="item in 6" :key="item" ></el-carousel-item>
+      <el-carousel-item v-for="item in 5" :key="item" ></el-carousel-item>
     </el-carousel>
     <span>
       <el-row class="image-row" type="flex" >
         <el-col :span="4" v-for="(item, index) in garbage_data" :key="index" class="garbage-class">
-          <el-card :body-style="{ padding: '0px' }">
-            <img :src="item.src" class="image">
-            <div style="padding: 5px;">
+          <el-card>
+            <div class="image-container">
+              <img :src="item.src" class="image">
+            </div>
+            <div style="padding: 10px;font-size: 18px;font-weight: bold">
               <span>{{ item.name }}</span>
-              <div class="bottom clearfix">
-                <text>{{ item.ext }}</text>
-              </div>
             </div>
           </el-card>
         </el-col>

@@ -33,7 +33,7 @@
         <template slot-scope="scope">
           <el-button
               size="mini"
-              style="background-color: #a3d48e"
+              style="background-color: #a3d48e;color: #fff"
               @click="handleEdit(scope.$index, scope.row)">查看</el-button>
         </template>
       </el-table-column>
@@ -42,7 +42,7 @@
         class="pageCut"
         @current-change="handleCurrentChange"
         :current-page.sync="currentPage"
-        :page-sizes="[8, 10, 20, 50]"
+        :page-sizes="[5, 10, 20, 50]"
         :page-size="pageSize"
         layout="total, sizes, prev, pager, next, jumper"
         :total="tableData.length">
@@ -121,7 +121,7 @@ export default {
       }],
       search: '',
       currentPage: 1,
-      pageSize: 8
+      pageSize: 10
     };
   },
   computed: {
@@ -182,5 +182,7 @@ export default {
 .pageCut{
   margin-top: 10px;
 }
-
+.el-button:hover{
+  border-color: #819d6a;
+}
 </style>

@@ -11,6 +11,8 @@ import VueAMap from 'vue-amap';
 // 引入 echarts 插件
 import echarts from 'echarts'
 
+import "lib-flexible"
+
 // 配置成全局组件
 Vue.prototype.$echarts = echarts
 Vue.use(VueAMap);
