@@ -1,35 +1,46 @@
 package com.example.carclub.controller;
 
+import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
+import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.core.toolkit.StringUtils;
-import com.example.carclub.common.Constants;
+import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.example.carclub.common.Result;
-import com.example.carclub.entity.Employee;
-import com.example.carclub.entity.dto.Employeedto;
-import com.example.carclub.service.EmployeeService;
+import com.example.carclub.entity.Information;
+import com.example.carclub.entity.Money;
+import com.example.carclub.service.InformationService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
+@RequestMapping("/information")
 @RestController
 public class LoginController {
 
+
     @Autowired
-    private EmployeeService employeeService;
+    private InformationService informationService;
 
-    @PostMapping("/login")
-    public Result login(@RequestBody Employeedto employeedto){
-        String username = employeedto.getUser();
-        String password = employeedto.getPassword();
-        if (StringUtils.isBlank(username) || StringUtils.isBlank(password)){
-            System.out.println("有问题");
-            return Result.error(Constants.CODE_400,"参数错误");
-        }
-        System.out.println("执行L");
-        Employeedto dto = employeeService.login(employeedto);
-        return Result.success(dto);
-
+    @GetMapping("/getinfo")
+    public IPage<Information> findpage(@RequestParam Integer pageNum,
+                                 @RequestParam Integer pageSize,
+                                 @RequestParam(defaultValue = "") String city)
+    {
+        System.out.println(pageSize);
+        IPage<Information> page = new Page<>(pageNum,pageSize);
+        QueryWrapper<Information> queryWrapper = new QueryWrapper<>();
+        if (!"".equals(city))
+            queryWrapper.like("city",city);
+        return informationService.page(page,queryWrapper);
     }
+
+    @PostMapping
+    public boolean save(@RequestBody Information information){
+        return informationService.saveOrUpdate(information);
+    }
+
+    @DeleteMapping("/{id}")
+    public boolean del(@PathVariable int id){
+        return informationService.removeById(id);
+    }
+
 
 }
