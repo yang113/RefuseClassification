@@ -19,8 +19,8 @@
       </el-table-column>
       <el-table-column
           label="标题"
-          :title="tableData.name"
-          prop="name">
+          :title="tableData.title"
+          prop="title">
       </el-table-column>
       <el-table-column
           align="right">
@@ -51,6 +51,8 @@
 </template>
 
 <script>
+import request from "@/utils/request";
+
 export default {
   methods: {
     handleEdit(index, row) {
@@ -61,68 +63,32 @@ export default {
     handleCurrentChange(val) {
       this.currentPage = val;
     },
+    load(){
+      request.get("information/getinfo",{
+        params:{
+          pageNum:this.currentPage,
+          pageSize:this.pageSize,
+          city:this.search
+        }
+      }).then(res=>{
+        console.log('load',res)
+        res.records.forEach(item=>{
+          item.date = item.date.toString().split('T')[0];
+        })
+        this.tableData = res.records;
+      })
+    }
   },
   data() {
     return {
-      tableData: [{
-        date: '2016-05-02',
-        province:'上海市',
-        city:'普陀区',
-        name: '如何进行垃圾分类呢？',
-        link:'https://www.baidu.com'
-      }, {
-        date: '2016-05-04',
-        province:'上海市',
-        city:'普陀区',
-        name: '垃圾分类新条款',
-        link:'https://www.baidu.com'
-      }, {
-        date: '2016-05-06',
-        province:'上海市',
-        city:'普陀区',
-        name: '如何进行垃圾分类',
-        link:'https://www.baidu.com'
-      }, {
-        date: '2016-05-08',
-        province:'河北省',
-        city:'石家庄市',
-        name: '如何进行垃圾分类',
-        link:'https://www.baidu.com'
-      },{
-        date: '2016-05-08',
-        province:'河北省',
-        city:'唐山市',
-        name: '如何进行垃圾分类',
-        link:'https://www.baidu.com'
-      },{
-        date: '2016-05-08',
-        province:'上海市',
-        city:'普陀区',
-        name: '如何进行垃圾分类',
-        link:'https://www.baidu.com'
-      },{
-        date: '2016-05-08',
-        province:'北京市',
-        city:'北京市',
-        name: '如何进行垃圾分类',
-        link:'https://www.baidu.com'
-      },{
-        date: '2016-05-08',
-        province:'天津市',
-        city:'西青区',
-        name: '如何进行垃圾分类',
-        link:'https://www.baidu.com'
-      },{
-        date: '2016-05-08',
-        province:'上海市',
-        city:'普陀区',
-        name: '如何进行垃圾分类',
-        link:'https://www.baidu.com'
-      }],
+      tableData: [],
       search: '',
       currentPage: 1,
       pageSize: 10
     };
+  },
+  mounted() {
+    this.load();
   },
   computed: {
     filteredTableData() {

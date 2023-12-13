@@ -20,19 +20,13 @@
     <el-menu-item index="/manageNews">
       <template slot="title">
         <i class="el-icon-s-order"></i>
-        <span>通知公告</span>
-      </template>
-    </el-menu-item>
-    <el-menu-item index="/manageKnowledge">
-      <template slot="title">
-        <i class="el-icon-s-marketing"></i>
-        <span>垃圾图谱</span>
+        <span>通知公告管理</span>
       </template>
     </el-menu-item>
     <el-menu-item index="/manageSearch">
       <template slot="title">
         <i class="el-icon-s-comment"></i>
-        <span>分类查询</span>
+        <span>垃圾分类管理</span>
       </template>
     </el-menu-item>
   </el-menu>

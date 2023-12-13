@@ -1,8 +1,10 @@
 <template>
   <div class="wrapper">
     <rain></rain>
-    <button class="goin" @click="login">-></button>
-    <button class="goin" @click="manageLogin"><-</button>
+    <div class="button-container">
+      <el-button type="success" plain size="large" @click="login">游客入口</el-button>
+      <el-button type="success" plain size="large" @click="manageLogin">管理入口</el-button>
+    </div>
   </div>
 </template>
 
@@ -27,6 +29,7 @@ export default {
 
 <style scoped>
 .wrapper {
+  position: relative; /* 将容器设置为相对定位 */
   height: 100vh;
   background: url("../assets/bg1.png");
   -webkit-background-size: cover;
@@ -34,23 +37,20 @@ export default {
   background-size: cover;
   overflow: hidden;
 }
-.goin{
-  margin-top: 480px;
-  width: 80px; /* 按钮宽度 */
-  height: 80px; /* 按钮高度 */
-  border-radius: 50%; /* 边框半径设置为宽度和高度的一半，实现圆形 */
-  border: none; /* 去掉边框 */
-  background-color: #819d6a;
-  font-size: larger;
-  font-weight: bolder;
-  cursor: pointer;
-  opacity: 0.9;
-  transition: background-color 0.3s ease;
-  transition: transform 0.3s ease;
-  /*bottom: 10px;*/
+
+.button-container {
+  position: absolute; /* 将按钮容器设置为绝对定位 */
+  bottom: 350px; /* 距离底部的距离 */
+  left: 20%; /* 水平居中 */
+  transform: translateX(-50%); /* 水平居中 */
 }
-.goin:hover{
-  background-color: #4d5942;
-  transform: translateY(-5px);
+
+.el-button {
+  margin: 0 10px; /* 调整按钮之间的间距 */
+  width: 150px;
+  height: 50px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #819d6a;
 }
 </style>

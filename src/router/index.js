@@ -37,12 +37,7 @@ const routes = [
         path: '/search',
         name:'分类查询',
         component:() => import('../views/search/search')
-      },
-      {
-        path: '/helps',
-        name:'帮助界面',
-        component:() => import('../views/helps')
-      },
+      }
     ]
   },
   {
@@ -58,24 +53,14 @@ const routes = [
       },
       {
         path: '/manageNews',
-        name:'通知公告',
-        component:() => import('../views/news/news')
-      },
-      {
-        path: '/manageKnowledge',
-        name: '知识图谱',
-        component:() => import('../views/knowledge/knowledge')
+        name:'通知公告管理',
+        component:() => import('../views/ManageNews/ManageNews')
       },
       {
         path: '/manageSearch',
-        name:'分类查询',
-        component:() => import('../views/search/search')
-      },
-      {
-        path: '/manageHelps',
-        name:'帮助界面',
-        component:() => import('../views/helps')
-      },
+        name:'垃圾管理',
+        component:() => import('../views/ManageSearch/ManageSearch')
+      }
     ]
   }
 ]

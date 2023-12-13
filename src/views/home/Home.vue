@@ -1,7 +1,7 @@
 <template>
   <div id="main" class="main">
     <el-carousel :interval="4000" type="card">
-      <el-carousel-item v-for="item in 5" :key="item" ></el-carousel-item>
+      <el-carousel-item v-for="item in 6" :key="item" ></el-carousel-item>
     </el-carousel>
     <span>
       <el-row class="image-row" type="flex" >
@@ -89,6 +89,12 @@ export default {
 }
 .el-carousel__item:nth-child(6n+4) {
   background: url("../../assets/i5.png");
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.el-carousel__item:nth-child(6n+5) {
+  background: url("../../assets/i6.png");
   -webkit-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
