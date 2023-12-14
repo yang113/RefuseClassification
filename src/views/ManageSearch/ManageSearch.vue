@@ -2,16 +2,16 @@
   <div>
     <el-form :inline="true" :model="addGarbage" class="demo-form-inline" style="padding-top:15px">
       <el-form-item label="垃圾类别">
-        <el-input size="small" v-model="addGarbage.class" placeholder="请输入垃圾类别"></el-input>
+        <el-input size="small" v-model="addGarbage.classname" placeholder="请输入垃圾类别"></el-input>
       </el-form-item>
       <el-form-item label="垃圾小类">
-        <el-input size="small" v-model="addGarbage.min_class" placeholder="请输入垃圾小类"></el-input>
+        <el-input size="small" v-model="addGarbage.minClass" placeholder="请输入垃圾小类"></el-input>
       </el-form-item>
       <el-form-item label="具体垃圾">
-        <el-input size="small" v-model="addGarbage.garbage" placeholder="请输入具体垃圾"></el-input>
+        <el-input size="small" v-model="addGarbage.name" placeholder="请输入具体垃圾"></el-input>
       </el-form-item>
       <el-form-item label="处理方式">
-        <el-input size="small" v-model="addGarbage.way" placeholder="请输入垃圾处理方式"></el-input>
+        <el-input size="small" v-model="addGarbage.handle" placeholder="请输入垃圾处理方式"></el-input>
       </el-form-item>
       <el-form-item>
         <el-button type="primary" @click="addRubbish" size="small" style="background-color: #819d6a">添加</el-button>
@@ -19,32 +19,35 @@
       <el-form-item>
         <el-button type="primary" @click="resetRubbish" size="small" style="background-color: #819d6a">重置</el-button>
       </el-form-item>
+      <el-form-item>
+        <el-button type="primary" @click="getRubbish" size="small" style="background-color: #819d6a">查询</el-button>
+      </el-form-item>
     </el-form>
     <el-table
-        :data="GarbageData"
+        :data="filterData"
         border
         style="width: 90%;margin-left: 60px">
       <el-table-column
           fixed
-          prop="class"
+          prop="classname"
           label="垃圾类别"
           width="250"
           height="50">
       </el-table-column>
       <el-table-column
-          prop="min_class"
+          prop="minClass"
           label="垃圾小类"
           width="250"
           height="50">
       </el-table-column>
       <el-table-column
-          prop="garbage"
+          prop="name"
           label="具体垃圾"
           width="250"
           height="50">
       </el-table-column>
       <el-table-column
-          prop="way"
+          prop="handle"
           label="处理方式"
           width="250"
           height="50">
@@ -67,21 +70,21 @@
         :page-sizes="[9, 10, 20, 50]"
         :page-size="pageSize"
         layout="total, sizes, prev, pager, next, jumper"
-        :total="GarbageData.length">
+        :total="this.total">
     </el-pagination>
     <el-dialog title="修改垃圾信息" :visible.sync="dialogFormVisible">
       <el-form :model="form">
         <el-form-item label="垃圾类别" :label-width="formLabelWidth">
-          <el-input size="small" v-model="form.class" autocomplete="off"></el-input>
+          <el-input size="small" v-model="form.classname" autocomplete="off"></el-input>
         </el-form-item>
         <el-form-item label="垃圾小类" :label-width="formLabelWidth">
           <el-input size="small" v-model="form.min_class" autocomplete="off"></el-input>
         </el-form-item>
         <el-form-item label="具体垃圾" :label-width="formLabelWidth">
-          <el-input size="small" v-model="form.garbage" autocomplete="off"></el-input>
+          <el-input size="small" v-model="form.name" autocomplete="off"></el-input>
         </el-form-item>
         <el-form-item label="处理方式" :label-width="formLabelWidth">
-          <el-input size="small" v-model="form.way" autocomplete="off"></el-input>
+          <el-input size="small" v-model="form.handle" autocomplete="off"></el-input>
         </el-form-item>
       </el-form>
       <div slot="footer" class="dialog-footer">
@@ -93,74 +96,107 @@
 </template>
 
 <script>
+import request from "@/utils/request";
+
 export default {
   name: "ManageGarbage",
   data() {
     return {
       addGarbage:{
-        class:'',
-        min_class:'',
-        garbage:'',
-        way:''
+        classname:'',
+        minClass:'',
+        name:'',
+        handle:''
       },
-      GarbageData: [{
-        class: '可回收垃圾',
-        min_class: '废纸类',
-        garbage: '草稿纸',
-        way:'回收'
-      }, {
-        class: '可回收垃圾',
-        min_class: '金属类',
-        garbage: '铁勺',
-        way:'回收'
-      }, {
-        class: '有害垃圾',
-        min_class: '废水银类',
-        garbage: '体温计',
-        way:'专业机构'
-      }, {
-        class: '湿垃圾',
-        min_class: '剩菜剩饭',
-        garbage: '过期的食物',
-        way:'堆肥'
-      }, {
-        class: '大件垃圾',
-        min_class: '废家具类',
-        garbage: '沙发',
-        way:'回收'
-      }, {
-        class: '可回收垃圾',
-        min_class: '玻璃类',
-        garbage: '水杯',
-        way:'焚烧'
-      }, {
-        class: '湿垃圾',
-        min_class: '植物残枝',
-        garbage: '花草',
-        way:'堆肥'
-      }],
+      GarbageData: [],
       currentPage: 1,
       pageSize: 9,
       dialogFormVisible:false,
       form:{
-        class:'',
+        classname:'',
         min_class:'',
-        garbage:'',
-        way:''
+        name:'',
+        handle:''
       },
+      total:'',
+      filterData:[],
       formLabelWidth:'120px'
     }
   },
+  mounted(){
+    this.load();
+  },
   methods: {
+    load(){
+      request.get("classification/getclass",{
+        params:{
+          pageNum:this.currentPage,
+          pageSize: this.pageSize,
+          name: '',
+          min_class:'',
+          classname:'',
+          handle:''
+        }
+      }).then(res=>{
+        console.log('load',res)
+        this.GarbageData = res.records;
+        this.filterData = this.GarbageData;
+        this.total = res.total;
+      })
+    },
+    getRubbish(){
+      request.get("classification/getclass",{
+        params:{
+          pageNum:this.currentPage,
+          pageSize: this.pageSize,
+          name: this.addGarbage.name,
+          min_class: this.addGarbage.minClass,
+          classname: this.addGarbage.classname,
+          handle: this.addGarbage.handle
+        }
+      }).then(res=>{
+        console.log('load',res)
+        this.filterData = res.records;
+        this.total = res.total;
+      })
+    },
     handleCurrentChange(val) {
       this.currentPage = val;
+      request.get("classification/getclass",{
+        params:{
+          pageNum:this.currentPage,
+          pageSize: this.pageSize,
+          name: this.addGarbage.name,
+          min_class: this.addGarbage.minClass,
+          classname: this.addGarbage.classname,
+          handle: this.addGarbage.handle
+        }
+      }).then(res=>{
+        console.log('load',res)
+        this.filterData = res.records;
+        this.total = res.total;
+      })
     },
     handleClick(row) {
       this.dialogFormVisible = true;
+      console.log('sha',row);
+      this.form.classname = row.classname;
+      this.form.min_class = row.minClass;
+      this.form.name = row.name;
+      this.form.handle = row.handle;
     },
-    confirmEdit(){
+    confirmEdit(e){
+      console.log('确认',this.form)
+      request.post("/classification",this.form).then(res=>{
+        if(res){
+          console.log('add',res)
+          this.$message.success("修改成功")
+          this.load()
+        }else{
+          this.$message.error("修改失败")
+        }
+      })
       this.dialogFormVisible = false;
-
     },
     DeleteGarbage(row){
       this.$confirm('是否确认删除？','提示',{
@@ -168,21 +204,48 @@ export default {
         cancelButtonText:'取消',
         type:'warning'
       }).then(()=>{
-        let garbage = row.garbage;
-        let newData = this.tableData.filter(item => item.garbage !== garbage);
-        this.tableData = newData;
+        console.log('删除',row);
+        request.delete("classification/"+row.value).then(res=>{
+          if(res){
+            this.$message.success("删除成功")
+            this.load()
+          }else{
+            this.$message.error("删除失败")
+          }
+        })
       })
     },
     addRubbish(){
-      this.GarbageData.push(this.addGarbage);
+      if(this.addGarbage.name === ""){
+        this.$message.error("请输入具体垃圾")
+        return
+      }
+      if(this.addGarbage.classname === ""){
+        this.$message.error("请输入垃圾类别")
+        return
+      }
+      if(this.addGarbage.minClass === ""){
+        this.$message.error("请输入垃圾小类")
+        return
+      }
+      request.post("/classification",this.addGarbage).then(res=>{
+        if(res){
+          console.log('add',res);
+          this.$message.success("添加成功");
+          this.load()
+        }else{
+          this.$message.error("添加失败");
+        }
+      })
     },
     resetRubbish(){
       this.addGarbage = {
-        class:'',
-        min_class:'',
-        garbage:'',
-        way:''
+        classname:'',
+        minClass:'',
+        name:'',
+        handle:''
       }
+      this.load();
     }
   },
 }

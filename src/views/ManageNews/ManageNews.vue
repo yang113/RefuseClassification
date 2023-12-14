@@ -140,9 +140,6 @@ import request from "@/utils/request";
 
 export default {
   name: "manageNews",
-  mounted(){
-    this.load();
-  },
   data() {
     return {
       tableData: [],
@@ -168,6 +165,9 @@ export default {
       dialogFormVisible:false,
       formLabelWidth: '120px',
     };
+  },
+  mounted(){
+    this.load();
   },
   methods: {
     load(){
@@ -262,7 +262,6 @@ export default {
         }
       })
       this.dialogFormVisible = false;
-
     }
   },
   computed: {
