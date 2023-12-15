@@ -21,18 +21,7 @@
       </el-form-item>
     </el-form>
     <el-row :gutter="20" class="card-row">
-      <el-col :span="12">
-        <el-card class="box-card">
-          <div slot="header" class="clearfix">
-            <span style="font-weight: bold;color: #819d6a;font-size: large">垃圾分类图谱</span>
-          </div>
-          <div>
-            知识图谱
-            <div ref="graphContainer" style="overflow: hidden; position: relative; height: 400px;"></div>
-          </div>
-        </el-card>
-      </el-col>
-      <el-col :span="12">
+      <el-col :span="20" style="width:100%;margin-top: -10px">
         <el-card class="search-card">
           <div slot="header" class="clearfix">
             <span style="font-weight: bold;color: #819d6a;font-size: large">垃圾详情</span>
@@ -46,24 +35,24 @@
                 prop="classname"
                 label="垃圾类别"
                 align="center"
-                width="150">
+                width="320">
             </el-table-column>
             <el-table-column
                 prop="minClass"
                 label="垃圾小类"
                 align="center"
-                width="150">
+                width="320">
             </el-table-column>
             <el-table-column
                 prop="name"
-                width="150"
+                width="325"
                 label="具体垃圾"
                 align="center">
             </el-table-column>
             <el-table-column
                 prop="handle"
                 label="处理方式"
-                width="150"
+                width="325"
                 align="center">
             </el-table-column>
           </el-table>

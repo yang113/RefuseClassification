@@ -113,8 +113,10 @@ export default {
       pageSize: 9,
       dialogFormVisible:false,
       form:{
+        id:'',
         classname:'',
         min_class:'',
+        min_class_num:'',
         name:'',
         handle:''
       },
@@ -184,9 +186,10 @@ export default {
       this.form.min_class = row.minClass;
       this.form.name = row.name;
       this.form.handle = row.handle;
+      this.form.id = row.id;
     },
     confirmEdit(e){
-      console.log('确认',this.form)
+      console.log('确认',e)
       request.post("/classification",this.form).then(res=>{
         if(res){
           console.log('add',res)
