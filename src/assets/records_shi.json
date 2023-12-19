@@ -1,0 +1,8948 @@
+﻿[
+  {
+    "p": {
+      "start": {
+        "identity": 36,
+        "labels": [
+          "Min_class"
+        ],
+        "properties": {
+          "name": "食物残渣",
+          "id": "24"
+        },
+        "elementId": "36"
+      },
+      "end": {
+        "identity": 2,
+        "labels": [
+          "Class"
+        ],
+        "properties": {
+          "name": "湿垃圾（厨余垃圾）",
+          "id": "4"
+        },
+        "elementId": "2"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 36,
+            "labels": [
+              "Min_class"
+            ],
+            "properties": {
+              "name": "食物残渣",
+              "id": "24"
+            },
+            "elementId": "36"
+          },
+          "relationship": {
+            "identity": 3996,
+            "start": 36,
+            "end": 2,
+            "type": "BELONGS_TO",
+            "properties": {},
+            "elementId": "3996",
+            "startNodeElementId": "36",
+            "endNodeElementId": "2"
+          },
+          "end": {
+            "identity": 2,
+            "labels": [
+              "Class"
+            ],
+            "properties": {
+              "name": "湿垃圾（厨余垃圾）",
+              "id": "4"
+            },
+            "elementId": "2"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 34,
+        "labels": [
+          "Min_class"
+        ],
+        "properties": {
+          "name": "盆栽残枝",
+          "id": "22"
+        },
+        "elementId": "34"
+      },
+      "end": {
+        "identity": 2,
+        "labels": [
+          "Class"
+        ],
+        "properties": {
+          "name": "湿垃圾（厨余垃圾）",
+          "id": "4"
+        },
+        "elementId": "2"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 34,
+            "labels": [
+              "Min_class"
+            ],
+            "properties": {
+              "name": "盆栽残枝",
+              "id": "22"
+            },
+            "elementId": "34"
+          },
+          "relationship": {
+            "identity": 3994,
+            "start": 34,
+            "end": 2,
+            "type": "BELONGS_TO",
+            "properties": {},
+            "elementId": "3994",
+            "startNodeElementId": "34",
+            "endNodeElementId": "2"
+          },
+          "end": {
+            "identity": 2,
+            "labels": [
+              "Class"
+            ],
+            "properties": {
+              "name": "湿垃圾（厨余垃圾）",
+              "id": "4"
+            },
+            "elementId": "2"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 33,
+        "labels": [
+          "Min_class"
+        ],
+        "properties": {
+          "name": "蔬菜类",
+          "id": "21"
+        },
+        "elementId": "33"
+      },
+      "end": {
+        "identity": 2,
+        "labels": [
+          "Class"
+        ],
+        "properties": {
+          "name": "湿垃圾（厨余垃圾）",
+          "id": "4"
+        },
+        "elementId": "2"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 33,
+            "labels": [
+              "Min_class"
+            ],
+            "properties": {
+              "name": "蔬菜类",
+              "id": "21"
+            },
+            "elementId": "33"
+          },
+          "relationship": {
+            "identity": 3993,
+            "start": 33,
+            "end": 2,
+            "type": "BELONGS_TO",
+            "properties": {},
+            "elementId": "3993",
+            "startNodeElementId": "33",
+            "endNodeElementId": "2"
+          },
+          "end": {
+            "identity": 2,
+            "labels": [
+              "Class"
+            ],
+            "properties": {
+              "name": "湿垃圾（厨余垃圾）",
+              "id": "4"
+            },
+            "elementId": "2"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 35,
+        "labels": [
+          "Min_class"
+        ],
+        "properties": {
+          "name": "碎骨物",
+          "id": "23"
+        },
+        "elementId": "35"
+      },
+      "end": {
+        "identity": 2,
+        "labels": [
+          "Class"
+        ],
+        "properties": {
+          "name": "湿垃圾（厨余垃圾）",
+          "id": "4"
+        },
+        "elementId": "2"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 35,
+            "labels": [
+              "Min_class"
+            ],
+            "properties": {
+              "name": "碎骨物",
+              "id": "23"
+            },
+            "elementId": "35"
+          },
+          "relationship": {
+            "identity": 3995,
+            "start": 35,
+            "end": 2,
+            "type": "BELONGS_TO",
+            "properties": {},
+            "elementId": "3995",
+            "startNodeElementId": "35",
+            "endNodeElementId": "2"
+          },
+          "end": {
+            "identity": 2,
+            "labels": [
+              "Class"
+            ],
+            "properties": {
+              "name": "湿垃圾（厨余垃圾）",
+              "id": "4"
+            },
+            "elementId": "2"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 31,
+        "labels": [
+          "Min_class"
+        ],
+        "properties": {
+          "name": "剩菜剩饭",
+          "id": "19"
+        },
+        "elementId": "31"
+      },
+      "end": {
+        "identity": 2,
+        "labels": [
+          "Class"
+        ],
+        "properties": {
+          "name": "湿垃圾（厨余垃圾）",
+          "id": "4"
+        },
+        "elementId": "2"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 31,
+            "labels": [
+              "Min_class"
+            ],
+            "properties": {
+              "name": "剩菜剩饭",
+              "id": "19"
+            },
+            "elementId": "31"
+          },
+          "relationship": {
+            "identity": 3991,
+            "start": 31,
+            "end": 2,
+            "type": "BELONGS_TO",
+            "properties": {},
+            "elementId": "3991",
+            "startNodeElementId": "31",
+            "endNodeElementId": "2"
+          },
+          "end": {
+            "identity": 2,
+            "labels": [
+              "Class"
+            ],
+            "properties": {
+              "name": "湿垃圾（厨余垃圾）",
+              "id": "4"
+            },
+            "elementId": "2"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 53,
+        "labels": [
+          "Min_class"
+        ],
+        "properties": {
+          "name": "动物尸体类",
+          "id": "41"
+        },
+        "elementId": "53"
+      },
+      "end": {
+        "identity": 2,
+        "labels": [
+          "Class"
+        ],
+        "properties": {
+          "name": "湿垃圾（厨余垃圾）",
+          "id": "4"
+        },
+        "elementId": "2"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 53,
+            "labels": [
+              "Min_class"
+            ],
+            "properties": {
+              "name": "动物尸体类",
+              "id": "41"
+            },
+            "elementId": "53"
+          },
+          "relationship": {
+            "identity": 4014,
+            "start": 53,
+            "end": 2,
+            "type": "BELONGS_TO",
+            "properties": {},
+            "elementId": "4014",
+            "startNodeElementId": "53",
+            "endNodeElementId": "2"
+          },
+          "end": {
+            "identity": 2,
+            "labels": [
+              "Class"
+            ],
+            "properties": {
+              "name": "湿垃圾（厨余垃圾）",
+              "id": "4"
+            },
+            "elementId": "2"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 49,
+        "labels": [
+          "Min_class"
+        ],
+        "properties": {
+          "name": "农田垃圾",
+          "id": "37"
+        },
+        "elementId": "49"
+      },
+      "end": {
+        "identity": 2,
+        "labels": [
+          "Class"
+        ],
+        "properties": {
+          "name": "湿垃圾（厨余垃圾）",
+          "id": "4"
+        },
+        "elementId": "2"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 49,
+            "labels": [
+              "Min_class"
+            ],
+            "properties": {
+              "name": "农田垃圾",
+              "id": "37"
+            },
+            "elementId": "49"
+          },
+          "relationship": {
+            "identity": 4008,
+            "start": 49,
+            "end": 2,
+            "type": "BELONGS_TO",
+            "properties": {},
+            "elementId": "4008",
+            "startNodeElementId": "49",
+            "endNodeElementId": "2"
+          },
+          "end": {
+            "identity": 2,
+            "labels": [
+              "Class"
+            ],
+            "properties": {
+              "name": "湿垃圾（厨余垃圾）",
+              "id": "4"
+            },
+            "elementId": "2"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 32,
+        "labels": [
+          "Min_class"
+        ],
+        "properties": {
+          "name": "瓜果皮类",
+          "id": "20"
+        },
+        "elementId": "32"
+      },
+      "end": {
+        "identity": 2,
+        "labels": [
+          "Class"
+        ],
+        "properties": {
+          "name": "湿垃圾（厨余垃圾）",
+          "id": "4"
+        },
+        "elementId": "2"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 32,
+            "labels": [
+              "Min_class"
+            ],
+            "properties": {
+              "name": "瓜果皮类",
+              "id": "20"
+            },
+            "elementId": "32"
+          },
+          "relationship": {
+            "identity": 3992,
+            "start": 32,
+            "end": 2,
+            "type": "BELONGS_TO",
+            "properties": {},
+            "elementId": "3992",
+            "startNodeElementId": "32",
+            "endNodeElementId": "2"
+          },
+          "end": {
+            "identity": 2,
+            "labels": [
+              "Class"
+            ],
+            "properties": {
+              "name": "湿垃圾（厨余垃圾）",
+              "id": "4"
+            },
+            "elementId": "2"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 416,
+        "labels": [
+          "Garbage"
+        ],
+        "properties": {
+          "name": "豆腐",
+          "id": "370"
+        },
+        "elementId": "416"
+      },
+      "end": {
+        "identity": 31,
+        "labels": [
+          "Min_class"
+        ],
+        "properties": {
+          "name": "剩菜剩饭",
+          "id": "19"
+        },
+        "elementId": "31"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 416,
+            "labels": [
+              "Garbage"
+            ],
+            "properties": {
+              "name": "豆腐",
+              "id": "370"
+            },
+            "elementId": "416"
+          },
+          "relationship": {
+            "identity": 381,
+            "start": 416,
+            "end": 31,
+            "type": "BELONGS_TO",
+            "properties": {},
+            "elementId": "381",
+            "startNodeElementId": "416",
+            "endNodeElementId": "31"
+          },
+          "end": {
+            "identity": 31,
+            "labels": [
+              "Min_class"
+            ],
+            "properties": {
+              "name": "剩菜剩饭",
+              "id": "19"
+            },
+            "elementId": "31"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 1187,
+        "labels": [
+          "Garbage"
+        ],
+        "properties": {
+          "name": "过期饼干",
+          "id": "1141"
+        },
+        "elementId": "1187"
+      },
+      "end": {
+        "identity": 31,
+        "labels": [
+          "Min_class"
+        ],
+        "properties": {
+          "name": "剩菜剩饭",
+          "id": "19"
+        },
+        "elementId": "31"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 1187,
+            "labels": [
+              "Garbage"
+            ],
+            "properties": {
+              "name": "过期饼干",
+              "id": "1141"
+            },
+            "elementId": "1187"
+          },
+          "relationship": {
+            "identity": 1143,
+            "start": 1187,
+            "end": 31,
+            "type": "BELONGS_TO",
+            "properties": {},
+            "elementId": "1143",
+            "startNodeElementId": "1187",
+            "endNodeElementId": "31"
+          },
+          "end": {
+            "identity": 31,
+            "labels": [
+              "Min_class"
+            ],
+            "properties": {
+              "name": "剩菜剩饭",
+              "id": "19"
+            },
+            "elementId": "31"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 1616,
+        "labels": [
+          "Garbage"
+        ],
+        "properties": {
+          "name": "螃蟹",
+          "id": "1570"
+        },
+        "elementId": "1616"
+      },
+      "end": {
+        "identity": 31,
+        "labels": [
+          "Min_class"
+        ],
+        "properties": {
+          "name": "剩菜剩饭",
+          "id": "19"
+        },
+        "elementId": "31"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 1616,
+            "labels": [
+              "Garbage"
+            ],
+            "properties": {
+              "name": "螃蟹",
+              "id": "1570"
+            },
+            "elementId": "1616"
+          },
+          "relationship": {
+            "identity": 1570,
+            "start": 1616,
+            "end": 31,
+            "type": "BELONGS_TO",
+            "properties": {},
+            "elementId": "1570",
+            "startNodeElementId": "1616",
+            "endNodeElementId": "31"
+          },
+          "end": {
+            "identity": 31,
+            "labels": [
+              "Min_class"
+            ],
+            "properties": {
+              "name": "剩菜剩饭",
+              "id": "19"
+            },
+            "elementId": "31"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 1086,
+        "labels": [
+          "Garbage"
+        ],
+        "properties": {
+          "name": "牡蛎肉",
+          "id": "1040"
+        },
+        "elementId": "1086"
+      },
+      "end": {
+        "identity": 31,
+        "labels": [
+          "Min_class"
+        ],
+        "properties": {
+          "name": "剩菜剩饭",
+          "id": "19"
+        },
+        "elementId": "31"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 1086,
+            "labels": [
+              "Garbage"
+            ],
+            "properties": {
+              "name": "牡蛎肉",
+              "id": "1040"
+            },
+            "elementId": "1086"
+          },
+          "relationship": {
+            "identity": 1042,
+            "start": 1086,
+            "end": 31,
+            "type": "BELONGS_TO",
+            "properties": {},
+            "elementId": "1042",
+            "startNodeElementId": "1086",
+            "endNodeElementId": "31"
+          },
+          "end": {
+            "identity": 31,
+            "labels": [
+              "Min_class"
+            ],
+            "properties": {
+              "name": "剩菜剩饭",
+              "id": "19"
+            },
+            "elementId": "31"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 925,
+        "labels": [
+          "Garbage"
+        ],
+        "properties": {
+          "name": "利乐包",
+          "id": "879"
+        },
+        "elementId": "925"
+      },
+      "end": {
+        "identity": 31,
+        "labels": [
+          "Min_class"
+        ],
+        "properties": {
+          "name": "剩菜剩饭",
+          "id": "19"
+        },
+        "elementId": "31"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 925,
+            "labels": [
+              "Garbage"
+            ],
+            "properties": {
+              "name": "利乐包",
+              "id": "879"
+            },
+            "elementId": "925"
+          },
+          "relationship": {
+            "identity": 881,
+            "start": 925,
+            "end": 31,
+            "type": "BELONGS_TO",
+            "properties": {},
+            "elementId": "881",
+            "startNodeElementId": "925",
+            "endNodeElementId": "31"
+          },
+          "end": {
+            "identity": 31,
+            "labels": [
+              "Min_class"
+            ],
+            "properties": {
+              "name": "剩菜剩饭",
+              "id": "19"
+            },
+            "elementId": "31"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 2117,
+        "labels": [
+          "Garbage"
+        ],
+        "properties": {
+          "name": "油桃核",
+          "id": "2071"
+        },
+        "elementId": "2117"
+      },
+      "end": {
+        "identity": 31,
+        "labels": [
+          "Min_class"
+        ],
+        "properties": {
+          "name": "剩菜剩饭",
+          "id": "19"
+        },
+        "elementId": "31"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 2117,
+            "labels": [
+              "Garbage"
+            ],
+            "properties": {
+              "name": "油桃核",
+              "id": "2071"
+            },
+            "elementId": "2117"
+          },
+          "relationship": {
+            "identity": 2071,
+            "start": 2117,
+            "end": 31,
+            "type": "BELONGS_TO",
+            "properties": {},
+            "elementId": "2071",
+            "startNodeElementId": "2117",
+            "endNodeElementId": "31"
+          },
+          "end": {
+            "identity": 31,
+            "labels": [
+              "Min_class"
+            ],
+            "properties": {
+              "name": "剩菜剩饭",
+              "id": "19"
+            },
+            "elementId": "31"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 2322,
+        "labels": [
+          "Garbage"
+        ],
+        "properties": {
+          "name": "螺蛳粉",
+          "id": "2276"
+        },
+        "elementId": "2322"
+      },
+      "end": {
+        "identity": 31,
+        "labels": [
+          "Min_class"
+        ],
+        "properties": {
+          "name": "剩菜剩饭",
+          "id": "19"
+        },
+        "elementId": "31"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 2322,
+            "labels": [
+              "Garbage"
+            ],
+            "properties": {
+              "name": "螺蛳粉",
+              "id": "2276"
+            },
+            "elementId": "2322"
+          },
+          "relationship": {
+            "identity": 2276,
+            "start": 2322,
+            "end": 31,
+            "type": "BELONGS_TO",
+            "properties": {},
+            "elementId": "2276",
+            "startNodeElementId": "2322",
+            "endNodeElementId": "31"
+          },
+          "end": {
+            "identity": 31,
+            "labels": [
+              "Min_class"
+            ],
+            "properties": {
+              "name": "剩菜剩饭",
+              "id": "19"
+            },
+            "elementId": "31"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 1774,
+        "labels": [
+          "Garbage"
+        ],
+        "properties": {
+          "name": "人造奶油",
+          "id": "1728"
+        },
+        "elementId": "1774"
+      },
+      "end": {
+        "identity": 31,
+        "labels": [
+          "Min_class"
+        ],
+        "properties": {
+          "name": "剩菜剩饭",
+          "id": "19"
+        },
+        "elementId": "31"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 1774,
+            "labels": [
+              "Garbage"
+            ],
+            "properties": {
+              "name": "人造奶油",
+              "id": "1728"
+            },
+            "elementId": "1774"
+          },
+          "relationship": {
+            "identity": 1728,
+            "start": 1774,
+            "end": 31,
+            "type": "BELONGS_TO",
+            "properties": {},
+            "elementId": "1728",
+            "startNodeElementId": "1774",
+            "endNodeElementId": "31"
+          },
+          "end": {
+            "identity": 31,
+            "labels": [
+              "Min_class"
+            ],
+            "properties": {
+              "name": "剩菜剩饭",
+              "id": "19"
+            },
+            "elementId": "31"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 692,
+        "labels": [
+          "Garbage"
+        ],
+        "properties": {
+          "name": "冰激淋",
+          "id": "646"
+        },
+        "elementId": "692"
+      },
+      "end": {
+        "identity": 31,
+        "labels": [
+          "Min_class"
+        ],
+        "properties": {
+          "name": "剩菜剩饭",
+          "id": "19"
+        },
+        "elementId": "31"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 692,
+            "labels": [
+              "Garbage"
+            ],
+            "properties": {
+              "name": "冰激淋",
+              "id": "646"
+            },
+            "elementId": "692"
+          },
+          "relationship": {
+            "identity": 649,
+            "start": 692,
+            "end": 31,
+            "type": "BELONGS_TO",
+            "properties": {},
+            "elementId": "649",
+            "startNodeElementId": "692",
+            "endNodeElementId": "31"
+          },
+          "end": {
+            "identity": 31,
+            "labels": [
+              "Min_class"
+            ],
+            "properties": {
+              "name": "剩菜剩饭",
+              "id": "19"
+            },
+            "elementId": "31"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 412,
+        "labels": [
+          "Garbage"
+        ],
+        "properties": {
+          "name": "冷冻食品",
+          "id": "366"
+        },
+        "elementId": "412"
+      },
+      "end": {
+        "identity": 31,
+        "labels": [
+          "Min_class"
+        ],
+        "properties": {
+          "name": "剩菜剩饭",
+          "id": "19"
+        },
+        "elementId": "31"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 412,
+            "labels": [
+              "Garbage"
+            ],
+            "properties": {
+              "name": "冷冻食品",
+              "id": "366"
+            },
+            "elementId": "412"
+          },
+          "relationship": {
+            "identity": 377,
+            "start": 412,
+            "end": 31,
+            "type": "BELONGS_TO",
+            "properties": {},
+            "elementId": "377",
+            "startNodeElementId": "412",
+            "endNodeElementId": "31"
+          },
+          "end": {
+            "identity": 31,
+            "labels": [
+              "Min_class"
+            ],
+            "properties": {
+              "name": "剩菜剩饭",
+              "id": "19"
+            },
+            "elementId": "31"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 2738,
+        "labels": [
+          "Garbage"
+        ],
+        "properties": {
+          "name": "糖浆包",
+          "id": "2692"
+        },
+        "elementId": "2738"
+      },
+      "end": {
+        "identity": 31,
+        "labels": [
+          "Min_class"
+        ],
+        "properties": {
+          "name": "剩菜剩饭",
+          "id": "19"
+        },
+        "elementId": "31"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 2738,
+            "labels": [
+              "Garbage"
+            ],
+            "properties": {
+              "name": "糖浆包",
+              "id": "2692"
+            },
+            "elementId": "2738"
+          },
+          "relationship": {
+            "identity": 2692,
+            "start": 2738,
+            "end": 31,
+            "type": "BELONGS_TO",
+            "properties": {},
+            "elementId": "2692",
+            "startNodeElementId": "2738",
+            "endNodeElementId": "31"
+          },
+          "end": {
+            "identity": 31,
+            "labels": [
+              "Min_class"
+            ],
+            "properties": {
+              "name": "剩菜剩饭",
+              "id": "19"
+            },
+            "elementId": "31"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 1667,
+        "labels": [
+          "Garbage"
+        ],
+        "properties": {
+          "name": "过期的燕麦片",
+          "id": "1621"
+        },
+        "elementId": "1667"
+      },
+      "end": {
+        "identity": 31,
+        "labels": [
+          "Min_class"
+        ],
+        "properties": {
+          "name": "剩菜剩饭",
+          "id": "19"
+        },
+        "elementId": "31"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 1667,
+            "labels": [
+              "Garbage"
+            ],
+            "properties": {
+              "name": "过期的燕麦片",
+              "id": "1621"
+            },
+            "elementId": "1667"
+          },
+          "relationship": {
+            "identity": 1621,
+            "start": 1667,
+            "end": 31,
+            "type": "BELONGS_TO",
+            "properties": {},
+            "elementId": "1621",
+            "startNodeElementId": "1667",
+            "endNodeElementId": "31"
+          },
+          "end": {
+            "identity": 31,
+            "labels": [
+              "Min_class"
+            ],
+            "properties": {
+              "name": "剩菜剩饭",
+              "id": "19"
+            },
+            "elementId": "31"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 2350,
+        "labels": [
+          "Garbage"
+        ],
+        "properties": {
+          "name": "猪肉排骨",
+          "id": "2304"
+        },
+        "elementId": "2350"
+      },
+      "end": {
+        "identity": 31,
+        "labels": [
+          "Min_class"
+        ],
+        "properties": {
+          "name": "剩菜剩饭",
+          "id": "19"
+        },
+        "elementId": "31"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 2350,
+            "labels": [
+              "Garbage"
+            ],
+            "properties": {
+              "name": "猪肉排骨",
+              "id": "2304"
+            },
+            "elementId": "2350"
+          },
+          "relationship": {
+            "identity": 2304,
+            "start": 2350,
+            "end": 31,
+            "type": "BELONGS_TO",
+            "properties": {},
+            "elementId": "2304",
+            "startNodeElementId": "2350",
+            "endNodeElementId": "31"
+          },
+          "end": {
+            "identity": 31,
+            "labels": [
+              "Min_class"
+            ],
+            "properties": {
+              "name": "剩菜剩饭",
+              "id": "19"
+            },
+            "elementId": "31"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 1615,
+        "labels": [
+          "Garbage"
+        ],
+        "properties": {
+          "name": "蟹",
+          "id": "1569"
+        },
+        "elementId": "1615"
+      },
+      "end": {
+        "identity": 31,
+        "labels": [
+          "Min_class"
+        ],
+        "properties": {
+          "name": "剩菜剩饭",
+          "id": "19"
+        },
+        "elementId": "31"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 1615,
+            "labels": [
+              "Garbage"
+            ],
+            "properties": {
+              "name": "蟹",
+              "id": "1569"
+            },
+            "elementId": "1615"
+          },
+          "relationship": {
+            "identity": 1569,
+            "start": 1615,
+            "end": 31,
+            "type": "BELONGS_TO",
+            "properties": {},
+            "elementId": "1569",
+            "startNodeElementId": "1615",
+            "endNodeElementId": "31"
+          },
+          "end": {
+            "identity": 31,
+            "labels": [
+              "Min_class"
+            ],
+            "properties": {
+              "name": "剩菜剩饭",
+              "id": "19"
+            },
+            "elementId": "31"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 919,
+        "labels": [
+          "Garbage"
+        ],
+        "properties": {
+          "name": "可丽饼",
+          "id": "873"
+        },
+        "elementId": "919"
+      },
+      "end": {
+        "identity": 31,
+        "labels": [
+          "Min_class"
+        ],
+        "properties": {
+          "name": "剩菜剩饭",
+          "id": "19"
+        },
+        "elementId": "31"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 919,
+            "labels": [
+              "Garbage"
+            ],
+            "properties": {
+              "name": "可丽饼",
+              "id": "873"
+            },
+            "elementId": "919"
+          },
+          "relationship": {
+            "identity": 875,
+            "start": 919,
+            "end": 31,
+            "type": "BELONGS_TO",
+            "properties": {},
+            "elementId": "875",
+            "startNodeElementId": "919",
+            "endNodeElementId": "31"
+          },
+          "end": {
+            "identity": 31,
+            "labels": [
+              "Min_class"
+            ],
+            "properties": {
+              "name": "剩菜剩饭",
+              "id": "19"
+            },
+            "elementId": "31"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 2141,
+        "labels": [
+          "Garbage"
+        ],
+        "properties": {
+          "name": "蚕豆",
+          "id": "2095"
+        },
+        "elementId": "2141"
+      },
+      "end": {
+        "identity": 31,
+        "labels": [
+          "Min_class"
+        ],
+        "properties": {
+          "name": "剩菜剩饭",
+          "id": "19"
+        },
+        "elementId": "31"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 2141,
+            "labels": [
+              "Garbage"
+            ],
+            "properties": {
+              "name": "蚕豆",
+              "id": "2095"
+            },
+            "elementId": "2141"
+          },
+          "relationship": {
+            "identity": 2095,
+            "start": 2141,
+            "end": 31,
+            "type": "BELONGS_TO",
+            "properties": {},
+            "elementId": "2095",
+            "startNodeElementId": "2141",
+            "endNodeElementId": "31"
+          },
+          "end": {
+            "identity": 31,
+            "labels": [
+              "Min_class"
+            ],
+            "properties": {
+              "name": "剩菜剩饭",
+              "id": "19"
+            },
+            "elementId": "31"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 1269,
+        "labels": [
+          "Garbage"
+        ],
+        "properties": {
+          "name": "软糖",
+          "id": "1223"
+        },
+        "elementId": "1269"
+      },
+      "end": {
+        "identity": 31,
+        "labels": [
+          "Min_class"
+        ],
+        "properties": {
+          "name": "剩菜剩饭",
+          "id": "19"
+        },
+        "elementId": "31"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 1269,
+            "labels": [
+              "Garbage"
+            ],
+            "properties": {
+              "name": "软糖",
+              "id": "1223"
+            },
+            "elementId": "1269"
+          },
+          "relationship": {
+            "identity": 1225,
+            "start": 1269,
+            "end": 31,
+            "type": "BELONGS_TO",
+            "properties": {},
+            "elementId": "1225",
+            "startNodeElementId": "1269",
+            "endNodeElementId": "31"
+          },
+          "end": {
+            "identity": 31,
+            "labels": [
+              "Min_class"
+            ],
+            "properties": {
+              "name": "剩菜剩饭",
+              "id": "19"
+            },
+            "elementId": "31"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 1653,
+        "labels": [
+          "Garbage"
+        ],
+        "properties": {
+          "name": "绿豆芽",
+          "id": "1607"
+        },
+        "elementId": "1653"
+      },
+      "end": {
+        "identity": 31,
+        "labels": [
+          "Min_class"
+        ],
+        "properties": {
+          "name": "剩菜剩饭",
+          "id": "19"
+        },
+        "elementId": "31"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 1653,
+            "labels": [
+              "Garbage"
+            ],
+            "properties": {
+              "name": "绿豆芽",
+              "id": "1607"
+            },
+            "elementId": "1653"
+          },
+          "relationship": {
+            "identity": 1607,
+            "start": 1653,
+            "end": 31,
+            "type": "BELONGS_TO",
+            "properties": {},
+            "elementId": "1607",
+            "startNodeElementId": "1653",
+            "endNodeElementId": "31"
+          },
+          "end": {
+            "identity": 31,
+            "labels": [
+              "Min_class"
+            ],
+            "properties": {
+              "name": "剩菜剩饭",
+              "id": "19"
+            },
+            "elementId": "31"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 798,
+        "labels": [
+          "Garbage"
+        ],
+        "properties": {
+          "name": "味精",
+          "id": "752"
+        },
+        "elementId": "798"
+      },
+      "end": {
+        "identity": 31,
+        "labels": [
+          "Min_class"
+        ],
+        "properties": {
+          "name": "剩菜剩饭",
+          "id": "19"
+        },
+        "elementId": "31"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 798,
+            "labels": [
+              "Garbage"
+            ],
+            "properties": {
+              "name": "味精",
+              "id": "752"
+            },
+            "elementId": "798"
+          },
+          "relationship": {
+            "identity": 754,
+            "start": 798,
+            "end": 31,
+            "type": "BELONGS_TO",
+            "properties": {},
+            "elementId": "754",
+            "startNodeElementId": "798",
+            "endNodeElementId": "31"
+          },
+          "end": {
+            "identity": 31,
+            "labels": [
+              "Min_class"
+            ],
+            "properties": {
+              "name": "剩菜剩饭",
+              "id": "19"
+            },
+            "elementId": "31"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 228,
+        "labels": [
+          "Garbage"
+        ],
+        "properties": {
+          "name": "水产类弃物",
+          "id": "182"
+        },
+        "elementId": "228"
+      },
+      "end": {
+        "identity": 31,
+        "labels": [
+          "Min_class"
+        ],
+        "properties": {
+          "name": "剩菜剩饭",
+          "id": "19"
+        },
+        "elementId": "31"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 228,
+            "labels": [
+              "Garbage"
+            ],
+            "properties": {
+              "name": "水产类弃物",
+              "id": "182"
+            },
+            "elementId": "228"
+          },
+          "relationship": {
+            "identity": 193,
+            "start": 228,
+            "end": 31,
+            "type": "BELONGS_TO",
+            "properties": {},
+            "elementId": "193",
+            "startNodeElementId": "228",
+            "endNodeElementId": "31"
+          },
+          "end": {
+            "identity": 31,
+            "labels": [
+              "Min_class"
+            ],
+            "properties": {
+              "name": "剩菜剩饭",
+              "id": "19"
+            },
+            "elementId": "31"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 1246,
+        "labels": [
+          "Garbage"
+        ],
+        "properties": {
+          "name": "瓜子仁",
+          "id": "1200"
+        },
+        "elementId": "1246"
+      },
+      "end": {
+        "identity": 31,
+        "labels": [
+          "Min_class"
+        ],
+        "properties": {
+          "name": "剩菜剩饭",
+          "id": "19"
+        },
+        "elementId": "31"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 1246,
+            "labels": [
+              "Garbage"
+            ],
+            "properties": {
+              "name": "瓜子仁",
+              "id": "1200"
+            },
+            "elementId": "1246"
+          },
+          "relationship": {
+            "identity": 1202,
+            "start": 1246,
+            "end": 31,
+            "type": "BELONGS_TO",
+            "properties": {},
+            "elementId": "1202",
+            "startNodeElementId": "1246",
+            "endNodeElementId": "31"
+          },
+          "end": {
+            "identity": 31,
+            "labels": [
+              "Min_class"
+            ],
+            "properties": {
+              "name": "剩菜剩饭",
+              "id": "19"
+            },
+            "elementId": "31"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 560,
+        "labels": [
+          "Garbage"
+        ],
+        "properties": {
+          "name": "菌菇",
+          "id": "514"
+        },
+        "elementId": "560"
+      },
+      "end": {
+        "identity": 31,
+        "labels": [
+          "Min_class"
+        ],
+        "properties": {
+          "name": "剩菜剩饭",
+          "id": "19"
+        },
+        "elementId": "31"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 560,
+            "labels": [
+              "Garbage"
+            ],
+            "properties": {
+              "name": "菌菇",
+              "id": "514"
+            },
+            "elementId": "560"
+          },
+          "relationship": {
+            "identity": 523,
+            "start": 560,
+            "end": 31,
+            "type": "BELONGS_TO",
+            "properties": {},
+            "elementId": "523",
+            "startNodeElementId": "560",
+            "endNodeElementId": "31"
+          },
+          "end": {
+            "identity": 31,
+            "labels": [
+              "Min_class"
+            ],
+            "properties": {
+              "name": "剩菜剩饭",
+              "id": "19"
+            },
+            "elementId": "31"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 2034,
+        "labels": [
+          "Garbage"
+        ],
+        "properties": {
+          "name": "奶油",
+          "id": "1988"
+        },
+        "elementId": "2034"
+      },
+      "end": {
+        "identity": 31,
+        "labels": [
+          "Min_class"
+        ],
+        "properties": {
+          "name": "剩菜剩饭",
+          "id": "19"
+        },
+        "elementId": "31"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 2034,
+            "labels": [
+              "Garbage"
+            ],
+            "properties": {
+              "name": "奶油",
+              "id": "1988"
+            },
+            "elementId": "2034"
+          },
+          "relationship": {
+            "identity": 1988,
+            "start": 2034,
+            "end": 31,
+            "type": "BELONGS_TO",
+            "properties": {},
+            "elementId": "1988",
+            "startNodeElementId": "2034",
+            "endNodeElementId": "31"
+          },
+          "end": {
+            "identity": 31,
+            "labels": [
+              "Min_class"
+            ],
+            "properties": {
+              "name": "剩菜剩饭",
+              "id": "19"
+            },
+            "elementId": "31"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 897,
+        "labels": [
+          "Garbage"
+        ],
+        "properties": {
+          "name": "奶酪",
+          "id": "851"
+        },
+        "elementId": "897"
+      },
+      "end": {
+        "identity": 31,
+        "labels": [
+          "Min_class"
+        ],
+        "properties": {
+          "name": "剩菜剩饭",
+          "id": "19"
+        },
+        "elementId": "31"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 897,
+            "labels": [
+              "Garbage"
+            ],
+            "properties": {
+              "name": "奶酪",
+              "id": "851"
+            },
+            "elementId": "897"
+          },
+          "relationship": {
+            "identity": 853,
+            "start": 897,
+            "end": 31,
+            "type": "BELONGS_TO",
+            "properties": {},
+            "elementId": "853",
+            "startNodeElementId": "897",
+            "endNodeElementId": "31"
+          },
+          "end": {
+            "identity": 31,
+            "labels": [
+              "Min_class"
+            ],
+            "properties": {
+              "name": "剩菜剩饭",
+              "id": "19"
+            },
+            "elementId": "31"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 1424,
+        "labels": [
+          "Garbage"
+        ],
+        "properties": {
+          "name": "海苔",
+          "id": "1378"
+        },
+        "elementId": "1424"
+      },
+      "end": {
+        "identity": 31,
+        "labels": [
+          "Min_class"
+        ],
+        "properties": {
+          "name": "剩菜剩饭",
+          "id": "19"
+        },
+        "elementId": "31"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 1424,
+            "labels": [
+              "Garbage"
+            ],
+            "properties": {
+              "name": "海苔",
+              "id": "1378"
+            },
+            "elementId": "1424"
+          },
+          "relationship": {
+            "identity": 1379,
+            "start": 1424,
+            "end": 31,
+            "type": "BELONGS_TO",
+            "properties": {},
+            "elementId": "1379",
+            "startNodeElementId": "1424",
+            "endNodeElementId": "31"
+          },
+          "end": {
+            "identity": 31,
+            "labels": [
+              "Min_class"
+            ],
+            "properties": {
+              "name": "剩菜剩饭",
+              "id": "19"
+            },
+            "elementId": "31"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 3846,
+        "labels": [
+          "Garbage"
+        ],
+        "properties": {
+          "name": "烂黄瓜",
+          "id": "3800"
+        },
+        "elementId": "3846"
+      },
+      "end": {
+        "identity": 31,
+        "labels": [
+          "Min_class"
+        ],
+        "properties": {
+          "name": "剩菜剩饭",
+          "id": "19"
+        },
+        "elementId": "31"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 3846,
+            "labels": [
+              "Garbage"
+            ],
+            "properties": {
+              "name": "烂黄瓜",
+              "id": "3800"
+            },
+            "elementId": "3846"
+          },
+          "relationship": {
+            "identity": 3799,
+            "start": 3846,
+            "end": 31,
+            "type": "BELONGS_TO",
+            "properties": {},
+            "elementId": "3799",
+            "startNodeElementId": "3846",
+            "endNodeElementId": "31"
+          },
+          "end": {
+            "identity": 31,
+            "labels": [
+              "Min_class"
+            ],
+            "properties": {
+              "name": "剩菜剩饭",
+              "id": "19"
+            },
+            "elementId": "31"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 1684,
+        "labels": [
+          "Garbage"
+        ],
+        "properties": {
+          "name": "青椰",
+          "id": "1638"
+        },
+        "elementId": "1684"
+      },
+      "end": {
+        "identity": 32,
+        "labels": [
+          "Min_class"
+        ],
+        "properties": {
+          "name": "瓜果皮类",
+          "id": "20"
+        },
+        "elementId": "32"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 1684,
+            "labels": [
+              "Garbage"
+            ],
+            "properties": {
+              "name": "青椰",
+              "id": "1638"
+            },
+            "elementId": "1684"
+          },
+          "relationship": {
+            "identity": 1638,
+            "start": 1684,
+            "end": 32,
+            "type": "BELONGS_TO",
+            "properties": {},
+            "elementId": "1638",
+            "startNodeElementId": "1684",
+            "endNodeElementId": "32"
+          },
+          "end": {
+            "identity": 32,
+            "labels": [
+              "Min_class"
+            ],
+            "properties": {
+              "name": "瓜果皮类",
+              "id": "20"
+            },
+            "elementId": "32"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 3945,
+        "labels": [
+          "Garbage"
+        ],
+        "properties": {
+          "name": "无花果壳",
+          "id": "3899"
+        },
+        "elementId": "3945"
+      },
+      "end": {
+        "identity": 32,
+        "labels": [
+          "Min_class"
+        ],
+        "properties": {
+          "name": "瓜果皮类",
+          "id": "20"
+        },
+        "elementId": "32"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 3945,
+            "labels": [
+              "Garbage"
+            ],
+            "properties": {
+              "name": "无花果壳",
+              "id": "3899"
+            },
+            "elementId": "3945"
+          },
+          "relationship": {
+            "identity": 3898,
+            "start": 3945,
+            "end": 32,
+            "type": "BELONGS_TO",
+            "properties": {},
+            "elementId": "3898",
+            "startNodeElementId": "3945",
+            "endNodeElementId": "32"
+          },
+          "end": {
+            "identity": 32,
+            "labels": [
+              "Min_class"
+            ],
+            "properties": {
+              "name": "瓜果皮类",
+              "id": "20"
+            },
+            "elementId": "32"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 1871,
+        "labels": [
+          "Garbage"
+        ],
+        "properties": {
+          "name": "葡萄籽",
+          "id": "1825"
+        },
+        "elementId": "1871"
+      },
+      "end": {
+        "identity": 32,
+        "labels": [
+          "Min_class"
+        ],
+        "properties": {
+          "name": "瓜果皮类",
+          "id": "20"
+        },
+        "elementId": "32"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 1871,
+            "labels": [
+              "Garbage"
+            ],
+            "properties": {
+              "name": "葡萄籽",
+              "id": "1825"
+            },
+            "elementId": "1871"
+          },
+          "relationship": {
+            "identity": 1825,
+            "start": 1871,
+            "end": 32,
+            "type": "BELONGS_TO",
+            "properties": {},
+            "elementId": "1825",
+            "startNodeElementId": "1871",
+            "endNodeElementId": "32"
+          },
+          "end": {
+            "identity": 32,
+            "labels": [
+              "Min_class"
+            ],
+            "properties": {
+              "name": "瓜果皮类",
+              "id": "20"
+            },
+            "elementId": "32"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 1173,
+        "labels": [
+          "Garbage"
+        ],
+        "properties": {
+          "name": "苹果核",
+          "id": "1127"
+        },
+        "elementId": "1173"
+      },
+      "end": {
+        "identity": 32,
+        "labels": [
+          "Min_class"
+        ],
+        "properties": {
+          "name": "瓜果皮类",
+          "id": "20"
+        },
+        "elementId": "32"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 1173,
+            "labels": [
+              "Garbage"
+            ],
+            "properties": {
+              "name": "苹果核",
+              "id": "1127"
+            },
+            "elementId": "1173"
+          },
+          "relationship": {
+            "identity": 1129,
+            "start": 1173,
+            "end": 32,
+            "type": "BELONGS_TO",
+            "properties": {},
+            "elementId": "1129",
+            "startNodeElementId": "1173",
+            "endNodeElementId": "32"
+          },
+          "end": {
+            "identity": 32,
+            "labels": [
+              "Min_class"
+            ],
+            "properties": {
+              "name": "瓜果皮类",
+              "id": "20"
+            },
+            "elementId": "32"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 1986,
+        "labels": [
+          "Garbage"
+        ],
+        "properties": {
+          "name": "毛豆壳",
+          "id": "1940"
+        },
+        "elementId": "1986"
+      },
+      "end": {
+        "identity": 32,
+        "labels": [
+          "Min_class"
+        ],
+        "properties": {
+          "name": "瓜果皮类",
+          "id": "20"
+        },
+        "elementId": "32"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 1986,
+            "labels": [
+              "Garbage"
+            ],
+            "properties": {
+              "name": "毛豆壳",
+              "id": "1940"
+            },
+            "elementId": "1986"
+          },
+          "relationship": {
+            "identity": 1940,
+            "start": 1986,
+            "end": 32,
+            "type": "BELONGS_TO",
+            "properties": {},
+            "elementId": "1940",
+            "startNodeElementId": "1986",
+            "endNodeElementId": "32"
+          },
+          "end": {
+            "identity": 32,
+            "labels": [
+              "Min_class"
+            ],
+            "properties": {
+              "name": "瓜果皮类",
+              "id": "20"
+            },
+            "elementId": "32"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 2285,
+        "labels": [
+          "Garbage"
+        ],
+        "properties": {
+          "name": "红薯皮",
+          "id": "2239"
+        },
+        "elementId": "2285"
+      },
+      "end": {
+        "identity": 32,
+        "labels": [
+          "Min_class"
+        ],
+        "properties": {
+          "name": "瓜果皮类",
+          "id": "20"
+        },
+        "elementId": "32"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 2285,
+            "labels": [
+              "Garbage"
+            ],
+            "properties": {
+              "name": "红薯皮",
+              "id": "2239"
+            },
+            "elementId": "2285"
+          },
+          "relationship": {
+            "identity": 2239,
+            "start": 2285,
+            "end": 32,
+            "type": "BELONGS_TO",
+            "properties": {},
+            "elementId": "2239",
+            "startNodeElementId": "2285",
+            "endNodeElementId": "32"
+          },
+          "end": {
+            "identity": 32,
+            "labels": [
+              "Min_class"
+            ],
+            "properties": {
+              "name": "瓜果皮类",
+              "id": "20"
+            },
+            "elementId": "32"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 1936,
+        "labels": [
+          "Garbage"
+        ],
+        "properties": {
+          "name": "香蕉皮",
+          "id": "1890"
+        },
+        "elementId": "1936"
+      },
+      "end": {
+        "identity": 32,
+        "labels": [
+          "Min_class"
+        ],
+        "properties": {
+          "name": "瓜果皮类",
+          "id": "20"
+        },
+        "elementId": "32"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 1936,
+            "labels": [
+              "Garbage"
+            ],
+            "properties": {
+              "name": "香蕉皮",
+              "id": "1890"
+            },
+            "elementId": "1936"
+          },
+          "relationship": {
+            "identity": 1890,
+            "start": 1936,
+            "end": 32,
+            "type": "BELONGS_TO",
+            "properties": {},
+            "elementId": "1890",
+            "startNodeElementId": "1936",
+            "endNodeElementId": "32"
+          },
+          "end": {
+            "identity": 32,
+            "labels": [
+              "Min_class"
+            ],
+            "properties": {
+              "name": "瓜果皮类",
+              "id": "20"
+            },
+            "elementId": "32"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 600,
+        "labels": [
+          "Garbage"
+        ],
+        "properties": {
+          "name": "哈密瓜皮",
+          "id": "554"
+        },
+        "elementId": "600"
+      },
+      "end": {
+        "identity": 32,
+        "labels": [
+          "Min_class"
+        ],
+        "properties": {
+          "name": "瓜果皮类",
+          "id": "20"
+        },
+        "elementId": "32"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 600,
+            "labels": [
+              "Garbage"
+            ],
+            "properties": {
+              "name": "哈密瓜皮",
+              "id": "554"
+            },
+            "elementId": "600"
+          },
+          "relationship": {
+            "identity": 563,
+            "start": 600,
+            "end": 32,
+            "type": "BELONGS_TO",
+            "properties": {},
+            "elementId": "563",
+            "startNodeElementId": "600",
+            "endNodeElementId": "32"
+          },
+          "end": {
+            "identity": 32,
+            "labels": [
+              "Min_class"
+            ],
+            "properties": {
+              "name": "瓜果皮类",
+              "id": "20"
+            },
+            "elementId": "32"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 2111,
+        "labels": [
+          "Garbage"
+        ],
+        "properties": {
+          "name": "紫薯皮",
+          "id": "2065"
+        },
+        "elementId": "2111"
+      },
+      "end": {
+        "identity": 32,
+        "labels": [
+          "Min_class"
+        ],
+        "properties": {
+          "name": "瓜果皮类",
+          "id": "20"
+        },
+        "elementId": "32"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 2111,
+            "labels": [
+              "Garbage"
+            ],
+            "properties": {
+              "name": "紫薯皮",
+              "id": "2065"
+            },
+            "elementId": "2111"
+          },
+          "relationship": {
+            "identity": 2065,
+            "start": 2111,
+            "end": 32,
+            "type": "BELONGS_TO",
+            "properties": {},
+            "elementId": "2065",
+            "startNodeElementId": "2111",
+            "endNodeElementId": "32"
+          },
+          "end": {
+            "identity": 32,
+            "labels": [
+              "Min_class"
+            ],
+            "properties": {
+              "name": "瓜果皮类",
+              "id": "20"
+            },
+            "elementId": "32"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 2919,
+        "labels": [
+          "Garbage"
+        ],
+        "properties": {
+          "name": "粽子皮",
+          "id": "2873"
+        },
+        "elementId": "2919"
+      },
+      "end": {
+        "identity": 32,
+        "labels": [
+          "Min_class"
+        ],
+        "properties": {
+          "name": "瓜果皮类",
+          "id": "20"
+        },
+        "elementId": "32"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 2919,
+            "labels": [
+              "Garbage"
+            ],
+            "properties": {
+              "name": "粽子皮",
+              "id": "2873"
+            },
+            "elementId": "2919"
+          },
+          "relationship": {
+            "identity": 2873,
+            "start": 2919,
+            "end": 32,
+            "type": "BELONGS_TO",
+            "properties": {},
+            "elementId": "2873",
+            "startNodeElementId": "2919",
+            "endNodeElementId": "32"
+          },
+          "end": {
+            "identity": 32,
+            "labels": [
+              "Min_class"
+            ],
+            "properties": {
+              "name": "瓜果皮类",
+              "id": "20"
+            },
+            "elementId": "32"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 1686,
+        "labels": [
+          "Garbage"
+        ],
+        "properties": {
+          "name": "椰子",
+          "id": "1640"
+        },
+        "elementId": "1686"
+      },
+      "end": {
+        "identity": 32,
+        "labels": [
+          "Min_class"
+        ],
+        "properties": {
+          "name": "瓜果皮类",
+          "id": "20"
+        },
+        "elementId": "32"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 1686,
+            "labels": [
+              "Garbage"
+            ],
+            "properties": {
+              "name": "椰子",
+              "id": "1640"
+            },
+            "elementId": "1686"
+          },
+          "relationship": {
+            "identity": 1640,
+            "start": 1686,
+            "end": 32,
+            "type": "BELONGS_TO",
+            "properties": {},
+            "elementId": "1640",
+            "startNodeElementId": "1686",
+            "endNodeElementId": "32"
+          },
+          "end": {
+            "identity": 32,
+            "labels": [
+              "Min_class"
+            ],
+            "properties": {
+              "name": "瓜果皮类",
+              "id": "20"
+            },
+            "elementId": "32"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 2266,
+        "labels": [
+          "Garbage"
+        ],
+        "properties": {
+          "name": "番茄皮",
+          "id": "2220"
+        },
+        "elementId": "2266"
+      },
+      "end": {
+        "identity": 32,
+        "labels": [
+          "Min_class"
+        ],
+        "properties": {
+          "name": "瓜果皮类",
+          "id": "20"
+        },
+        "elementId": "32"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 2266,
+            "labels": [
+              "Garbage"
+            ],
+            "properties": {
+              "name": "番茄皮",
+              "id": "2220"
+            },
+            "elementId": "2266"
+          },
+          "relationship": {
+            "identity": 2220,
+            "start": 2266,
+            "end": 32,
+            "type": "BELONGS_TO",
+            "properties": {},
+            "elementId": "2220",
+            "startNodeElementId": "2266",
+            "endNodeElementId": "32"
+          },
+          "end": {
+            "identity": 32,
+            "labels": [
+              "Min_class"
+            ],
+            "properties": {
+              "name": "瓜果皮类",
+              "id": "20"
+            },
+            "elementId": "32"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 2202,
+        "labels": [
+          "Garbage"
+        ],
+        "properties": {
+          "name": "桃子皮",
+          "id": "2156"
+        },
+        "elementId": "2202"
+      },
+      "end": {
+        "identity": 32,
+        "labels": [
+          "Min_class"
+        ],
+        "properties": {
+          "name": "瓜果皮类",
+          "id": "20"
+        },
+        "elementId": "32"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 2202,
+            "labels": [
+              "Garbage"
+            ],
+            "properties": {
+              "name": "桃子皮",
+              "id": "2156"
+            },
+            "elementId": "2202"
+          },
+          "relationship": {
+            "identity": 2156,
+            "start": 2202,
+            "end": 32,
+            "type": "BELONGS_TO",
+            "properties": {},
+            "elementId": "2156",
+            "startNodeElementId": "2202",
+            "endNodeElementId": "32"
+          },
+          "end": {
+            "identity": 32,
+            "labels": [
+              "Min_class"
+            ],
+            "properties": {
+              "name": "瓜果皮类",
+              "id": "20"
+            },
+            "elementId": "32"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 1999,
+        "labels": [
+          "Garbage"
+        ],
+        "properties": {
+          "name": "火龙果皮",
+          "id": "1953"
+        },
+        "elementId": "1999"
+      },
+      "end": {
+        "identity": 32,
+        "labels": [
+          "Min_class"
+        ],
+        "properties": {
+          "name": "瓜果皮类",
+          "id": "20"
+        },
+        "elementId": "32"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 1999,
+            "labels": [
+              "Garbage"
+            ],
+            "properties": {
+              "name": "火龙果皮",
+              "id": "1953"
+            },
+            "elementId": "1999"
+          },
+          "relationship": {
+            "identity": 1953,
+            "start": 1999,
+            "end": 32,
+            "type": "BELONGS_TO",
+            "properties": {},
+            "elementId": "1953",
+            "startNodeElementId": "1999",
+            "endNodeElementId": "32"
+          },
+          "end": {
+            "identity": 32,
+            "labels": [
+              "Min_class"
+            ],
+            "properties": {
+              "name": "瓜果皮类",
+              "id": "20"
+            },
+            "elementId": "32"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 1938,
+        "labels": [
+          "Garbage"
+        ],
+        "properties": {
+          "name": "西瓜皮",
+          "id": "1892"
+        },
+        "elementId": "1938"
+      },
+      "end": {
+        "identity": 32,
+        "labels": [
+          "Min_class"
+        ],
+        "properties": {
+          "name": "瓜果皮类",
+          "id": "20"
+        },
+        "elementId": "32"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 1938,
+            "labels": [
+              "Garbage"
+            ],
+            "properties": {
+              "name": "西瓜皮",
+              "id": "1892"
+            },
+            "elementId": "1938"
+          },
+          "relationship": {
+            "identity": 1892,
+            "start": 1938,
+            "end": 32,
+            "type": "BELONGS_TO",
+            "properties": {},
+            "elementId": "1892",
+            "startNodeElementId": "1938",
+            "endNodeElementId": "32"
+          },
+          "end": {
+            "identity": 32,
+            "labels": [
+              "Min_class"
+            ],
+            "properties": {
+              "name": "瓜果皮类",
+              "id": "20"
+            },
+            "elementId": "32"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 3884,
+        "labels": [
+          "Garbage"
+        ],
+        "properties": {
+          "name": "瓜皮",
+          "id": "3838"
+        },
+        "elementId": "3884"
+      },
+      "end": {
+        "identity": 32,
+        "labels": [
+          "Min_class"
+        ],
+        "properties": {
+          "name": "瓜果皮类",
+          "id": "20"
+        },
+        "elementId": "32"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 3884,
+            "labels": [
+              "Garbage"
+            ],
+            "properties": {
+              "name": "瓜皮",
+              "id": "3838"
+            },
+            "elementId": "3884"
+          },
+          "relationship": {
+            "identity": 3837,
+            "start": 3884,
+            "end": 32,
+            "type": "BELONGS_TO",
+            "properties": {},
+            "elementId": "3837",
+            "startNodeElementId": "3884",
+            "endNodeElementId": "32"
+          },
+          "end": {
+            "identity": 32,
+            "labels": [
+              "Min_class"
+            ],
+            "properties": {
+              "name": "瓜果皮类",
+              "id": "20"
+            },
+            "elementId": "32"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 2365,
+        "labels": [
+          "Garbage"
+        ],
+        "properties": {
+          "name": "香蕉干",
+          "id": "2319"
+        },
+        "elementId": "2365"
+      },
+      "end": {
+        "identity": 32,
+        "labels": [
+          "Min_class"
+        ],
+        "properties": {
+          "name": "瓜果皮类",
+          "id": "20"
+        },
+        "elementId": "32"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 2365,
+            "labels": [
+              "Garbage"
+            ],
+            "properties": {
+              "name": "香蕉干",
+              "id": "2319"
+            },
+            "elementId": "2365"
+          },
+          "relationship": {
+            "identity": 2319,
+            "start": 2365,
+            "end": 32,
+            "type": "BELONGS_TO",
+            "properties": {},
+            "elementId": "2319",
+            "startNodeElementId": "2365",
+            "endNodeElementId": "32"
+          },
+          "end": {
+            "identity": 32,
+            "labels": [
+              "Min_class"
+            ],
+            "properties": {
+              "name": "瓜果皮类",
+              "id": "20"
+            },
+            "elementId": "32"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 2323,
+        "labels": [
+          "Garbage"
+        ],
+        "properties": {
+          "name": "芋艿皮",
+          "id": "2277"
+        },
+        "elementId": "2323"
+      },
+      "end": {
+        "identity": 32,
+        "labels": [
+          "Min_class"
+        ],
+        "properties": {
+          "name": "瓜果皮类",
+          "id": "20"
+        },
+        "elementId": "32"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 2323,
+            "labels": [
+              "Garbage"
+            ],
+            "properties": {
+              "name": "芋艿皮",
+              "id": "2277"
+            },
+            "elementId": "2323"
+          },
+          "relationship": {
+            "identity": 2277,
+            "start": 2323,
+            "end": 32,
+            "type": "BELONGS_TO",
+            "properties": {},
+            "elementId": "2277",
+            "startNodeElementId": "2323",
+            "endNodeElementId": "32"
+          },
+          "end": {
+            "identity": 32,
+            "labels": [
+              "Min_class"
+            ],
+            "properties": {
+              "name": "瓜果皮类",
+              "id": "20"
+            },
+            "elementId": "32"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 1171,
+        "labels": [
+          "Garbage"
+        ],
+        "properties": {
+          "name": "苹果",
+          "id": "1125"
+        },
+        "elementId": "1171"
+      },
+      "end": {
+        "identity": 32,
+        "labels": [
+          "Min_class"
+        ],
+        "properties": {
+          "name": "瓜果皮类",
+          "id": "20"
+        },
+        "elementId": "32"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 1171,
+            "labels": [
+              "Garbage"
+            ],
+            "properties": {
+              "name": "苹果",
+              "id": "1125"
+            },
+            "elementId": "1171"
+          },
+          "relationship": {
+            "identity": 1127,
+            "start": 1171,
+            "end": 32,
+            "type": "BELONGS_TO",
+            "properties": {},
+            "elementId": "1127",
+            "startNodeElementId": "1171",
+            "endNodeElementId": "32"
+          },
+          "end": {
+            "identity": 32,
+            "labels": [
+              "Min_class"
+            ],
+            "properties": {
+              "name": "瓜果皮类",
+              "id": "20"
+            },
+            "elementId": "32"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 1390,
+        "labels": [
+          "Garbage"
+        ],
+        "properties": {
+          "name": "素菜",
+          "id": "1344"
+        },
+        "elementId": "1390"
+      },
+      "end": {
+        "identity": 33,
+        "labels": [
+          "Min_class"
+        ],
+        "properties": {
+          "name": "蔬菜类",
+          "id": "21"
+        },
+        "elementId": "33"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 1390,
+            "labels": [
+              "Garbage"
+            ],
+            "properties": {
+              "name": "素菜",
+              "id": "1344"
+            },
+            "elementId": "1390"
+          },
+          "relationship": {
+            "identity": 1345,
+            "start": 1390,
+            "end": 33,
+            "type": "BELONGS_TO",
+            "properties": {},
+            "elementId": "1345",
+            "startNodeElementId": "1390",
+            "endNodeElementId": "33"
+          },
+          "end": {
+            "identity": 33,
+            "labels": [
+              "Min_class"
+            ],
+            "properties": {
+              "name": "蔬菜类",
+              "id": "21"
+            },
+            "elementId": "33"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 2230,
+        "labels": [
+          "Garbage"
+        ],
+        "properties": {
+          "name": "西葫芦",
+          "id": "2184"
+        },
+        "elementId": "2230"
+      },
+      "end": {
+        "identity": 33,
+        "labels": [
+          "Min_class"
+        ],
+        "properties": {
+          "name": "蔬菜类",
+          "id": "21"
+        },
+        "elementId": "33"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 2230,
+            "labels": [
+              "Garbage"
+            ],
+            "properties": {
+              "name": "西葫芦",
+              "id": "2184"
+            },
+            "elementId": "2230"
+          },
+          "relationship": {
+            "identity": 2184,
+            "start": 2230,
+            "end": 33,
+            "type": "BELONGS_TO",
+            "properties": {},
+            "elementId": "2184",
+            "startNodeElementId": "2230",
+            "endNodeElementId": "33"
+          },
+          "end": {
+            "identity": 33,
+            "labels": [
+              "Min_class"
+            ],
+            "properties": {
+              "name": "蔬菜类",
+              "id": "21"
+            },
+            "elementId": "33"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 2022,
+        "labels": [
+          "Garbage"
+        ],
+        "properties": {
+          "name": "蔬菜残余",
+          "id": "1976"
+        },
+        "elementId": "2022"
+      },
+      "end": {
+        "identity": 33,
+        "labels": [
+          "Min_class"
+        ],
+        "properties": {
+          "name": "蔬菜类",
+          "id": "21"
+        },
+        "elementId": "33"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 2022,
+            "labels": [
+              "Garbage"
+            ],
+            "properties": {
+              "name": "蔬菜残余",
+              "id": "1976"
+            },
+            "elementId": "2022"
+          },
+          "relationship": {
+            "identity": 1976,
+            "start": 2022,
+            "end": 33,
+            "type": "BELONGS_TO",
+            "properties": {},
+            "elementId": "1976",
+            "startNodeElementId": "2022",
+            "endNodeElementId": "33"
+          },
+          "end": {
+            "identity": 33,
+            "labels": [
+              "Min_class"
+            ],
+            "properties": {
+              "name": "蔬菜类",
+              "id": "21"
+            },
+            "elementId": "33"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 346,
+        "labels": [
+          "Garbage"
+        ],
+        "properties": {
+          "name": "淡菜",
+          "id": "300"
+        },
+        "elementId": "346"
+      },
+      "end": {
+        "identity": 33,
+        "labels": [
+          "Min_class"
+        ],
+        "properties": {
+          "name": "蔬菜类",
+          "id": "21"
+        },
+        "elementId": "33"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 346,
+            "labels": [
+              "Garbage"
+            ],
+            "properties": {
+              "name": "淡菜",
+              "id": "300"
+            },
+            "elementId": "346"
+          },
+          "relationship": {
+            "identity": 311,
+            "start": 346,
+            "end": 33,
+            "type": "BELONGS_TO",
+            "properties": {},
+            "elementId": "311",
+            "startNodeElementId": "346",
+            "endNodeElementId": "33"
+          },
+          "end": {
+            "identity": 33,
+            "labels": [
+              "Min_class"
+            ],
+            "properties": {
+              "name": "蔬菜类",
+              "id": "21"
+            },
+            "elementId": "33"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 331,
+        "labels": [
+          "Garbage"
+        ],
+        "properties": {
+          "name": "大葱",
+          "id": "285"
+        },
+        "elementId": "331"
+      },
+      "end": {
+        "identity": 33,
+        "labels": [
+          "Min_class"
+        ],
+        "properties": {
+          "name": "蔬菜类",
+          "id": "21"
+        },
+        "elementId": "33"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 331,
+            "labels": [
+              "Garbage"
+            ],
+            "properties": {
+              "name": "大葱",
+              "id": "285"
+            },
+            "elementId": "331"
+          },
+          "relationship": {
+            "identity": 296,
+            "start": 331,
+            "end": 33,
+            "type": "BELONGS_TO",
+            "properties": {},
+            "elementId": "296",
+            "startNodeElementId": "331",
+            "endNodeElementId": "33"
+          },
+          "end": {
+            "identity": 33,
+            "labels": [
+              "Min_class"
+            ],
+            "properties": {
+              "name": "蔬菜类",
+              "id": "21"
+            },
+            "elementId": "33"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 194,
+        "labels": [
+          "Garbage"
+        ],
+        "properties": {
+          "name": "菜",
+          "id": "148"
+        },
+        "elementId": "194"
+      },
+      "end": {
+        "identity": 33,
+        "labels": [
+          "Min_class"
+        ],
+        "properties": {
+          "name": "蔬菜类",
+          "id": "21"
+        },
+        "elementId": "33"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 194,
+            "labels": [
+              "Garbage"
+            ],
+            "properties": {
+              "name": "菜",
+              "id": "148"
+            },
+            "elementId": "194"
+          },
+          "relationship": {
+            "identity": 159,
+            "start": 194,
+            "end": 33,
+            "type": "BELONGS_TO",
+            "properties": {},
+            "elementId": "159",
+            "startNodeElementId": "194",
+            "endNodeElementId": "33"
+          },
+          "end": {
+            "identity": 33,
+            "labels": [
+              "Min_class"
+            ],
+            "properties": {
+              "name": "蔬菜类",
+              "id": "21"
+            },
+            "elementId": "33"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 178,
+        "labels": [
+          "Garbage"
+        ],
+        "properties": {
+          "name": "萝卜",
+          "id": "132"
+        },
+        "elementId": "178"
+      },
+      "end": {
+        "identity": 33,
+        "labels": [
+          "Min_class"
+        ],
+        "properties": {
+          "name": "蔬菜类",
+          "id": "21"
+        },
+        "elementId": "33"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 178,
+            "labels": [
+              "Garbage"
+            ],
+            "properties": {
+              "name": "萝卜",
+              "id": "132"
+            },
+            "elementId": "178"
+          },
+          "relationship": {
+            "identity": 143,
+            "start": 178,
+            "end": 33,
+            "type": "BELONGS_TO",
+            "properties": {},
+            "elementId": "143",
+            "startNodeElementId": "178",
+            "endNodeElementId": "33"
+          },
+          "end": {
+            "identity": 33,
+            "labels": [
+              "Min_class"
+            ],
+            "properties": {
+              "name": "蔬菜类",
+              "id": "21"
+            },
+            "elementId": "33"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 257,
+        "labels": [
+          "Garbage"
+        ],
+        "properties": {
+          "name": "橙子",
+          "id": "211"
+        },
+        "elementId": "257"
+      },
+      "end": {
+        "identity": 33,
+        "labels": [
+          "Min_class"
+        ],
+        "properties": {
+          "name": "蔬菜类",
+          "id": "21"
+        },
+        "elementId": "33"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 257,
+            "labels": [
+              "Garbage"
+            ],
+            "properties": {
+              "name": "橙子",
+              "id": "211"
+            },
+            "elementId": "257"
+          },
+          "relationship": {
+            "identity": 222,
+            "start": 257,
+            "end": 33,
+            "type": "BELONGS_TO",
+            "properties": {},
+            "elementId": "222",
+            "startNodeElementId": "257",
+            "endNodeElementId": "33"
+          },
+          "end": {
+            "identity": 33,
+            "labels": [
+              "Min_class"
+            ],
+            "properties": {
+              "name": "蔬菜类",
+              "id": "21"
+            },
+            "elementId": "33"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 1217,
+        "labels": [
+          "Garbage"
+        ],
+        "properties": {
+          "name": "芹菜",
+          "id": "1171"
+        },
+        "elementId": "1217"
+      },
+      "end": {
+        "identity": 33,
+        "labels": [
+          "Min_class"
+        ],
+        "properties": {
+          "name": "蔬菜类",
+          "id": "21"
+        },
+        "elementId": "33"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 1217,
+            "labels": [
+              "Garbage"
+            ],
+            "properties": {
+              "name": "芹菜",
+              "id": "1171"
+            },
+            "elementId": "1217"
+          },
+          "relationship": {
+            "identity": 1173,
+            "start": 1217,
+            "end": 33,
+            "type": "BELONGS_TO",
+            "properties": {},
+            "elementId": "1173",
+            "startNodeElementId": "1217",
+            "endNodeElementId": "33"
+          },
+          "end": {
+            "identity": 33,
+            "labels": [
+              "Min_class"
+            ],
+            "properties": {
+              "name": "蔬菜类",
+              "id": "21"
+            },
+            "elementId": "33"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 792,
+        "labels": [
+          "Garbage"
+        ],
+        "properties": {
+          "name": "根茎蔬菜",
+          "id": "746"
+        },
+        "elementId": "792"
+      },
+      "end": {
+        "identity": 33,
+        "labels": [
+          "Min_class"
+        ],
+        "properties": {
+          "name": "蔬菜类",
+          "id": "21"
+        },
+        "elementId": "33"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 792,
+            "labels": [
+              "Garbage"
+            ],
+            "properties": {
+              "name": "根茎蔬菜",
+              "id": "746"
+            },
+            "elementId": "792"
+          },
+          "relationship": {
+            "identity": 748,
+            "start": 792,
+            "end": 33,
+            "type": "BELONGS_TO",
+            "properties": {},
+            "elementId": "748",
+            "startNodeElementId": "792",
+            "endNodeElementId": "33"
+          },
+          "end": {
+            "identity": 33,
+            "labels": [
+              "Min_class"
+            ],
+            "properties": {
+              "name": "蔬菜类",
+              "id": "21"
+            },
+            "elementId": "33"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 1950,
+        "labels": [
+          "Garbage"
+        ],
+        "properties": {
+          "name": "大白菜",
+          "id": "1904"
+        },
+        "elementId": "1950"
+      },
+      "end": {
+        "identity": 33,
+        "labels": [
+          "Min_class"
+        ],
+        "properties": {
+          "name": "蔬菜类",
+          "id": "21"
+        },
+        "elementId": "33"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 1950,
+            "labels": [
+              "Garbage"
+            ],
+            "properties": {
+              "name": "大白菜",
+              "id": "1904"
+            },
+            "elementId": "1950"
+          },
+          "relationship": {
+            "identity": 1904,
+            "start": 1950,
+            "end": 33,
+            "type": "BELONGS_TO",
+            "properties": {},
+            "elementId": "1904",
+            "startNodeElementId": "1950",
+            "endNodeElementId": "33"
+          },
+          "end": {
+            "identity": 33,
+            "labels": [
+              "Min_class"
+            ],
+            "properties": {
+              "name": "蔬菜类",
+              "id": "21"
+            },
+            "elementId": "33"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 793,
+        "labels": [
+          "Garbage"
+        ],
+        "properties": {
+          "name": "蔬菜茎叶",
+          "id": "747"
+        },
+        "elementId": "793"
+      },
+      "end": {
+        "identity": 33,
+        "labels": [
+          "Min_class"
+        ],
+        "properties": {
+          "name": "蔬菜类",
+          "id": "21"
+        },
+        "elementId": "33"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 793,
+            "labels": [
+              "Garbage"
+            ],
+            "properties": {
+              "name": "蔬菜茎叶",
+              "id": "747"
+            },
+            "elementId": "793"
+          },
+          "relationship": {
+            "identity": 749,
+            "start": 793,
+            "end": 33,
+            "type": "BELONGS_TO",
+            "properties": {},
+            "elementId": "749",
+            "startNodeElementId": "793",
+            "endNodeElementId": "33"
+          },
+          "end": {
+            "identity": 33,
+            "labels": [
+              "Min_class"
+            ],
+            "properties": {
+              "name": "蔬菜类",
+              "id": "21"
+            },
+            "elementId": "33"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 179,
+        "labels": [
+          "Garbage"
+        ],
+        "properties": {
+          "name": "胡萝卜",
+          "id": "133"
+        },
+        "elementId": "179"
+      },
+      "end": {
+        "identity": 33,
+        "labels": [
+          "Min_class"
+        ],
+        "properties": {
+          "name": "蔬菜类",
+          "id": "21"
+        },
+        "elementId": "33"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 179,
+            "labels": [
+              "Garbage"
+            ],
+            "properties": {
+              "name": "胡萝卜",
+              "id": "133"
+            },
+            "elementId": "179"
+          },
+          "relationship": {
+            "identity": 144,
+            "start": 179,
+            "end": 33,
+            "type": "BELONGS_TO",
+            "properties": {},
+            "elementId": "144",
+            "startNodeElementId": "179",
+            "endNodeElementId": "33"
+          },
+          "end": {
+            "identity": 33,
+            "labels": [
+              "Min_class"
+            ],
+            "properties": {
+              "name": "蔬菜类",
+              "id": "21"
+            },
+            "elementId": "33"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 445,
+        "labels": [
+          "Garbage"
+        ],
+        "properties": {
+          "name": "番茄",
+          "id": "399"
+        },
+        "elementId": "445"
+      },
+      "end": {
+        "identity": 33,
+        "labels": [
+          "Min_class"
+        ],
+        "properties": {
+          "name": "蔬菜类",
+          "id": "21"
+        },
+        "elementId": "33"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 445,
+            "labels": [
+              "Garbage"
+            ],
+            "properties": {
+              "name": "番茄",
+              "id": "399"
+            },
+            "elementId": "445"
+          },
+          "relationship": {
+            "identity": 410,
+            "start": 445,
+            "end": 33,
+            "type": "BELONGS_TO",
+            "properties": {},
+            "elementId": "410",
+            "startNodeElementId": "445",
+            "endNodeElementId": "33"
+          },
+          "end": {
+            "identity": 33,
+            "labels": [
+              "Min_class"
+            ],
+            "properties": {
+              "name": "蔬菜类",
+              "id": "21"
+            },
+            "elementId": "33"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 180,
+        "labels": [
+          "Garbage"
+        ],
+        "properties": {
+          "name": "萝卜干",
+          "id": "134"
+        },
+        "elementId": "180"
+      },
+      "end": {
+        "identity": 33,
+        "labels": [
+          "Min_class"
+        ],
+        "properties": {
+          "name": "蔬菜类",
+          "id": "21"
+        },
+        "elementId": "33"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 180,
+            "labels": [
+              "Garbage"
+            ],
+            "properties": {
+              "name": "萝卜干",
+              "id": "134"
+            },
+            "elementId": "180"
+          },
+          "relationship": {
+            "identity": 145,
+            "start": 180,
+            "end": 33,
+            "type": "BELONGS_TO",
+            "properties": {},
+            "elementId": "145",
+            "startNodeElementId": "180",
+            "endNodeElementId": "33"
+          },
+          "end": {
+            "identity": 33,
+            "labels": [
+              "Min_class"
+            ],
+            "properties": {
+              "name": "蔬菜类",
+              "id": "21"
+            },
+            "elementId": "33"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 1220,
+        "labels": [
+          "Garbage"
+        ],
+        "properties": {
+          "name": "青菜",
+          "id": "1174"
+        },
+        "elementId": "1220"
+      },
+      "end": {
+        "identity": 33,
+        "labels": [
+          "Min_class"
+        ],
+        "properties": {
+          "name": "蔬菜类",
+          "id": "21"
+        },
+        "elementId": "33"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 1220,
+            "labels": [
+              "Garbage"
+            ],
+            "properties": {
+              "name": "青菜",
+              "id": "1174"
+            },
+            "elementId": "1220"
+          },
+          "relationship": {
+            "identity": 1176,
+            "start": 1220,
+            "end": 33,
+            "type": "BELONGS_TO",
+            "properties": {},
+            "elementId": "1176",
+            "startNodeElementId": "1220",
+            "endNodeElementId": "33"
+          },
+          "end": {
+            "identity": 33,
+            "labels": [
+              "Min_class"
+            ],
+            "properties": {
+              "name": "蔬菜类",
+              "id": "21"
+            },
+            "elementId": "33"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 2375,
+        "labels": [
+          "Garbage"
+        ],
+        "properties": {
+          "name": "枯萎花草",
+          "id": "2329"
+        },
+        "elementId": "2375"
+      },
+      "end": {
+        "identity": 34,
+        "labels": [
+          "Min_class"
+        ],
+        "properties": {
+          "name": "盆栽残枝",
+          "id": "22"
+        },
+        "elementId": "34"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 2375,
+            "labels": [
+              "Garbage"
+            ],
+            "properties": {
+              "name": "枯萎花草",
+              "id": "2329"
+            },
+            "elementId": "2375"
+          },
+          "relationship": {
+            "identity": 2329,
+            "start": 2375,
+            "end": 34,
+            "type": "BELONGS_TO",
+            "properties": {},
+            "elementId": "2329",
+            "startNodeElementId": "2375",
+            "endNodeElementId": "34"
+          },
+          "end": {
+            "identity": 34,
+            "labels": [
+              "Min_class"
+            ],
+            "properties": {
+              "name": "盆栽残枝",
+              "id": "22"
+            },
+            "elementId": "34"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 1153,
+        "labels": [
+          "Garbage"
+        ],
+        "properties": {
+          "name": "盆栽",
+          "id": "1107"
+        },
+        "elementId": "1153"
+      },
+      "end": {
+        "identity": 34,
+        "labels": [
+          "Min_class"
+        ],
+        "properties": {
+          "name": "盆栽残枝",
+          "id": "22"
+        },
+        "elementId": "34"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 1153,
+            "labels": [
+              "Garbage"
+            ],
+            "properties": {
+              "name": "盆栽",
+              "id": "1107"
+            },
+            "elementId": "1153"
+          },
+          "relationship": {
+            "identity": 1109,
+            "start": 1153,
+            "end": 34,
+            "type": "BELONGS_TO",
+            "properties": {},
+            "elementId": "1109",
+            "startNodeElementId": "1153",
+            "endNodeElementId": "34"
+          },
+          "end": {
+            "identity": 34,
+            "labels": [
+              "Min_class"
+            ],
+            "properties": {
+              "name": "盆栽残枝",
+              "id": "22"
+            },
+            "elementId": "34"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 3894,
+        "labels": [
+          "Garbage"
+        ],
+        "properties": {
+          "name": "青草",
+          "id": "3848"
+        },
+        "elementId": "3894"
+      },
+      "end": {
+        "identity": 34,
+        "labels": [
+          "Min_class"
+        ],
+        "properties": {
+          "name": "盆栽残枝",
+          "id": "22"
+        },
+        "elementId": "34"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 3894,
+            "labels": [
+              "Garbage"
+            ],
+            "properties": {
+              "name": "青草",
+              "id": "3848"
+            },
+            "elementId": "3894"
+          },
+          "relationship": {
+            "identity": 3847,
+            "start": 3894,
+            "end": 34,
+            "type": "BELONGS_TO",
+            "properties": {},
+            "elementId": "3847",
+            "startNodeElementId": "3894",
+            "endNodeElementId": "34"
+          },
+          "end": {
+            "identity": 34,
+            "labels": [
+              "Min_class"
+            ],
+            "properties": {
+              "name": "盆栽残枝",
+              "id": "22"
+            },
+            "elementId": "34"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 399,
+        "labels": [
+          "Garbage"
+        ],
+        "properties": {
+          "name": "洋钉",
+          "id": "353"
+        },
+        "elementId": "399"
+      },
+      "end": {
+        "identity": 34,
+        "labels": [
+          "Min_class"
+        ],
+        "properties": {
+          "name": "盆栽残枝",
+          "id": "22"
+        },
+        "elementId": "34"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 399,
+            "labels": [
+              "Garbage"
+            ],
+            "properties": {
+              "name": "洋钉",
+              "id": "353"
+            },
+            "elementId": "399"
+          },
+          "relationship": {
+            "identity": 364,
+            "start": 399,
+            "end": 34,
+            "type": "BELONGS_TO",
+            "properties": {},
+            "elementId": "364",
+            "startNodeElementId": "399",
+            "endNodeElementId": "34"
+          },
+          "end": {
+            "identity": 34,
+            "labels": [
+              "Min_class"
+            ],
+            "properties": {
+              "name": "盆栽残枝",
+              "id": "22"
+            },
+            "elementId": "34"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 588,
+        "labels": [
+          "Garbage"
+        ],
+        "properties": {
+          "name": "干枯玫瑰花",
+          "id": "542"
+        },
+        "elementId": "588"
+      },
+      "end": {
+        "identity": 34,
+        "labels": [
+          "Min_class"
+        ],
+        "properties": {
+          "name": "盆栽残枝",
+          "id": "22"
+        },
+        "elementId": "34"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 588,
+            "labels": [
+              "Garbage"
+            ],
+            "properties": {
+              "name": "干枯玫瑰花",
+              "id": "542"
+            },
+            "elementId": "588"
+          },
+          "relationship": {
+            "identity": 551,
+            "start": 588,
+            "end": 34,
+            "type": "BELONGS_TO",
+            "properties": {},
+            "elementId": "551",
+            "startNodeElementId": "588",
+            "endNodeElementId": "34"
+          },
+          "end": {
+            "identity": 34,
+            "labels": [
+              "Min_class"
+            ],
+            "properties": {
+              "name": "盆栽残枝",
+              "id": "22"
+            },
+            "elementId": "34"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 982,
+        "labels": [
+          "Garbage"
+        ],
+        "properties": {
+          "name": "芦荟",
+          "id": "936"
+        },
+        "elementId": "982"
+      },
+      "end": {
+        "identity": 34,
+        "labels": [
+          "Min_class"
+        ],
+        "properties": {
+          "name": "盆栽残枝",
+          "id": "22"
+        },
+        "elementId": "34"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 982,
+            "labels": [
+              "Garbage"
+            ],
+            "properties": {
+              "name": "芦荟",
+              "id": "936"
+            },
+            "elementId": "982"
+          },
+          "relationship": {
+            "identity": 938,
+            "start": 982,
+            "end": 34,
+            "type": "BELONGS_TO",
+            "properties": {},
+            "elementId": "938",
+            "startNodeElementId": "982",
+            "endNodeElementId": "34"
+          },
+          "end": {
+            "identity": 34,
+            "labels": [
+              "Min_class"
+            ],
+            "properties": {
+              "name": "盆栽残枝",
+              "id": "22"
+            },
+            "elementId": "34"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 648,
+        "labels": [
+          "Garbage"
+        ],
+        "properties": {
+          "name": "花",
+          "id": "602"
+        },
+        "elementId": "648"
+      },
+      "end": {
+        "identity": 34,
+        "labels": [
+          "Min_class"
+        ],
+        "properties": {
+          "name": "盆栽残枝",
+          "id": "22"
+        },
+        "elementId": "34"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 648,
+            "labels": [
+              "Garbage"
+            ],
+            "properties": {
+              "name": "花",
+              "id": "602"
+            },
+            "elementId": "648"
+          },
+          "relationship": {
+            "identity": 610,
+            "start": 648,
+            "end": 34,
+            "type": "BELONGS_TO",
+            "properties": {},
+            "elementId": "610",
+            "startNodeElementId": "648",
+            "endNodeElementId": "34"
+          },
+          "end": {
+            "identity": 34,
+            "labels": [
+              "Min_class"
+            ],
+            "properties": {
+              "name": "盆栽残枝",
+              "id": "22"
+            },
+            "elementId": "34"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 586,
+        "labels": [
+          "Garbage"
+        ],
+        "properties": {
+          "name": "玫瑰",
+          "id": "540"
+        },
+        "elementId": "586"
+      },
+      "end": {
+        "identity": 34,
+        "labels": [
+          "Min_class"
+        ],
+        "properties": {
+          "name": "盆栽残枝",
+          "id": "22"
+        },
+        "elementId": "34"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 586,
+            "labels": [
+              "Garbage"
+            ],
+            "properties": {
+              "name": "玫瑰",
+              "id": "540"
+            },
+            "elementId": "586"
+          },
+          "relationship": {
+            "identity": 549,
+            "start": 586,
+            "end": 34,
+            "type": "BELONGS_TO",
+            "properties": {},
+            "elementId": "549",
+            "startNodeElementId": "586",
+            "endNodeElementId": "34"
+          },
+          "end": {
+            "identity": 34,
+            "labels": [
+              "Min_class"
+            ],
+            "properties": {
+              "name": "盆栽残枝",
+              "id": "22"
+            },
+            "elementId": "34"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 3970,
+        "labels": [
+          "Garbage"
+        ],
+        "properties": {
+          "name": "家养盆栽",
+          "id": "3924"
+        },
+        "elementId": "3970"
+      },
+      "end": {
+        "identity": 34,
+        "labels": [
+          "Min_class"
+        ],
+        "properties": {
+          "name": "盆栽残枝",
+          "id": "22"
+        },
+        "elementId": "34"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 3970,
+            "labels": [
+              "Garbage"
+            ],
+            "properties": {
+              "name": "家养盆栽",
+              "id": "3924"
+            },
+            "elementId": "3970"
+          },
+          "relationship": {
+            "identity": 3923,
+            "start": 3970,
+            "end": 34,
+            "type": "BELONGS_TO",
+            "properties": {},
+            "elementId": "3923",
+            "startNodeElementId": "3970",
+            "endNodeElementId": "34"
+          },
+          "end": {
+            "identity": 34,
+            "labels": [
+              "Min_class"
+            ],
+            "properties": {
+              "name": "盆栽残枝",
+              "id": "22"
+            },
+            "elementId": "34"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 1555,
+        "labels": [
+          "Garbage"
+        ],
+        "properties": {
+          "name": "文竹",
+          "id": "1509"
+        },
+        "elementId": "1555"
+      },
+      "end": {
+        "identity": 34,
+        "labels": [
+          "Min_class"
+        ],
+        "properties": {
+          "name": "盆栽残枝",
+          "id": "22"
+        },
+        "elementId": "34"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 1555,
+            "labels": [
+              "Garbage"
+            ],
+            "properties": {
+              "name": "文竹",
+              "id": "1509"
+            },
+            "elementId": "1555"
+          },
+          "relationship": {
+            "identity": 1509,
+            "start": 1555,
+            "end": 34,
+            "type": "BELONGS_TO",
+            "properties": {},
+            "elementId": "1509",
+            "startNodeElementId": "1555",
+            "endNodeElementId": "34"
+          },
+          "end": {
+            "identity": 34,
+            "labels": [
+              "Min_class"
+            ],
+            "properties": {
+              "name": "盆栽残枝",
+              "id": "22"
+            },
+            "elementId": "34"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 1824,
+        "labels": [
+          "Garbage"
+        ],
+        "properties": {
+          "name": "树枝",
+          "id": "1778"
+        },
+        "elementId": "1824"
+      },
+      "end": {
+        "identity": 34,
+        "labels": [
+          "Min_class"
+        ],
+        "properties": {
+          "name": "盆栽残枝",
+          "id": "22"
+        },
+        "elementId": "34"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 1824,
+            "labels": [
+              "Garbage"
+            ],
+            "properties": {
+              "name": "树枝",
+              "id": "1778"
+            },
+            "elementId": "1824"
+          },
+          "relationship": {
+            "identity": 1778,
+            "start": 1824,
+            "end": 34,
+            "type": "BELONGS_TO",
+            "properties": {},
+            "elementId": "1778",
+            "startNodeElementId": "1824",
+            "endNodeElementId": "34"
+          },
+          "end": {
+            "identity": 34,
+            "labels": [
+              "Min_class"
+            ],
+            "properties": {
+              "name": "盆栽残枝",
+              "id": "22"
+            },
+            "elementId": "34"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 206,
+        "labels": [
+          "Garbage"
+        ],
+        "properties": {
+          "name": "草",
+          "id": "160"
+        },
+        "elementId": "206"
+      },
+      "end": {
+        "identity": 34,
+        "labels": [
+          "Min_class"
+        ],
+        "properties": {
+          "name": "盆栽残枝",
+          "id": "22"
+        },
+        "elementId": "34"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 206,
+            "labels": [
+              "Garbage"
+            ],
+            "properties": {
+              "name": "草",
+              "id": "160"
+            },
+            "elementId": "206"
+          },
+          "relationship": {
+            "identity": 171,
+            "start": 206,
+            "end": 34,
+            "type": "BELONGS_TO",
+            "properties": {},
+            "elementId": "171",
+            "startNodeElementId": "206",
+            "endNodeElementId": "34"
+          },
+          "end": {
+            "identity": 34,
+            "labels": [
+              "Min_class"
+            ],
+            "properties": {
+              "name": "盆栽残枝",
+              "id": "22"
+            },
+            "elementId": "34"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 2173,
+        "labels": [
+          "Garbage"
+        ],
+        "properties": {
+          "name": "海藻",
+          "id": "2127"
+        },
+        "elementId": "2173"
+      },
+      "end": {
+        "identity": 34,
+        "labels": [
+          "Min_class"
+        ],
+        "properties": {
+          "name": "盆栽残枝",
+          "id": "22"
+        },
+        "elementId": "34"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 2173,
+            "labels": [
+              "Garbage"
+            ],
+            "properties": {
+              "name": "海藻",
+              "id": "2127"
+            },
+            "elementId": "2173"
+          },
+          "relationship": {
+            "identity": 2127,
+            "start": 2173,
+            "end": 34,
+            "type": "BELONGS_TO",
+            "properties": {},
+            "elementId": "2127",
+            "startNodeElementId": "2173",
+            "endNodeElementId": "34"
+          },
+          "end": {
+            "identity": 34,
+            "labels": [
+              "Min_class"
+            ],
+            "properties": {
+              "name": "盆栽残枝",
+              "id": "22"
+            },
+            "elementId": "34"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 2299,
+        "labels": [
+          "Garbage"
+        ],
+        "properties": {
+          "name": "蒲公英",
+          "id": "2253"
+        },
+        "elementId": "2299"
+      },
+      "end": {
+        "identity": 34,
+        "labels": [
+          "Min_class"
+        ],
+        "properties": {
+          "name": "盆栽残枝",
+          "id": "22"
+        },
+        "elementId": "34"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 2299,
+            "labels": [
+              "Garbage"
+            ],
+            "properties": {
+              "name": "蒲公英",
+              "id": "2253"
+            },
+            "elementId": "2299"
+          },
+          "relationship": {
+            "identity": 2253,
+            "start": 2299,
+            "end": 34,
+            "type": "BELONGS_TO",
+            "properties": {},
+            "elementId": "2253",
+            "startNodeElementId": "2299",
+            "endNodeElementId": "34"
+          },
+          "end": {
+            "identity": 34,
+            "labels": [
+              "Min_class"
+            ],
+            "properties": {
+              "name": "盆栽残枝",
+              "id": "22"
+            },
+            "elementId": "34"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 2712,
+        "labels": [
+          "Garbage"
+        ],
+        "properties": {
+          "name": "柳絮",
+          "id": "2666"
+        },
+        "elementId": "2712"
+      },
+      "end": {
+        "identity": 34,
+        "labels": [
+          "Min_class"
+        ],
+        "properties": {
+          "name": "盆栽残枝",
+          "id": "22"
+        },
+        "elementId": "34"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 2712,
+            "labels": [
+              "Garbage"
+            ],
+            "properties": {
+              "name": "柳絮",
+              "id": "2666"
+            },
+            "elementId": "2712"
+          },
+          "relationship": {
+            "identity": 2666,
+            "start": 2712,
+            "end": 34,
+            "type": "BELONGS_TO",
+            "properties": {},
+            "elementId": "2666",
+            "startNodeElementId": "2712",
+            "endNodeElementId": "34"
+          },
+          "end": {
+            "identity": 34,
+            "labels": [
+              "Min_class"
+            ],
+            "properties": {
+              "name": "盆栽残枝",
+              "id": "22"
+            },
+            "elementId": "34"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 2234,
+        "labels": [
+          "Garbage"
+        ],
+        "properties": {
+          "name": "拉菲草",
+          "id": "2188"
+        },
+        "elementId": "2234"
+      },
+      "end": {
+        "identity": 34,
+        "labels": [
+          "Min_class"
+        ],
+        "properties": {
+          "name": "盆栽残枝",
+          "id": "22"
+        },
+        "elementId": "34"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 2234,
+            "labels": [
+              "Garbage"
+            ],
+            "properties": {
+              "name": "拉菲草",
+              "id": "2188"
+            },
+            "elementId": "2234"
+          },
+          "relationship": {
+            "identity": 2188,
+            "start": 2234,
+            "end": 34,
+            "type": "BELONGS_TO",
+            "properties": {},
+            "elementId": "2188",
+            "startNodeElementId": "2234",
+            "endNodeElementId": "34"
+          },
+          "end": {
+            "identity": 34,
+            "labels": [
+              "Min_class"
+            ],
+            "properties": {
+              "name": "盆栽残枝",
+              "id": "22"
+            },
+            "elementId": "34"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 1475,
+        "labels": [
+          "Garbage"
+        ],
+        "properties": {
+          "name": "家庭绿化",
+          "id": "1429"
+        },
+        "elementId": "1475"
+      },
+      "end": {
+        "identity": 34,
+        "labels": [
+          "Min_class"
+        ],
+        "properties": {
+          "name": "盆栽残枝",
+          "id": "22"
+        },
+        "elementId": "34"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 1475,
+            "labels": [
+              "Garbage"
+            ],
+            "properties": {
+              "name": "家庭绿化",
+              "id": "1429"
+            },
+            "elementId": "1475"
+          },
+          "relationship": {
+            "identity": 1429,
+            "start": 1475,
+            "end": 34,
+            "type": "BELONGS_TO",
+            "properties": {},
+            "elementId": "1429",
+            "startNodeElementId": "1475",
+            "endNodeElementId": "34"
+          },
+          "end": {
+            "identity": 34,
+            "labels": [
+              "Min_class"
+            ],
+            "properties": {
+              "name": "盆栽残枝",
+              "id": "22"
+            },
+            "elementId": "34"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 1005,
+        "labels": [
+          "Garbage"
+        ],
+        "properties": {
+          "name": "绿萝",
+          "id": "959"
+        },
+        "elementId": "1005"
+      },
+      "end": {
+        "identity": 34,
+        "labels": [
+          "Min_class"
+        ],
+        "properties": {
+          "name": "盆栽残枝",
+          "id": "22"
+        },
+        "elementId": "34"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 1005,
+            "labels": [
+              "Garbage"
+            ],
+            "properties": {
+              "name": "绿萝",
+              "id": "959"
+            },
+            "elementId": "1005"
+          },
+          "relationship": {
+            "identity": 961,
+            "start": 1005,
+            "end": 34,
+            "type": "BELONGS_TO",
+            "properties": {},
+            "elementId": "961",
+            "startNodeElementId": "1005",
+            "endNodeElementId": "34"
+          },
+          "end": {
+            "identity": 34,
+            "labels": [
+              "Min_class"
+            ],
+            "properties": {
+              "name": "盆栽残枝",
+              "id": "22"
+            },
+            "elementId": "34"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 2340,
+        "labels": [
+          "Garbage"
+        ],
+        "properties": {
+          "name": "鸡头",
+          "id": "2294"
+        },
+        "elementId": "2340"
+      },
+      "end": {
+        "identity": 35,
+        "labels": [
+          "Min_class"
+        ],
+        "properties": {
+          "name": "碎骨物",
+          "id": "23"
+        },
+        "elementId": "35"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 2340,
+            "labels": [
+              "Garbage"
+            ],
+            "properties": {
+              "name": "鸡头",
+              "id": "2294"
+            },
+            "elementId": "2340"
+          },
+          "relationship": {
+            "identity": 2294,
+            "start": 2340,
+            "end": 35,
+            "type": "BELONGS_TO",
+            "properties": {},
+            "elementId": "2294",
+            "startNodeElementId": "2340",
+            "endNodeElementId": "35"
+          },
+          "end": {
+            "identity": 35,
+            "labels": [
+              "Min_class"
+            ],
+            "properties": {
+              "name": "碎骨物",
+              "id": "23"
+            },
+            "elementId": "35"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 2225,
+        "labels": [
+          "Garbage"
+        ],
+        "properties": {
+          "name": "碎骨头",
+          "id": "2179"
+        },
+        "elementId": "2225"
+      },
+      "end": {
+        "identity": 35,
+        "labels": [
+          "Min_class"
+        ],
+        "properties": {
+          "name": "碎骨物",
+          "id": "23"
+        },
+        "elementId": "35"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 2225,
+            "labels": [
+              "Garbage"
+            ],
+            "properties": {
+              "name": "碎骨头",
+              "id": "2179"
+            },
+            "elementId": "2225"
+          },
+          "relationship": {
+            "identity": 2179,
+            "start": 2225,
+            "end": 35,
+            "type": "BELONGS_TO",
+            "properties": {},
+            "elementId": "2179",
+            "startNodeElementId": "2225",
+            "endNodeElementId": "35"
+          },
+          "end": {
+            "identity": 35,
+            "labels": [
+              "Min_class"
+            ],
+            "properties": {
+              "name": "碎骨物",
+              "id": "23"
+            },
+            "elementId": "35"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 1669,
+        "labels": [
+          "Garbage"
+        ],
+        "properties": {
+          "name": "羊骨",
+          "id": "1623"
+        },
+        "elementId": "1669"
+      },
+      "end": {
+        "identity": 35,
+        "labels": [
+          "Min_class"
+        ],
+        "properties": {
+          "name": "碎骨物",
+          "id": "23"
+        },
+        "elementId": "35"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 1669,
+            "labels": [
+              "Garbage"
+            ],
+            "properties": {
+              "name": "羊骨",
+              "id": "1623"
+            },
+            "elementId": "1669"
+          },
+          "relationship": {
+            "identity": 1623,
+            "start": 1669,
+            "end": 35,
+            "type": "BELONGS_TO",
+            "properties": {},
+            "elementId": "1623",
+            "startNodeElementId": "1669",
+            "endNodeElementId": "35"
+          },
+          "end": {
+            "identity": 35,
+            "labels": [
+              "Min_class"
+            ],
+            "properties": {
+              "name": "碎骨物",
+              "id": "23"
+            },
+            "elementId": "35"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 1922,
+        "labels": [
+          "Garbage"
+        ],
+        "properties": {
+          "name": "鸡骨头",
+          "id": "1876"
+        },
+        "elementId": "1922"
+      },
+      "end": {
+        "identity": 35,
+        "labels": [
+          "Min_class"
+        ],
+        "properties": {
+          "name": "碎骨物",
+          "id": "23"
+        },
+        "elementId": "35"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 1922,
+            "labels": [
+              "Garbage"
+            ],
+            "properties": {
+              "name": "鸡骨头",
+              "id": "1876"
+            },
+            "elementId": "1922"
+          },
+          "relationship": {
+            "identity": 1876,
+            "start": 1922,
+            "end": 35,
+            "type": "BELONGS_TO",
+            "properties": {},
+            "elementId": "1876",
+            "startNodeElementId": "1922",
+            "endNodeElementId": "35"
+          },
+          "end": {
+            "identity": 35,
+            "labels": [
+              "Min_class"
+            ],
+            "properties": {
+              "name": "碎骨物",
+              "id": "23"
+            },
+            "elementId": "35"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 2938,
+        "labels": [
+          "Garbage"
+        ],
+        "properties": {
+          "name": "羊肉骨头",
+          "id": "2892"
+        },
+        "elementId": "2938"
+      },
+      "end": {
+        "identity": 35,
+        "labels": [
+          "Min_class"
+        ],
+        "properties": {
+          "name": "碎骨物",
+          "id": "23"
+        },
+        "elementId": "35"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 2938,
+            "labels": [
+              "Garbage"
+            ],
+            "properties": {
+              "name": "羊肉骨头",
+              "id": "2892"
+            },
+            "elementId": "2938"
+          },
+          "relationship": {
+            "identity": 2892,
+            "start": 2938,
+            "end": 35,
+            "type": "BELONGS_TO",
+            "properties": {},
+            "elementId": "2892",
+            "startNodeElementId": "2938",
+            "endNodeElementId": "35"
+          },
+          "end": {
+            "identity": 35,
+            "labels": [
+              "Min_class"
+            ],
+            "properties": {
+              "name": "碎骨物",
+              "id": "23"
+            },
+            "elementId": "35"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 344,
+        "labels": [
+          "Garbage"
+        ],
+        "properties": {
+          "name": "海胆壳",
+          "id": "298"
+        },
+        "elementId": "344"
+      },
+      "end": {
+        "identity": 35,
+        "labels": [
+          "Min_class"
+        ],
+        "properties": {
+          "name": "碎骨物",
+          "id": "23"
+        },
+        "elementId": "35"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 344,
+            "labels": [
+              "Garbage"
+            ],
+            "properties": {
+              "name": "海胆壳",
+              "id": "298"
+            },
+            "elementId": "344"
+          },
+          "relationship": {
+            "identity": 309,
+            "start": 344,
+            "end": 35,
+            "type": "BELONGS_TO",
+            "properties": {},
+            "elementId": "309",
+            "startNodeElementId": "344",
+            "endNodeElementId": "35"
+          },
+          "end": {
+            "identity": 35,
+            "labels": [
+              "Min_class"
+            ],
+            "properties": {
+              "name": "碎骨物",
+              "id": "23"
+            },
+            "elementId": "35"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 2767,
+        "labels": [
+          "Garbage"
+        ],
+        "properties": {
+          "name": "羊大骨",
+          "id": "2721"
+        },
+        "elementId": "2767"
+      },
+      "end": {
+        "identity": 35,
+        "labels": [
+          "Min_class"
+        ],
+        "properties": {
+          "name": "碎骨物",
+          "id": "23"
+        },
+        "elementId": "35"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 2767,
+            "labels": [
+              "Garbage"
+            ],
+            "properties": {
+              "name": "羊大骨",
+              "id": "2721"
+            },
+            "elementId": "2767"
+          },
+          "relationship": {
+            "identity": 2721,
+            "start": 2767,
+            "end": 35,
+            "type": "BELONGS_TO",
+            "properties": {},
+            "elementId": "2721",
+            "startNodeElementId": "2767",
+            "endNodeElementId": "35"
+          },
+          "end": {
+            "identity": 35,
+            "labels": [
+              "Min_class"
+            ],
+            "properties": {
+              "name": "碎骨物",
+              "id": "23"
+            },
+            "elementId": "35"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 900,
+        "labels": [
+          "Garbage"
+        ],
+        "properties": {
+          "name": "肋骨",
+          "id": "854"
+        },
+        "elementId": "900"
+      },
+      "end": {
+        "identity": 35,
+        "labels": [
+          "Min_class"
+        ],
+        "properties": {
+          "name": "碎骨物",
+          "id": "23"
+        },
+        "elementId": "35"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 900,
+            "labels": [
+              "Garbage"
+            ],
+            "properties": {
+              "name": "肋骨",
+              "id": "854"
+            },
+            "elementId": "900"
+          },
+          "relationship": {
+            "identity": 856,
+            "start": 900,
+            "end": 35,
+            "type": "BELONGS_TO",
+            "properties": {},
+            "elementId": "856",
+            "startNodeElementId": "900",
+            "endNodeElementId": "35"
+          },
+          "end": {
+            "identity": 35,
+            "labels": [
+              "Min_class"
+            ],
+            "properties": {
+              "name": "碎骨物",
+              "id": "23"
+            },
+            "elementId": "35"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 1510,
+        "labels": [
+          "Garbage"
+        ],
+        "properties": {
+          "name": "牛蛙骨头",
+          "id": "1464"
+        },
+        "elementId": "1510"
+      },
+      "end": {
+        "identity": 35,
+        "labels": [
+          "Min_class"
+        ],
+        "properties": {
+          "name": "碎骨物",
+          "id": "23"
+        },
+        "elementId": "35"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 1510,
+            "labels": [
+              "Garbage"
+            ],
+            "properties": {
+              "name": "牛蛙骨头",
+              "id": "1464"
+            },
+            "elementId": "1510"
+          },
+          "relationship": {
+            "identity": 1464,
+            "start": 1510,
+            "end": 35,
+            "type": "BELONGS_TO",
+            "properties": {},
+            "elementId": "1464",
+            "startNodeElementId": "1510",
+            "endNodeElementId": "35"
+          },
+          "end": {
+            "identity": 35,
+            "labels": [
+              "Min_class"
+            ],
+            "properties": {
+              "name": "碎骨物",
+              "id": "23"
+            },
+            "elementId": "35"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 960,
+        "labels": [
+          "Garbage"
+        ],
+        "properties": {
+          "name": "鱼鳞",
+          "id": "914"
+        },
+        "elementId": "960"
+      },
+      "end": {
+        "identity": 35,
+        "labels": [
+          "Min_class"
+        ],
+        "properties": {
+          "name": "碎骨物",
+          "id": "23"
+        },
+        "elementId": "35"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 960,
+            "labels": [
+              "Garbage"
+            ],
+            "properties": {
+              "name": "鱼鳞",
+              "id": "914"
+            },
+            "elementId": "960"
+          },
+          "relationship": {
+            "identity": 916,
+            "start": 960,
+            "end": 35,
+            "type": "BELONGS_TO",
+            "properties": {},
+            "elementId": "916",
+            "startNodeElementId": "960",
+            "endNodeElementId": "35"
+          },
+          "end": {
+            "identity": 35,
+            "labels": [
+              "Min_class"
+            ],
+            "properties": {
+              "name": "碎骨物",
+              "id": "23"
+            },
+            "elementId": "35"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 3827,
+        "labels": [
+          "Garbage"
+        ],
+        "properties": {
+          "name": "鸡骨架",
+          "id": "3781"
+        },
+        "elementId": "3827"
+      },
+      "end": {
+        "identity": 35,
+        "labels": [
+          "Min_class"
+        ],
+        "properties": {
+          "name": "碎骨物",
+          "id": "23"
+        },
+        "elementId": "35"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 3827,
+            "labels": [
+              "Garbage"
+            ],
+            "properties": {
+              "name": "鸡骨架",
+              "id": "3781"
+            },
+            "elementId": "3827"
+          },
+          "relationship": {
+            "identity": 3780,
+            "start": 3827,
+            "end": 35,
+            "type": "BELONGS_TO",
+            "properties": {},
+            "elementId": "3780",
+            "startNodeElementId": "3827",
+            "endNodeElementId": "35"
+          },
+          "end": {
+            "identity": 35,
+            "labels": [
+              "Min_class"
+            ],
+            "properties": {
+              "name": "碎骨物",
+              "id": "23"
+            },
+            "elementId": "35"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 2752,
+        "labels": [
+          "Garbage"
+        ],
+        "properties": {
+          "name": "牛骨头",
+          "id": "2706"
+        },
+        "elementId": "2752"
+      },
+      "end": {
+        "identity": 35,
+        "labels": [
+          "Min_class"
+        ],
+        "properties": {
+          "name": "碎骨物",
+          "id": "23"
+        },
+        "elementId": "35"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 2752,
+            "labels": [
+              "Garbage"
+            ],
+            "properties": {
+              "name": "牛骨头",
+              "id": "2706"
+            },
+            "elementId": "2752"
+          },
+          "relationship": {
+            "identity": 2706,
+            "start": 2752,
+            "end": 35,
+            "type": "BELONGS_TO",
+            "properties": {},
+            "elementId": "2706",
+            "startNodeElementId": "2752",
+            "endNodeElementId": "35"
+          },
+          "end": {
+            "identity": 35,
+            "labels": [
+              "Min_class"
+            ],
+            "properties": {
+              "name": "碎骨物",
+              "id": "23"
+            },
+            "elementId": "35"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 1605,
+        "labels": [
+          "Garbage"
+        ],
+        "properties": {
+          "name": "小骨",
+          "id": "1559"
+        },
+        "elementId": "1605"
+      },
+      "end": {
+        "identity": 35,
+        "labels": [
+          "Min_class"
+        ],
+        "properties": {
+          "name": "碎骨物",
+          "id": "23"
+        },
+        "elementId": "35"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 1605,
+            "labels": [
+              "Garbage"
+            ],
+            "properties": {
+              "name": "小骨",
+              "id": "1559"
+            },
+            "elementId": "1605"
+          },
+          "relationship": {
+            "identity": 1559,
+            "start": 1605,
+            "end": 35,
+            "type": "BELONGS_TO",
+            "properties": {},
+            "elementId": "1559",
+            "startNodeElementId": "1605",
+            "endNodeElementId": "35"
+          },
+          "end": {
+            "identity": 35,
+            "labels": [
+              "Min_class"
+            ],
+            "properties": {
+              "name": "碎骨物",
+              "id": "23"
+            },
+            "elementId": "35"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 2054,
+        "labels": [
+          "Garbage"
+        ],
+        "properties": {
+          "name": "猪蹄骨",
+          "id": "2008"
+        },
+        "elementId": "2054"
+      },
+      "end": {
+        "identity": 35,
+        "labels": [
+          "Min_class"
+        ],
+        "properties": {
+          "name": "碎骨物",
+          "id": "23"
+        },
+        "elementId": "35"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 2054,
+            "labels": [
+              "Garbage"
+            ],
+            "properties": {
+              "name": "猪蹄骨",
+              "id": "2008"
+            },
+            "elementId": "2054"
+          },
+          "relationship": {
+            "identity": 2008,
+            "start": 2054,
+            "end": 35,
+            "type": "BELONGS_TO",
+            "properties": {},
+            "elementId": "2008",
+            "startNodeElementId": "2054",
+            "endNodeElementId": "35"
+          },
+          "end": {
+            "identity": 35,
+            "labels": [
+              "Min_class"
+            ],
+            "properties": {
+              "name": "碎骨物",
+              "id": "23"
+            },
+            "elementId": "35"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 1923,
+        "labels": [
+          "Garbage"
+        ],
+        "properties": {
+          "name": "鸭骨头",
+          "id": "1877"
+        },
+        "elementId": "1923"
+      },
+      "end": {
+        "identity": 35,
+        "labels": [
+          "Min_class"
+        ],
+        "properties": {
+          "name": "碎骨物",
+          "id": "23"
+        },
+        "elementId": "35"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 1923,
+            "labels": [
+              "Garbage"
+            ],
+            "properties": {
+              "name": "鸭骨头",
+              "id": "1877"
+            },
+            "elementId": "1923"
+          },
+          "relationship": {
+            "identity": 1877,
+            "start": 1923,
+            "end": 35,
+            "type": "BELONGS_TO",
+            "properties": {},
+            "elementId": "1877",
+            "startNodeElementId": "1923",
+            "endNodeElementId": "35"
+          },
+          "end": {
+            "identity": 35,
+            "labels": [
+              "Min_class"
+            ],
+            "properties": {
+              "name": "碎骨物",
+              "id": "23"
+            },
+            "elementId": "35"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 1652,
+        "labels": [
+          "Garbage"
+        ],
+        "properties": {
+          "name": "鸭骨",
+          "id": "1606"
+        },
+        "elementId": "1652"
+      },
+      "end": {
+        "identity": 35,
+        "labels": [
+          "Min_class"
+        ],
+        "properties": {
+          "name": "碎骨物",
+          "id": "23"
+        },
+        "elementId": "35"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 1652,
+            "labels": [
+              "Garbage"
+            ],
+            "properties": {
+              "name": "鸭骨",
+              "id": "1606"
+            },
+            "elementId": "1652"
+          },
+          "relationship": {
+            "identity": 1606,
+            "start": 1652,
+            "end": 35,
+            "type": "BELONGS_TO",
+            "properties": {},
+            "elementId": "1606",
+            "startNodeElementId": "1652",
+            "endNodeElementId": "35"
+          },
+          "end": {
+            "identity": 35,
+            "labels": [
+              "Min_class"
+            ],
+            "properties": {
+              "name": "碎骨物",
+              "id": "23"
+            },
+            "elementId": "35"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 1724,
+        "labels": [
+          "Garbage"
+        ],
+        "properties": {
+          "name": "硬贝壳",
+          "id": "1678"
+        },
+        "elementId": "1724"
+      },
+      "end": {
+        "identity": 35,
+        "labels": [
+          "Min_class"
+        ],
+        "properties": {
+          "name": "碎骨物",
+          "id": "23"
+        },
+        "elementId": "35"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 1724,
+            "labels": [
+              "Garbage"
+            ],
+            "properties": {
+              "name": "硬贝壳",
+              "id": "1678"
+            },
+            "elementId": "1724"
+          },
+          "relationship": {
+            "identity": 1678,
+            "start": 1724,
+            "end": 35,
+            "type": "BELONGS_TO",
+            "properties": {},
+            "elementId": "1678",
+            "startNodeElementId": "1724",
+            "endNodeElementId": "35"
+          },
+          "end": {
+            "identity": 35,
+            "labels": [
+              "Min_class"
+            ],
+            "properties": {
+              "name": "碎骨物",
+              "id": "23"
+            },
+            "elementId": "35"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 1330,
+        "labels": [
+          "Garbage"
+        ],
+        "properties": {
+          "name": "使用过的猫砂",
+          "id": "1284"
+        },
+        "elementId": "1330"
+      },
+      "end": {
+        "identity": 36,
+        "labels": [
+          "Min_class"
+        ],
+        "properties": {
+          "name": "食物残渣",
+          "id": "24"
+        },
+        "elementId": "36"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 1330,
+            "labels": [
+              "Garbage"
+            ],
+            "properties": {
+              "name": "使用过的猫砂",
+              "id": "1284"
+            },
+            "elementId": "1330"
+          },
+          "relationship": {
+            "identity": 1286,
+            "start": 1330,
+            "end": 36,
+            "type": "BELONGS_TO",
+            "properties": {},
+            "elementId": "1286",
+            "startNodeElementId": "1330",
+            "endNodeElementId": "36"
+          },
+          "end": {
+            "identity": 36,
+            "labels": [
+              "Min_class"
+            ],
+            "properties": {
+              "name": "食物残渣",
+              "id": "24"
+            },
+            "elementId": "36"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 231,
+        "labels": [
+          "Garbage"
+        ],
+        "properties": {
+          "name": "平常喝的茶叶",
+          "id": "185"
+        },
+        "elementId": "231"
+      },
+      "end": {
+        "identity": 36,
+        "labels": [
+          "Min_class"
+        ],
+        "properties": {
+          "name": "食物残渣",
+          "id": "24"
+        },
+        "elementId": "36"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 231,
+            "labels": [
+              "Garbage"
+            ],
+            "properties": {
+              "name": "平常喝的茶叶",
+              "id": "185"
+            },
+            "elementId": "231"
+          },
+          "relationship": {
+            "identity": 196,
+            "start": 231,
+            "end": 36,
+            "type": "BELONGS_TO",
+            "properties": {},
+            "elementId": "196",
+            "startNodeElementId": "231",
+            "endNodeElementId": "36"
+          },
+          "end": {
+            "identity": 36,
+            "labels": [
+              "Min_class"
+            ],
+            "properties": {
+              "name": "食物残渣",
+              "id": "24"
+            },
+            "elementId": "36"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 382,
+        "labels": [
+          "Garbage"
+        ],
+        "properties": {
+          "name": "淀粉",
+          "id": "336"
+        },
+        "elementId": "382"
+      },
+      "end": {
+        "identity": 36,
+        "labels": [
+          "Min_class"
+        ],
+        "properties": {
+          "name": "食物残渣",
+          "id": "24"
+        },
+        "elementId": "36"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 382,
+            "labels": [
+              "Garbage"
+            ],
+            "properties": {
+              "name": "淀粉",
+              "id": "336"
+            },
+            "elementId": "382"
+          },
+          "relationship": {
+            "identity": 347,
+            "start": 382,
+            "end": 36,
+            "type": "BELONGS_TO",
+            "properties": {},
+            "elementId": "347",
+            "startNodeElementId": "382",
+            "endNodeElementId": "36"
+          },
+          "end": {
+            "identity": 36,
+            "labels": [
+              "Min_class"
+            ],
+            "properties": {
+              "name": "食物残渣",
+              "id": "24"
+            },
+            "elementId": "36"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 1288,
+        "labels": [
+          "Garbage"
+        ],
+        "properties": {
+          "name": "猫砂",
+          "id": "1242"
+        },
+        "elementId": "1288"
+      },
+      "end": {
+        "identity": 36,
+        "labels": [
+          "Min_class"
+        ],
+        "properties": {
+          "name": "食物残渣",
+          "id": "24"
+        },
+        "elementId": "36"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 1288,
+            "labels": [
+              "Garbage"
+            ],
+            "properties": {
+              "name": "猫砂",
+              "id": "1242"
+            },
+            "elementId": "1288"
+          },
+          "relationship": {
+            "identity": 1244,
+            "start": 1288,
+            "end": 36,
+            "type": "BELONGS_TO",
+            "properties": {},
+            "elementId": "1244",
+            "startNodeElementId": "1288",
+            "endNodeElementId": "36"
+          },
+          "end": {
+            "identity": 36,
+            "labels": [
+              "Min_class"
+            ],
+            "properties": {
+              "name": "食物残渣",
+              "id": "24"
+            },
+            "elementId": "36"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 2078,
+        "labels": [
+          "Garbage"
+        ],
+        "properties": {
+          "name": "孜然粉",
+          "id": "2032"
+        },
+        "elementId": "2078"
+      },
+      "end": {
+        "identity": 36,
+        "labels": [
+          "Min_class"
+        ],
+        "properties": {
+          "name": "食物残渣",
+          "id": "24"
+        },
+        "elementId": "36"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 2078,
+            "labels": [
+              "Garbage"
+            ],
+            "properties": {
+              "name": "孜然粉",
+              "id": "2032"
+            },
+            "elementId": "2078"
+          },
+          "relationship": {
+            "identity": 2032,
+            "start": 2078,
+            "end": 36,
+            "type": "BELONGS_TO",
+            "properties": {},
+            "elementId": "2032",
+            "startNodeElementId": "2078",
+            "endNodeElementId": "36"
+          },
+          "end": {
+            "identity": 36,
+            "labels": [
+              "Min_class"
+            ],
+            "properties": {
+              "name": "食物残渣",
+              "id": "24"
+            },
+            "elementId": "36"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 1783,
+        "labels": [
+          "Garbage"
+        ],
+        "properties": {
+          "name": "茶渣",
+          "id": "1737"
+        },
+        "elementId": "1783"
+      },
+      "end": {
+        "identity": 36,
+        "labels": [
+          "Min_class"
+        ],
+        "properties": {
+          "name": "食物残渣",
+          "id": "24"
+        },
+        "elementId": "36"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 1783,
+            "labels": [
+              "Garbage"
+            ],
+            "properties": {
+              "name": "茶渣",
+              "id": "1737"
+            },
+            "elementId": "1783"
+          },
+          "relationship": {
+            "identity": 1737,
+            "start": 1783,
+            "end": 36,
+            "type": "BELONGS_TO",
+            "properties": {},
+            "elementId": "1737",
+            "startNodeElementId": "1783",
+            "endNodeElementId": "36"
+          },
+          "end": {
+            "identity": 36,
+            "labels": [
+              "Min_class"
+            ],
+            "properties": {
+              "name": "食物残渣",
+              "id": "24"
+            },
+            "elementId": "36"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 2192,
+        "labels": [
+          "Garbage"
+        ],
+        "properties": {
+          "name": "花茶渣",
+          "id": "2146"
+        },
+        "elementId": "2192"
+      },
+      "end": {
+        "identity": 36,
+        "labels": [
+          "Min_class"
+        ],
+        "properties": {
+          "name": "食物残渣",
+          "id": "24"
+        },
+        "elementId": "36"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 2192,
+            "labels": [
+              "Garbage"
+            ],
+            "properties": {
+              "name": "花茶渣",
+              "id": "2146"
+            },
+            "elementId": "2192"
+          },
+          "relationship": {
+            "identity": 2146,
+            "start": 2192,
+            "end": 36,
+            "type": "BELONGS_TO",
+            "properties": {},
+            "elementId": "2146",
+            "startNodeElementId": "2192",
+            "endNodeElementId": "36"
+          },
+          "end": {
+            "identity": 36,
+            "labels": [
+              "Min_class"
+            ],
+            "properties": {
+              "name": "食物残渣",
+              "id": "24"
+            },
+            "elementId": "36"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 1389,
+        "labels": [
+          "Garbage"
+        ],
+        "properties": {
+          "name": "松木猫砂",
+          "id": "1343"
+        },
+        "elementId": "1389"
+      },
+      "end": {
+        "identity": 36,
+        "labels": [
+          "Min_class"
+        ],
+        "properties": {
+          "name": "食物残渣",
+          "id": "24"
+        },
+        "elementId": "36"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 1389,
+            "labels": [
+              "Garbage"
+            ],
+            "properties": {
+              "name": "松木猫砂",
+              "id": "1343"
+            },
+            "elementId": "1389"
+          },
+          "relationship": {
+            "identity": 1344,
+            "start": 1389,
+            "end": 36,
+            "type": "BELONGS_TO",
+            "properties": {},
+            "elementId": "1344",
+            "startNodeElementId": "1389",
+            "endNodeElementId": "36"
+          },
+          "end": {
+            "identity": 36,
+            "labels": [
+              "Min_class"
+            ],
+            "properties": {
+              "name": "食物残渣",
+              "id": "24"
+            },
+            "elementId": "36"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 2295,
+        "labels": [
+          "Garbage"
+        ],
+        "properties": {
+          "name": "麻辣香锅残渣",
+          "id": "2249"
+        },
+        "elementId": "2295"
+      },
+      "end": {
+        "identity": 36,
+        "labels": [
+          "Min_class"
+        ],
+        "properties": {
+          "name": "食物残渣",
+          "id": "24"
+        },
+        "elementId": "36"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 2295,
+            "labels": [
+              "Garbage"
+            ],
+            "properties": {
+              "name": "麻辣香锅残渣",
+              "id": "2249"
+            },
+            "elementId": "2295"
+          },
+          "relationship": {
+            "identity": 2249,
+            "start": 2295,
+            "end": 36,
+            "type": "BELONGS_TO",
+            "properties": {},
+            "elementId": "2249",
+            "startNodeElementId": "2295",
+            "endNodeElementId": "36"
+          },
+          "end": {
+            "identity": 36,
+            "labels": [
+              "Min_class"
+            ],
+            "properties": {
+              "name": "食物残渣",
+              "id": "24"
+            },
+            "elementId": "36"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 2182,
+        "labels": [
+          "Garbage"
+        ],
+        "properties": {
+          "name": "面包屑",
+          "id": "2136"
+        },
+        "elementId": "2182"
+      },
+      "end": {
+        "identity": 36,
+        "labels": [
+          "Min_class"
+        ],
+        "properties": {
+          "name": "食物残渣",
+          "id": "24"
+        },
+        "elementId": "36"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 2182,
+            "labels": [
+              "Garbage"
+            ],
+            "properties": {
+              "name": "面包屑",
+              "id": "2136"
+            },
+            "elementId": "2182"
+          },
+          "relationship": {
+            "identity": 2136,
+            "start": 2182,
+            "end": 36,
+            "type": "BELONGS_TO",
+            "properties": {},
+            "elementId": "2136",
+            "startNodeElementId": "2182",
+            "endNodeElementId": "36"
+          },
+          "end": {
+            "identity": 36,
+            "labels": [
+              "Min_class"
+            ],
+            "properties": {
+              "name": "食物残渣",
+              "id": "24"
+            },
+            "elementId": "36"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 3889,
+        "labels": [
+          "Garbage"
+        ],
+        "properties": {
+          "name": "过期茶叶",
+          "id": "3843"
+        },
+        "elementId": "3889"
+      },
+      "end": {
+        "identity": 36,
+        "labels": [
+          "Min_class"
+        ],
+        "properties": {
+          "name": "食物残渣",
+          "id": "24"
+        },
+        "elementId": "36"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 3889,
+            "labels": [
+              "Garbage"
+            ],
+            "properties": {
+              "name": "过期茶叶",
+              "id": "3843"
+            },
+            "elementId": "3889"
+          },
+          "relationship": {
+            "identity": 3842,
+            "start": 3889,
+            "end": 36,
+            "type": "BELONGS_TO",
+            "properties": {},
+            "elementId": "3842",
+            "startNodeElementId": "3889",
+            "endNodeElementId": "36"
+          },
+          "end": {
+            "identity": 36,
+            "labels": [
+              "Min_class"
+            ],
+            "properties": {
+              "name": "食物残渣",
+              "id": "24"
+            },
+            "elementId": "36"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 2027,
+        "labels": [
+          "Garbage"
+        ],
+        "properties": {
+          "name": "结团猫砂",
+          "id": "1981"
+        },
+        "elementId": "2027"
+      },
+      "end": {
+        "identity": 36,
+        "labels": [
+          "Min_class"
+        ],
+        "properties": {
+          "name": "食物残渣",
+          "id": "24"
+        },
+        "elementId": "36"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 2027,
+            "labels": [
+              "Garbage"
+            ],
+            "properties": {
+              "name": "结团猫砂",
+              "id": "1981"
+            },
+            "elementId": "2027"
+          },
+          "relationship": {
+            "identity": 1981,
+            "start": 2027,
+            "end": 36,
+            "type": "BELONGS_TO",
+            "properties": {},
+            "elementId": "1981",
+            "startNodeElementId": "2027",
+            "endNodeElementId": "36"
+          },
+          "end": {
+            "identity": 36,
+            "labels": [
+              "Min_class"
+            ],
+            "properties": {
+              "name": "食物残渣",
+              "id": "24"
+            },
+            "elementId": "36"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 1942,
+        "labels": [
+          "Garbage"
+        ],
+        "properties": {
+          "name": "中药渣",
+          "id": "1896"
+        },
+        "elementId": "1942"
+      },
+      "end": {
+        "identity": 36,
+        "labels": [
+          "Min_class"
+        ],
+        "properties": {
+          "name": "食物残渣",
+          "id": "24"
+        },
+        "elementId": "36"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 1942,
+            "labels": [
+              "Garbage"
+            ],
+            "properties": {
+              "name": "中药渣",
+              "id": "1896"
+            },
+            "elementId": "1942"
+          },
+          "relationship": {
+            "identity": 1896,
+            "start": 1942,
+            "end": 36,
+            "type": "BELONGS_TO",
+            "properties": {},
+            "elementId": "1896",
+            "startNodeElementId": "1942",
+            "endNodeElementId": "36"
+          },
+          "end": {
+            "identity": 36,
+            "labels": [
+              "Min_class"
+            ],
+            "properties": {
+              "name": "食物残渣",
+              "id": "24"
+            },
+            "elementId": "36"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 610,
+        "labels": [
+          "Garbage"
+        ],
+        "properties": {
+          "name": "喝过的茶叶",
+          "id": "564"
+        },
+        "elementId": "610"
+      },
+      "end": {
+        "identity": 36,
+        "labels": [
+          "Min_class"
+        ],
+        "properties": {
+          "name": "食物残渣",
+          "id": "24"
+        },
+        "elementId": "36"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 610,
+            "labels": [
+              "Garbage"
+            ],
+            "properties": {
+              "name": "喝过的茶叶",
+              "id": "564"
+            },
+            "elementId": "610"
+          },
+          "relationship": {
+            "identity": 572,
+            "start": 610,
+            "end": 36,
+            "type": "BELONGS_TO",
+            "properties": {},
+            "elementId": "572",
+            "startNodeElementId": "610",
+            "endNodeElementId": "36"
+          },
+          "end": {
+            "identity": 36,
+            "labels": [
+              "Min_class"
+            ],
+            "properties": {
+              "name": "食物残渣",
+              "id": "24"
+            },
+            "elementId": "36"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 2167,
+        "labels": [
+          "Garbage"
+        ],
+        "properties": {
+          "name": "茶叶",
+          "id": "2121"
+        },
+        "elementId": "2167"
+      },
+      "end": {
+        "identity": 36,
+        "labels": [
+          "Min_class"
+        ],
+        "properties": {
+          "name": "食物残渣",
+          "id": "24"
+        },
+        "elementId": "36"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 2167,
+            "labels": [
+              "Garbage"
+            ],
+            "properties": {
+              "name": "茶叶",
+              "id": "2121"
+            },
+            "elementId": "2167"
+          },
+          "relationship": {
+            "identity": 2121,
+            "start": 2167,
+            "end": 36,
+            "type": "BELONGS_TO",
+            "properties": {},
+            "elementId": "2121",
+            "startNodeElementId": "2167",
+            "endNodeElementId": "36"
+          },
+          "end": {
+            "identity": 36,
+            "labels": [
+              "Min_class"
+            ],
+            "properties": {
+              "name": "食物残渣",
+              "id": "24"
+            },
+            "elementId": "36"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 1995,
+        "labels": [
+          "Garbage"
+        ],
+        "properties": {
+          "name": "包裹着猫屎的豆腐猫砂",
+          "id": "1949"
+        },
+        "elementId": "1995"
+      },
+      "end": {
+        "identity": 36,
+        "labels": [
+          "Min_class"
+        ],
+        "properties": {
+          "name": "食物残渣",
+          "id": "24"
+        },
+        "elementId": "36"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 1995,
+            "labels": [
+              "Garbage"
+            ],
+            "properties": {
+              "name": "包裹着猫屎的豆腐猫砂",
+              "id": "1949"
+            },
+            "elementId": "1995"
+          },
+          "relationship": {
+            "identity": 1949,
+            "start": 1995,
+            "end": 36,
+            "type": "BELONGS_TO",
+            "properties": {},
+            "elementId": "1949",
+            "startNodeElementId": "1995",
+            "endNodeElementId": "36"
+          },
+          "end": {
+            "identity": 36,
+            "labels": [
+              "Min_class"
+            ],
+            "properties": {
+              "name": "食物残渣",
+              "id": "24"
+            },
+            "elementId": "36"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 791,
+        "labels": [
+          "Garbage"
+        ],
+        "properties": {
+          "name": "香烟灰烬",
+          "id": "745"
+        },
+        "elementId": "791"
+      },
+      "end": {
+        "identity": 36,
+        "labels": [
+          "Min_class"
+        ],
+        "properties": {
+          "name": "食物残渣",
+          "id": "24"
+        },
+        "elementId": "36"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 791,
+            "labels": [
+              "Garbage"
+            ],
+            "properties": {
+              "name": "香烟灰烬",
+              "id": "745"
+            },
+            "elementId": "791"
+          },
+          "relationship": {
+            "identity": 747,
+            "start": 791,
+            "end": 36,
+            "type": "BELONGS_TO",
+            "properties": {},
+            "elementId": "747",
+            "startNodeElementId": "791",
+            "endNodeElementId": "36"
+          },
+          "end": {
+            "identity": 36,
+            "labels": [
+              "Min_class"
+            ],
+            "properties": {
+              "name": "食物残渣",
+              "id": "24"
+            },
+            "elementId": "36"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 2309,
+        "labels": [
+          "Garbage"
+        ],
+        "properties": {
+          "name": "粗盐",
+          "id": "2263"
+        },
+        "elementId": "2309"
+      },
+      "end": {
+        "identity": 36,
+        "labels": [
+          "Min_class"
+        ],
+        "properties": {
+          "name": "食物残渣",
+          "id": "24"
+        },
+        "elementId": "36"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 2309,
+            "labels": [
+              "Garbage"
+            ],
+            "properties": {
+              "name": "粗盐",
+              "id": "2263"
+            },
+            "elementId": "2309"
+          },
+          "relationship": {
+            "identity": 2263,
+            "start": 2309,
+            "end": 36,
+            "type": "BELONGS_TO",
+            "properties": {},
+            "elementId": "2263",
+            "startNodeElementId": "2309",
+            "endNodeElementId": "36"
+          },
+          "end": {
+            "identity": 36,
+            "labels": [
+              "Min_class"
+            ],
+            "properties": {
+              "name": "食物残渣",
+              "id": "24"
+            },
+            "elementId": "36"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 643,
+        "labels": [
+          "Garbage"
+        ],
+        "properties": {
+          "name": "胡子",
+          "id": "597"
+        },
+        "elementId": "643"
+      },
+      "end": {
+        "identity": 53,
+        "labels": [
+          "Min_class"
+        ],
+        "properties": {
+          "name": "动物尸体类",
+          "id": "41"
+        },
+        "elementId": "53"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 643,
+            "labels": [
+              "Garbage"
+            ],
+            "properties": {
+              "name": "胡子",
+              "id": "597"
+            },
+            "elementId": "643"
+          },
+          "relationship": {
+            "identity": 605,
+            "start": 643,
+            "end": 53,
+            "type": "BELONGS_TO",
+            "properties": {},
+            "elementId": "605",
+            "startNodeElementId": "643",
+            "endNodeElementId": "53"
+          },
+          "end": {
+            "identity": 53,
+            "labels": [
+              "Min_class"
+            ],
+            "properties": {
+              "name": "动物尸体类",
+              "id": "41"
+            },
+            "elementId": "53"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 626,
+        "labels": [
+          "Garbage"
+        ],
+        "properties": {
+          "name": "黑猪",
+          "id": "580"
+        },
+        "elementId": "626"
+      },
+      "end": {
+        "identity": 53,
+        "labels": [
+          "Min_class"
+        ],
+        "properties": {
+          "name": "动物尸体类",
+          "id": "41"
+        },
+        "elementId": "53"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 626,
+            "labels": [
+              "Garbage"
+            ],
+            "properties": {
+              "name": "黑猪",
+              "id": "580"
+            },
+            "elementId": "626"
+          },
+          "relationship": {
+            "identity": 588,
+            "start": 626,
+            "end": 53,
+            "type": "BELONGS_TO",
+            "properties": {},
+            "elementId": "588",
+            "startNodeElementId": "626",
+            "endNodeElementId": "53"
+          },
+          "end": {
+            "identity": 53,
+            "labels": [
+              "Min_class"
+            ],
+            "properties": {
+              "name": "动物尸体类",
+              "id": "41"
+            },
+            "elementId": "53"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 722,
+        "labels": [
+          "Garbage"
+        ],
+        "properties": {
+          "name": "假牙",
+          "id": "676"
+        },
+        "elementId": "722"
+      },
+      "end": {
+        "identity": 53,
+        "labels": [
+          "Min_class"
+        ],
+        "properties": {
+          "name": "动物尸体类",
+          "id": "41"
+        },
+        "elementId": "53"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 722,
+            "labels": [
+              "Garbage"
+            ],
+            "properties": {
+              "name": "假牙",
+              "id": "676"
+            },
+            "elementId": "722"
+          },
+          "relationship": {
+            "identity": 679,
+            "start": 722,
+            "end": 53,
+            "type": "BELONGS_TO",
+            "properties": {},
+            "elementId": "679",
+            "startNodeElementId": "722",
+            "endNodeElementId": "53"
+          },
+          "end": {
+            "identity": 53,
+            "labels": [
+              "Min_class"
+            ],
+            "properties": {
+              "name": "动物尸体类",
+              "id": "41"
+            },
+            "elementId": "53"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 2916,
+        "labels": [
+          "Garbage"
+        ],
+        "properties": {
+          "name": "兔毛",
+          "id": "2870"
+        },
+        "elementId": "2916"
+      },
+      "end": {
+        "identity": 53,
+        "labels": [
+          "Min_class"
+        ],
+        "properties": {
+          "name": "动物尸体类",
+          "id": "41"
+        },
+        "elementId": "53"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 2916,
+            "labels": [
+              "Garbage"
+            ],
+            "properties": {
+              "name": "兔毛",
+              "id": "2870"
+            },
+            "elementId": "2916"
+          },
+          "relationship": {
+            "identity": 2870,
+            "start": 2916,
+            "end": 53,
+            "type": "BELONGS_TO",
+            "properties": {},
+            "elementId": "2870",
+            "startNodeElementId": "2916",
+            "endNodeElementId": "53"
+          },
+          "end": {
+            "identity": 53,
+            "labels": [
+              "Min_class"
+            ],
+            "properties": {
+              "name": "动物尸体类",
+              "id": "41"
+            },
+            "elementId": "53"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 695,
+        "labels": [
+          "Garbage"
+        ],
+        "properties": {
+          "name": "鸡",
+          "id": "649"
+        },
+        "elementId": "695"
+      },
+      "end": {
+        "identity": 53,
+        "labels": [
+          "Min_class"
+        ],
+        "properties": {
+          "name": "动物尸体类",
+          "id": "41"
+        },
+        "elementId": "53"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 695,
+            "labels": [
+              "Garbage"
+            ],
+            "properties": {
+              "name": "鸡",
+              "id": "649"
+            },
+            "elementId": "695"
+          },
+          "relationship": {
+            "identity": 652,
+            "start": 695,
+            "end": 53,
+            "type": "BELONGS_TO",
+            "properties": {},
+            "elementId": "652",
+            "startNodeElementId": "695",
+            "endNodeElementId": "53"
+          },
+          "end": {
+            "identity": 53,
+            "labels": [
+              "Min_class"
+            ],
+            "properties": {
+              "name": "动物尸体类",
+              "id": "41"
+            },
+            "elementId": "53"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 763,
+        "labels": [
+          "Garbage"
+        ],
+        "properties": {
+          "name": "脚皮",
+          "id": "717"
+        },
+        "elementId": "763"
+      },
+      "end": {
+        "identity": 53,
+        "labels": [
+          "Min_class"
+        ],
+        "properties": {
+          "name": "动物尸体类",
+          "id": "41"
+        },
+        "elementId": "53"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 763,
+            "labels": [
+              "Garbage"
+            ],
+            "properties": {
+              "name": "脚皮",
+              "id": "717"
+            },
+            "elementId": "763"
+          },
+          "relationship": {
+            "identity": 719,
+            "start": 763,
+            "end": 53,
+            "type": "BELONGS_TO",
+            "properties": {},
+            "elementId": "719",
+            "startNodeElementId": "763",
+            "endNodeElementId": "53"
+          },
+          "end": {
+            "identity": 53,
+            "labels": [
+              "Min_class"
+            ],
+            "properties": {
+              "name": "动物尸体类",
+              "id": "41"
+            },
+            "elementId": "53"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 1034,
+        "labels": [
+          "Garbage"
+        ],
+        "properties": {
+          "name": "狗毛",
+          "id": "988"
+        },
+        "elementId": "1034"
+      },
+      "end": {
+        "identity": 53,
+        "labels": [
+          "Min_class"
+        ],
+        "properties": {
+          "name": "动物尸体类",
+          "id": "41"
+        },
+        "elementId": "53"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 1034,
+            "labels": [
+              "Garbage"
+            ],
+            "properties": {
+              "name": "狗毛",
+              "id": "988"
+            },
+            "elementId": "1034"
+          },
+          "relationship": {
+            "identity": 990,
+            "start": 1034,
+            "end": 53,
+            "type": "BELONGS_TO",
+            "properties": {},
+            "elementId": "990",
+            "startNodeElementId": "1034",
+            "endNodeElementId": "53"
+          },
+          "end": {
+            "identity": 53,
+            "labels": [
+              "Min_class"
+            ],
+            "properties": {
+              "name": "动物尸体类",
+              "id": "41"
+            },
+            "elementId": "53"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 2678,
+        "labels": [
+          "Garbage"
+        ],
+        "properties": {
+          "name": "鸡毛",
+          "id": "2632"
+        },
+        "elementId": "2678"
+      },
+      "end": {
+        "identity": 53,
+        "labels": [
+          "Min_class"
+        ],
+        "properties": {
+          "name": "动物尸体类",
+          "id": "41"
+        },
+        "elementId": "53"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 2678,
+            "labels": [
+              "Garbage"
+            ],
+            "properties": {
+              "name": "鸡毛",
+              "id": "2632"
+            },
+            "elementId": "2678"
+          },
+          "relationship": {
+            "identity": 2632,
+            "start": 2678,
+            "end": 53,
+            "type": "BELONGS_TO",
+            "properties": {},
+            "elementId": "2632",
+            "startNodeElementId": "2678",
+            "endNodeElementId": "53"
+          },
+          "end": {
+            "identity": 53,
+            "labels": [
+              "Min_class"
+            ],
+            "properties": {
+              "name": "动物尸体类",
+              "id": "41"
+            },
+            "elementId": "53"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 776,
+        "labels": [
+          "Garbage"
+        ],
+        "properties": {
+          "name": "假睫毛",
+          "id": "730"
+        },
+        "elementId": "776"
+      },
+      "end": {
+        "identity": 53,
+        "labels": [
+          "Min_class"
+        ],
+        "properties": {
+          "name": "动物尸体类",
+          "id": "41"
+        },
+        "elementId": "53"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 776,
+            "labels": [
+              "Garbage"
+            ],
+            "properties": {
+              "name": "假睫毛",
+              "id": "730"
+            },
+            "elementId": "776"
+          },
+          "relationship": {
+            "identity": 732,
+            "start": 776,
+            "end": 53,
+            "type": "BELONGS_TO",
+            "properties": {},
+            "elementId": "732",
+            "startNodeElementId": "776",
+            "endNodeElementId": "53"
+          },
+          "end": {
+            "identity": 53,
+            "labels": [
+              "Min_class"
+            ],
+            "properties": {
+              "name": "动物尸体类",
+              "id": "41"
+            },
+            "elementId": "53"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 1557,
+        "labels": [
+          "Garbage"
+        ],
+        "properties": {
+          "name": "蜗牛壳",
+          "id": "1511"
+        },
+        "elementId": "1557"
+      },
+      "end": {
+        "identity": 53,
+        "labels": [
+          "Min_class"
+        ],
+        "properties": {
+          "name": "动物尸体类",
+          "id": "41"
+        },
+        "elementId": "53"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 1557,
+            "labels": [
+              "Garbage"
+            ],
+            "properties": {
+              "name": "蜗牛壳",
+              "id": "1511"
+            },
+            "elementId": "1557"
+          },
+          "relationship": {
+            "identity": 1511,
+            "start": 1557,
+            "end": 53,
+            "type": "BELONGS_TO",
+            "properties": {},
+            "elementId": "1511",
+            "startNodeElementId": "1557",
+            "endNodeElementId": "53"
+          },
+          "end": {
+            "identity": 53,
+            "labels": [
+              "Min_class"
+            ],
+            "properties": {
+              "name": "动物尸体类",
+              "id": "41"
+            },
+            "elementId": "53"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 870,
+        "labels": [
+          "Garbage"
+        ],
+        "properties": {
+          "name": "死昆虫",
+          "id": "824"
+        },
+        "elementId": "870"
+      },
+      "end": {
+        "identity": 53,
+        "labels": [
+          "Min_class"
+        ],
+        "properties": {
+          "name": "动物尸体类",
+          "id": "41"
+        },
+        "elementId": "53"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 870,
+            "labels": [
+              "Garbage"
+            ],
+            "properties": {
+              "name": "死昆虫",
+              "id": "824"
+            },
+            "elementId": "870"
+          },
+          "relationship": {
+            "identity": 826,
+            "start": 870,
+            "end": 53,
+            "type": "BELONGS_TO",
+            "properties": {},
+            "elementId": "826",
+            "startNodeElementId": "870",
+            "endNodeElementId": "53"
+          },
+          "end": {
+            "identity": 53,
+            "labels": [
+              "Min_class"
+            ],
+            "properties": {
+              "name": "动物尸体类",
+              "id": "41"
+            },
+            "elementId": "53"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 1933,
+        "labels": [
+          "Garbage"
+        ],
+        "properties": {
+          "name": "动物尸体",
+          "id": "1887"
+        },
+        "elementId": "1933"
+      },
+      "end": {
+        "identity": 53,
+        "labels": [
+          "Min_class"
+        ],
+        "properties": {
+          "name": "动物尸体类",
+          "id": "41"
+        },
+        "elementId": "53"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 1933,
+            "labels": [
+              "Garbage"
+            ],
+            "properties": {
+              "name": "动物尸体",
+              "id": "1887"
+            },
+            "elementId": "1933"
+          },
+          "relationship": {
+            "identity": 1887,
+            "start": 1933,
+            "end": 53,
+            "type": "BELONGS_TO",
+            "properties": {},
+            "elementId": "1887",
+            "startNodeElementId": "1933",
+            "endNodeElementId": "53"
+          },
+          "end": {
+            "identity": 53,
+            "labels": [
+              "Min_class"
+            ],
+            "properties": {
+              "name": "动物尸体类",
+              "id": "41"
+            },
+            "elementId": "53"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 2425,
+        "labels": [
+          "Garbage"
+        ],
+        "properties": {
+          "name": "包裹着狗屎的纸巾",
+          "id": "2379"
+        },
+        "elementId": "2425"
+      },
+      "end": {
+        "identity": 53,
+        "labels": [
+          "Min_class"
+        ],
+        "properties": {
+          "name": "动物尸体类",
+          "id": "41"
+        },
+        "elementId": "53"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 2425,
+            "labels": [
+              "Garbage"
+            ],
+            "properties": {
+              "name": "包裹着狗屎的纸巾",
+              "id": "2379"
+            },
+            "elementId": "2425"
+          },
+          "relationship": {
+            "identity": 2379,
+            "start": 2425,
+            "end": 53,
+            "type": "BELONGS_TO",
+            "properties": {},
+            "elementId": "2379",
+            "startNodeElementId": "2425",
+            "endNodeElementId": "53"
+          },
+          "end": {
+            "identity": 53,
+            "labels": [
+              "Min_class"
+            ],
+            "properties": {
+              "name": "动物尸体类",
+              "id": "41"
+            },
+            "elementId": "53"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 3926,
+        "labels": [
+          "Garbage"
+        ],
+        "properties": {
+          "name": "死鱼",
+          "id": "3880"
+        },
+        "elementId": "3926"
+      },
+      "end": {
+        "identity": 53,
+        "labels": [
+          "Min_class"
+        ],
+        "properties": {
+          "name": "动物尸体类",
+          "id": "41"
+        },
+        "elementId": "53"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 3926,
+            "labels": [
+              "Garbage"
+            ],
+            "properties": {
+              "name": "死鱼",
+              "id": "3880"
+            },
+            "elementId": "3926"
+          },
+          "relationship": {
+            "identity": 3879,
+            "start": 3926,
+            "end": 53,
+            "type": "BELONGS_TO",
+            "properties": {},
+            "elementId": "3879",
+            "startNodeElementId": "3926",
+            "endNodeElementId": "53"
+          },
+          "end": {
+            "identity": 53,
+            "labels": [
+              "Min_class"
+            ],
+            "properties": {
+              "name": "动物尸体类",
+              "id": "41"
+            },
+            "elementId": "53"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 3044,
+        "labels": [
+          "Garbage"
+        ],
+        "properties": {
+          "name": "腋毛",
+          "id": "2998"
+        },
+        "elementId": "3044"
+      },
+      "end": {
+        "identity": 53,
+        "labels": [
+          "Min_class"
+        ],
+        "properties": {
+          "name": "动物尸体类",
+          "id": "41"
+        },
+        "elementId": "53"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 3044,
+            "labels": [
+              "Garbage"
+            ],
+            "properties": {
+              "name": "腋毛",
+              "id": "2998"
+            },
+            "elementId": "3044"
+          },
+          "relationship": {
+            "identity": 2998,
+            "start": 3044,
+            "end": 53,
+            "type": "BELONGS_TO",
+            "properties": {},
+            "elementId": "2998",
+            "startNodeElementId": "3044",
+            "endNodeElementId": "53"
+          },
+          "end": {
+            "identity": 53,
+            "labels": [
+              "Min_class"
+            ],
+            "properties": {
+              "name": "动物尸体类",
+              "id": "41"
+            },
+            "elementId": "53"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 1913,
+        "labels": [
+          "Garbage"
+        ],
+        "properties": {
+          "name": "鱼虾",
+          "id": "1867"
+        },
+        "elementId": "1913"
+      },
+      "end": {
+        "identity": 53,
+        "labels": [
+          "Min_class"
+        ],
+        "properties": {
+          "name": "动物尸体类",
+          "id": "41"
+        },
+        "elementId": "53"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 1913,
+            "labels": [
+              "Garbage"
+            ],
+            "properties": {
+              "name": "鱼虾",
+              "id": "1867"
+            },
+            "elementId": "1913"
+          },
+          "relationship": {
+            "identity": 1867,
+            "start": 1913,
+            "end": 53,
+            "type": "BELONGS_TO",
+            "properties": {},
+            "elementId": "1867",
+            "startNodeElementId": "1913",
+            "endNodeElementId": "53"
+          },
+          "end": {
+            "identity": 53,
+            "labels": [
+              "Min_class"
+            ],
+            "properties": {
+              "name": "动物尸体类",
+              "id": "41"
+            },
+            "elementId": "53"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 285,
+        "labels": [
+          "Garbage"
+        ],
+        "properties": {
+          "name": "虫",
+          "id": "239"
+        },
+        "elementId": "285"
+      },
+      "end": {
+        "identity": 53,
+        "labels": [
+          "Min_class"
+        ],
+        "properties": {
+          "name": "动物尸体类",
+          "id": "41"
+        },
+        "elementId": "53"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 285,
+            "labels": [
+              "Garbage"
+            ],
+            "properties": {
+              "name": "虫",
+              "id": "239"
+            },
+            "elementId": "285"
+          },
+          "relationship": {
+            "identity": 250,
+            "start": 285,
+            "end": 53,
+            "type": "BELONGS_TO",
+            "properties": {},
+            "elementId": "250",
+            "startNodeElementId": "285",
+            "endNodeElementId": "53"
+          },
+          "end": {
+            "identity": 53,
+            "labels": [
+              "Min_class"
+            ],
+            "properties": {
+              "name": "动物尸体类",
+              "id": "41"
+            },
+            "elementId": "53"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 204,
+        "labels": [
+          "Garbage"
+        ],
+        "properties": {
+          "name": "苍蝇",
+          "id": "158"
+        },
+        "elementId": "204"
+      },
+      "end": {
+        "identity": 53,
+        "labels": [
+          "Min_class"
+        ],
+        "properties": {
+          "name": "动物尸体类",
+          "id": "41"
+        },
+        "elementId": "53"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 204,
+            "labels": [
+              "Garbage"
+            ],
+            "properties": {
+              "name": "苍蝇",
+              "id": "158"
+            },
+            "elementId": "204"
+          },
+          "relationship": {
+            "identity": 169,
+            "start": 204,
+            "end": 53,
+            "type": "BELONGS_TO",
+            "properties": {},
+            "elementId": "169",
+            "startNodeElementId": "204",
+            "endNodeElementId": "53"
+          },
+          "end": {
+            "identity": 53,
+            "labels": [
+              "Min_class"
+            ],
+            "properties": {
+              "name": "动物尸体类",
+              "id": "41"
+            },
+            "elementId": "53"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 2,
+        "labels": [
+          "Class"
+        ],
+        "properties": {
+          "name": "湿垃圾（厨余垃圾）",
+          "id": "4"
+        },
+        "elementId": "2"
+      },
+      "end": {
+        "identity": 4034,
+        "labels": [
+          "Way"
+        ],
+        "properties": {
+          "name": "堆肥",
+          "id": "3"
+        },
+        "elementId": "4034"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 2,
+            "labels": [
+              "Class"
+            ],
+            "properties": {
+              "name": "湿垃圾（厨余垃圾）",
+              "id": "4"
+            },
+            "elementId": "2"
+          },
+          "relationship": {
+            "identity": 4018,
+            "start": 2,
+            "end": 4034,
+            "type": "SHOULD",
+            "properties": {},
+            "elementId": "4018",
+            "startNodeElementId": "2",
+            "endNodeElementId": "4034"
+          },
+          "end": {
+            "identity": 4034,
+            "labels": [
+              "Way"
+            ],
+            "properties": {
+              "name": "堆肥",
+              "id": "3"
+            },
+            "elementId": "4034"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 2,
+        "labels": [
+          "Class"
+        ],
+        "properties": {
+          "name": "湿垃圾（厨余垃圾）",
+          "id": "4"
+        },
+        "elementId": "2"
+      },
+      "end": {
+        "identity": 4036,
+        "labels": [
+          "Way"
+        ],
+        "properties": {
+          "name": "生物处理",
+          "id": "5"
+        },
+        "elementId": "4036"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 2,
+            "labels": [
+              "Class"
+            ],
+            "properties": {
+              "name": "湿垃圾（厨余垃圾）",
+              "id": "4"
+            },
+            "elementId": "2"
+          },
+          "relationship": {
+            "identity": 4024,
+            "start": 2,
+            "end": 4036,
+            "type": "SHOULD",
+            "properties": {},
+            "elementId": "4024",
+            "startNodeElementId": "2",
+            "endNodeElementId": "4036"
+          },
+          "end": {
+            "identity": 4036,
+            "labels": [
+              "Way"
+            ],
+            "properties": {
+              "name": "生物处理",
+              "id": "5"
+            },
+            "elementId": "4036"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  }
+]

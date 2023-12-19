@@ -1,0 +1,1829 @@
+﻿[
+  {
+    "p": {
+      "start": {
+        "identity": 38,
+        "labels": [
+          "Min_class"
+        ],
+        "properties": {
+          "name": "家具",
+          "id": "26"
+        },
+        "elementId": "38"
+      },
+      "end": {
+        "identity": 4,
+        "labels": [
+          "Class"
+        ],
+        "properties": {
+          "name": "大件垃圾",
+          "id": "16"
+        },
+        "elementId": "4"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 38,
+            "labels": [
+              "Min_class"
+            ],
+            "properties": {
+              "name": "家具",
+              "id": "26"
+            },
+            "elementId": "38"
+          },
+          "relationship": {
+            "identity": 3998,
+            "start": 38,
+            "end": 4,
+            "type": "BELONGS_TO",
+            "properties": {},
+            "elementId": "3998",
+            "startNodeElementId": "38",
+            "endNodeElementId": "4"
+          },
+          "end": {
+            "identity": 4,
+            "labels": [
+              "Class"
+            ],
+            "properties": {
+              "name": "大件垃圾",
+              "id": "16"
+            },
+            "elementId": "4"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 4,
+        "labels": [
+          "Class"
+        ],
+        "properties": {
+          "name": "大件垃圾",
+          "id": "16"
+        },
+        "elementId": "4"
+      },
+      "end": {
+        "identity": 4039,
+        "labels": [
+          "Way"
+        ],
+        "properties": {
+          "name": "其他",
+          "id": "8"
+        },
+        "elementId": "4039"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 4,
+            "labels": [
+              "Class"
+            ],
+            "properties": {
+              "name": "大件垃圾",
+              "id": "16"
+            },
+            "elementId": "4"
+          },
+          "relationship": {
+            "identity": 4020,
+            "start": 4,
+            "end": 4039,
+            "type": "SHOULD",
+            "properties": {},
+            "elementId": "4020",
+            "startNodeElementId": "4",
+            "endNodeElementId": "4039"
+          },
+          "end": {
+            "identity": 4039,
+            "labels": [
+              "Way"
+            ],
+            "properties": {
+              "name": "其他",
+              "id": "8"
+            },
+            "elementId": "4039"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 4003,
+        "labels": [
+          "Garbage"
+        ],
+        "properties": {
+          "name": "书柜",
+          "id": "3957"
+        },
+        "elementId": "4003"
+      },
+      "end": {
+        "identity": 38,
+        "labels": [
+          "Min_class"
+        ],
+        "properties": {
+          "name": "家具",
+          "id": "26"
+        },
+        "elementId": "38"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 4003,
+            "labels": [
+              "Garbage"
+            ],
+            "properties": {
+              "name": "书柜",
+              "id": "3957"
+            },
+            "elementId": "4003"
+          },
+          "relationship": {
+            "identity": 3956,
+            "start": 4003,
+            "end": 38,
+            "type": "BELONGS_TO",
+            "properties": {},
+            "elementId": "3956",
+            "startNodeElementId": "4003",
+            "endNodeElementId": "38"
+          },
+          "end": {
+            "identity": 38,
+            "labels": [
+              "Min_class"
+            ],
+            "properties": {
+              "name": "家具",
+              "id": "26"
+            },
+            "elementId": "38"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 3992,
+        "labels": [
+          "Garbage"
+        ],
+        "properties": {
+          "name": "床",
+          "id": "3946"
+        },
+        "elementId": "3992"
+      },
+      "end": {
+        "identity": 38,
+        "labels": [
+          "Min_class"
+        ],
+        "properties": {
+          "name": "家具",
+          "id": "26"
+        },
+        "elementId": "38"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 3992,
+            "labels": [
+              "Garbage"
+            ],
+            "properties": {
+              "name": "床",
+              "id": "3946"
+            },
+            "elementId": "3992"
+          },
+          "relationship": {
+            "identity": 3945,
+            "start": 3992,
+            "end": 38,
+            "type": "BELONGS_TO",
+            "properties": {},
+            "elementId": "3945",
+            "startNodeElementId": "3992",
+            "endNodeElementId": "38"
+          },
+          "end": {
+            "identity": 38,
+            "labels": [
+              "Min_class"
+            ],
+            "properties": {
+              "name": "家具",
+              "id": "26"
+            },
+            "elementId": "38"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 3999,
+        "labels": [
+          "Garbage"
+        ],
+        "properties": {
+          "name": "书架",
+          "id": "3953"
+        },
+        "elementId": "3999"
+      },
+      "end": {
+        "identity": 38,
+        "labels": [
+          "Min_class"
+        ],
+        "properties": {
+          "name": "家具",
+          "id": "26"
+        },
+        "elementId": "38"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 3999,
+            "labels": [
+              "Garbage"
+            ],
+            "properties": {
+              "name": "书架",
+              "id": "3953"
+            },
+            "elementId": "3999"
+          },
+          "relationship": {
+            "identity": 3952,
+            "start": 3999,
+            "end": 38,
+            "type": "BELONGS_TO",
+            "properties": {},
+            "elementId": "3952",
+            "startNodeElementId": "3999",
+            "endNodeElementId": "38"
+          },
+          "end": {
+            "identity": 38,
+            "labels": [
+              "Min_class"
+            ],
+            "properties": {
+              "name": "家具",
+              "id": "26"
+            },
+            "elementId": "38"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 3998,
+        "labels": [
+          "Garbage"
+        ],
+        "properties": {
+          "name": "红木家具",
+          "id": "3952"
+        },
+        "elementId": "3998"
+      },
+      "end": {
+        "identity": 38,
+        "labels": [
+          "Min_class"
+        ],
+        "properties": {
+          "name": "家具",
+          "id": "26"
+        },
+        "elementId": "38"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 3998,
+            "labels": [
+              "Garbage"
+            ],
+            "properties": {
+              "name": "红木家具",
+              "id": "3952"
+            },
+            "elementId": "3998"
+          },
+          "relationship": {
+            "identity": 3951,
+            "start": 3998,
+            "end": 38,
+            "type": "BELONGS_TO",
+            "properties": {},
+            "elementId": "3951",
+            "startNodeElementId": "3998",
+            "endNodeElementId": "38"
+          },
+          "end": {
+            "identity": 38,
+            "labels": [
+              "Min_class"
+            ],
+            "properties": {
+              "name": "家具",
+              "id": "26"
+            },
+            "elementId": "38"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 3301,
+        "labels": [
+          "Garbage"
+        ],
+        "properties": {
+          "name": "木凳",
+          "id": "3255"
+        },
+        "elementId": "3301"
+      },
+      "end": {
+        "identity": 38,
+        "labels": [
+          "Min_class"
+        ],
+        "properties": {
+          "name": "家具",
+          "id": "26"
+        },
+        "elementId": "38"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 3301,
+            "labels": [
+              "Garbage"
+            ],
+            "properties": {
+              "name": "木凳",
+              "id": "3255"
+            },
+            "elementId": "3301"
+          },
+          "relationship": {
+            "identity": 3255,
+            "start": 3301,
+            "end": 38,
+            "type": "BELONGS_TO",
+            "properties": {},
+            "elementId": "3255",
+            "startNodeElementId": "3301",
+            "endNodeElementId": "38"
+          },
+          "end": {
+            "identity": 38,
+            "labels": [
+              "Min_class"
+            ],
+            "properties": {
+              "name": "家具",
+              "id": "26"
+            },
+            "elementId": "38"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 3149,
+        "labels": [
+          "Garbage"
+        ],
+        "properties": {
+          "name": "家电家具",
+          "id": "3103"
+        },
+        "elementId": "3149"
+      },
+      "end": {
+        "identity": 38,
+        "labels": [
+          "Min_class"
+        ],
+        "properties": {
+          "name": "家具",
+          "id": "26"
+        },
+        "elementId": "38"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 3149,
+            "labels": [
+              "Garbage"
+            ],
+            "properties": {
+              "name": "家电家具",
+              "id": "3103"
+            },
+            "elementId": "3149"
+          },
+          "relationship": {
+            "identity": 3103,
+            "start": 3149,
+            "end": 38,
+            "type": "BELONGS_TO",
+            "properties": {},
+            "elementId": "3103",
+            "startNodeElementId": "3149",
+            "endNodeElementId": "38"
+          },
+          "end": {
+            "identity": 38,
+            "labels": [
+              "Min_class"
+            ],
+            "properties": {
+              "name": "家具",
+              "id": "26"
+            },
+            "elementId": "38"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 4002,
+        "labels": [
+          "Garbage"
+        ],
+        "properties": {
+          "name": "电脑桌",
+          "id": "3956"
+        },
+        "elementId": "4002"
+      },
+      "end": {
+        "identity": 38,
+        "labels": [
+          "Min_class"
+        ],
+        "properties": {
+          "name": "家具",
+          "id": "26"
+        },
+        "elementId": "38"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 4002,
+            "labels": [
+              "Garbage"
+            ],
+            "properties": {
+              "name": "电脑桌",
+              "id": "3956"
+            },
+            "elementId": "4002"
+          },
+          "relationship": {
+            "identity": 3955,
+            "start": 4002,
+            "end": 38,
+            "type": "BELONGS_TO",
+            "properties": {},
+            "elementId": "3955",
+            "startNodeElementId": "4002",
+            "endNodeElementId": "38"
+          },
+          "end": {
+            "identity": 38,
+            "labels": [
+              "Min_class"
+            ],
+            "properties": {
+              "name": "家具",
+              "id": "26"
+            },
+            "elementId": "38"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 3122,
+        "labels": [
+          "Garbage"
+        ],
+        "properties": {
+          "name": "办公桌",
+          "id": "3076"
+        },
+        "elementId": "3122"
+      },
+      "end": {
+        "identity": 38,
+        "labels": [
+          "Min_class"
+        ],
+        "properties": {
+          "name": "家具",
+          "id": "26"
+        },
+        "elementId": "38"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 3122,
+            "labels": [
+              "Garbage"
+            ],
+            "properties": {
+              "name": "办公桌",
+              "id": "3076"
+            },
+            "elementId": "3122"
+          },
+          "relationship": {
+            "identity": 3076,
+            "start": 3122,
+            "end": 38,
+            "type": "BELONGS_TO",
+            "properties": {},
+            "elementId": "3076",
+            "startNodeElementId": "3122",
+            "endNodeElementId": "38"
+          },
+          "end": {
+            "identity": 38,
+            "labels": [
+              "Min_class"
+            ],
+            "properties": {
+              "name": "家具",
+              "id": "26"
+            },
+            "elementId": "38"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 3997,
+        "labels": [
+          "Garbage"
+        ],
+        "properties": {
+          "name": "家具",
+          "id": "3951"
+        },
+        "elementId": "3997"
+      },
+      "end": {
+        "identity": 38,
+        "labels": [
+          "Min_class"
+        ],
+        "properties": {
+          "name": "家具",
+          "id": "26"
+        },
+        "elementId": "38"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 3997,
+            "labels": [
+              "Garbage"
+            ],
+            "properties": {
+              "name": "家具",
+              "id": "3951"
+            },
+            "elementId": "3997"
+          },
+          "relationship": {
+            "identity": 3950,
+            "start": 3997,
+            "end": 38,
+            "type": "BELONGS_TO",
+            "properties": {},
+            "elementId": "3950",
+            "startNodeElementId": "3997",
+            "endNodeElementId": "38"
+          },
+          "end": {
+            "identity": 38,
+            "labels": [
+              "Min_class"
+            ],
+            "properties": {
+              "name": "家具",
+              "id": "26"
+            },
+            "elementId": "38"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 4029,
+        "labels": [
+          "Garbage"
+        ],
+        "properties": {
+          "name": "书桌",
+          "id": "3983"
+        },
+        "elementId": "4029"
+      },
+      "end": {
+        "identity": 38,
+        "labels": [
+          "Min_class"
+        ],
+        "properties": {
+          "name": "家具",
+          "id": "26"
+        },
+        "elementId": "38"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 4029,
+            "labels": [
+              "Garbage"
+            ],
+            "properties": {
+              "name": "书桌",
+              "id": "3983"
+            },
+            "elementId": "4029"
+          },
+          "relationship": {
+            "identity": 3982,
+            "start": 4029,
+            "end": 38,
+            "type": "BELONGS_TO",
+            "properties": {},
+            "elementId": "3982",
+            "startNodeElementId": "4029",
+            "endNodeElementId": "38"
+          },
+          "end": {
+            "identity": 38,
+            "labels": [
+              "Min_class"
+            ],
+            "properties": {
+              "name": "家具",
+              "id": "26"
+            },
+            "elementId": "38"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 3302,
+        "labels": [
+          "Garbage"
+        ],
+        "properties": {
+          "name": "木椅",
+          "id": "3256"
+        },
+        "elementId": "3302"
+      },
+      "end": {
+        "identity": 38,
+        "labels": [
+          "Min_class"
+        ],
+        "properties": {
+          "name": "家具",
+          "id": "26"
+        },
+        "elementId": "38"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 3302,
+            "labels": [
+              "Garbage"
+            ],
+            "properties": {
+              "name": "木椅",
+              "id": "3256"
+            },
+            "elementId": "3302"
+          },
+          "relationship": {
+            "identity": 3256,
+            "start": 3302,
+            "end": 38,
+            "type": "BELONGS_TO",
+            "properties": {},
+            "elementId": "3256",
+            "startNodeElementId": "3302",
+            "endNodeElementId": "38"
+          },
+          "end": {
+            "identity": 38,
+            "labels": [
+              "Min_class"
+            ],
+            "properties": {
+              "name": "家具",
+              "id": "26"
+            },
+            "elementId": "38"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 3993,
+        "labels": [
+          "Garbage"
+        ],
+        "properties": {
+          "name": "凳子",
+          "id": "3947"
+        },
+        "elementId": "3993"
+      },
+      "end": {
+        "identity": 38,
+        "labels": [
+          "Min_class"
+        ],
+        "properties": {
+          "name": "家具",
+          "id": "26"
+        },
+        "elementId": "38"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 3993,
+            "labels": [
+              "Garbage"
+            ],
+            "properties": {
+              "name": "凳子",
+              "id": "3947"
+            },
+            "elementId": "3993"
+          },
+          "relationship": {
+            "identity": 3946,
+            "start": 3993,
+            "end": 38,
+            "type": "BELONGS_TO",
+            "properties": {},
+            "elementId": "3946",
+            "startNodeElementId": "3993",
+            "endNodeElementId": "38"
+          },
+          "end": {
+            "identity": 38,
+            "labels": [
+              "Min_class"
+            ],
+            "properties": {
+              "name": "家具",
+              "id": "26"
+            },
+            "elementId": "38"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 3121,
+        "labels": [
+          "Garbage"
+        ],
+        "properties": {
+          "name": "茶几",
+          "id": "3075"
+        },
+        "elementId": "3121"
+      },
+      "end": {
+        "identity": 38,
+        "labels": [
+          "Min_class"
+        ],
+        "properties": {
+          "name": "家具",
+          "id": "26"
+        },
+        "elementId": "38"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 3121,
+            "labels": [
+              "Garbage"
+            ],
+            "properties": {
+              "name": "茶几",
+              "id": "3075"
+            },
+            "elementId": "3121"
+          },
+          "relationship": {
+            "identity": 3075,
+            "start": 3121,
+            "end": 38,
+            "type": "BELONGS_TO",
+            "properties": {},
+            "elementId": "3075",
+            "startNodeElementId": "3121",
+            "endNodeElementId": "38"
+          },
+          "end": {
+            "identity": 38,
+            "labels": [
+              "Min_class"
+            ],
+            "properties": {
+              "name": "家具",
+              "id": "26"
+            },
+            "elementId": "38"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 3990,
+        "labels": [
+          "Garbage"
+        ],
+        "properties": {
+          "name": "抽屉",
+          "id": "3944"
+        },
+        "elementId": "3990"
+      },
+      "end": {
+        "identity": 38,
+        "labels": [
+          "Min_class"
+        ],
+        "properties": {
+          "name": "家具",
+          "id": "26"
+        },
+        "elementId": "38"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 3990,
+            "labels": [
+              "Garbage"
+            ],
+            "properties": {
+              "name": "抽屉",
+              "id": "3944"
+            },
+            "elementId": "3990"
+          },
+          "relationship": {
+            "identity": 3943,
+            "start": 3990,
+            "end": 38,
+            "type": "BELONGS_TO",
+            "properties": {},
+            "elementId": "3943",
+            "startNodeElementId": "3990",
+            "endNodeElementId": "38"
+          },
+          "end": {
+            "identity": 38,
+            "labels": [
+              "Min_class"
+            ],
+            "properties": {
+              "name": "家具",
+              "id": "26"
+            },
+            "elementId": "38"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 4000,
+        "labels": [
+          "Garbage"
+        ],
+        "properties": {
+          "name": "课桌",
+          "id": "3954"
+        },
+        "elementId": "4000"
+      },
+      "end": {
+        "identity": 38,
+        "labels": [
+          "Min_class"
+        ],
+        "properties": {
+          "name": "家具",
+          "id": "26"
+        },
+        "elementId": "38"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 4000,
+            "labels": [
+              "Garbage"
+            ],
+            "properties": {
+              "name": "课桌",
+              "id": "3954"
+            },
+            "elementId": "4000"
+          },
+          "relationship": {
+            "identity": 3953,
+            "start": 4000,
+            "end": 38,
+            "type": "BELONGS_TO",
+            "properties": {},
+            "elementId": "3953",
+            "startNodeElementId": "4000",
+            "endNodeElementId": "38"
+          },
+          "end": {
+            "identity": 38,
+            "labels": [
+              "Min_class"
+            ],
+            "properties": {
+              "name": "家具",
+              "id": "26"
+            },
+            "elementId": "38"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 4004,
+        "labels": [
+          "Garbage"
+        ],
+        "properties": {
+          "name": "木箱",
+          "id": "3958"
+        },
+        "elementId": "4004"
+      },
+      "end": {
+        "identity": 38,
+        "labels": [
+          "Min_class"
+        ],
+        "properties": {
+          "name": "家具",
+          "id": "26"
+        },
+        "elementId": "38"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 4004,
+            "labels": [
+              "Garbage"
+            ],
+            "properties": {
+              "name": "木箱",
+              "id": "3958"
+            },
+            "elementId": "4004"
+          },
+          "relationship": {
+            "identity": 3957,
+            "start": 4004,
+            "end": 38,
+            "type": "BELONGS_TO",
+            "properties": {},
+            "elementId": "3957",
+            "startNodeElementId": "4004",
+            "endNodeElementId": "38"
+          },
+          "end": {
+            "identity": 38,
+            "labels": [
+              "Min_class"
+            ],
+            "properties": {
+              "name": "家具",
+              "id": "26"
+            },
+            "elementId": "38"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 3124,
+        "labels": [
+          "Garbage"
+        ],
+        "properties": {
+          "name": "椅子",
+          "id": "3078"
+        },
+        "elementId": "3124"
+      },
+      "end": {
+        "identity": 38,
+        "labels": [
+          "Min_class"
+        ],
+        "properties": {
+          "name": "家具",
+          "id": "26"
+        },
+        "elementId": "38"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 3124,
+            "labels": [
+              "Garbage"
+            ],
+            "properties": {
+              "name": "椅子",
+              "id": "3078"
+            },
+            "elementId": "3124"
+          },
+          "relationship": {
+            "identity": 3078,
+            "start": 3124,
+            "end": 38,
+            "type": "BELONGS_TO",
+            "properties": {},
+            "elementId": "3078",
+            "startNodeElementId": "3124",
+            "endNodeElementId": "38"
+          },
+          "end": {
+            "identity": 38,
+            "labels": [
+              "Min_class"
+            ],
+            "properties": {
+              "name": "家具",
+              "id": "26"
+            },
+            "elementId": "38"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 4001,
+        "labels": [
+          "Garbage"
+        ],
+        "properties": {
+          "name": "席梦思",
+          "id": "3955"
+        },
+        "elementId": "4001"
+      },
+      "end": {
+        "identity": 38,
+        "labels": [
+          "Min_class"
+        ],
+        "properties": {
+          "name": "家具",
+          "id": "26"
+        },
+        "elementId": "38"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 4001,
+            "labels": [
+              "Garbage"
+            ],
+            "properties": {
+              "name": "席梦思",
+              "id": "3955"
+            },
+            "elementId": "4001"
+          },
+          "relationship": {
+            "identity": 3954,
+            "start": 4001,
+            "end": 38,
+            "type": "BELONGS_TO",
+            "properties": {},
+            "elementId": "3954",
+            "startNodeElementId": "4001",
+            "endNodeElementId": "38"
+          },
+          "end": {
+            "identity": 38,
+            "labels": [
+              "Min_class"
+            ],
+            "properties": {
+              "name": "家具",
+              "id": "26"
+            },
+            "elementId": "38"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 3120,
+        "labels": [
+          "Garbage"
+        ],
+        "properties": {
+          "name": "沙发",
+          "id": "3074"
+        },
+        "elementId": "3120"
+      },
+      "end": {
+        "identity": 38,
+        "labels": [
+          "Min_class"
+        ],
+        "properties": {
+          "name": "家具",
+          "id": "26"
+        },
+        "elementId": "38"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 3120,
+            "labels": [
+              "Garbage"
+            ],
+            "properties": {
+              "name": "沙发",
+              "id": "3074"
+            },
+            "elementId": "3120"
+          },
+          "relationship": {
+            "identity": 3074,
+            "start": 3120,
+            "end": 38,
+            "type": "BELONGS_TO",
+            "properties": {},
+            "elementId": "3074",
+            "startNodeElementId": "3120",
+            "endNodeElementId": "38"
+          },
+          "end": {
+            "identity": 38,
+            "labels": [
+              "Min_class"
+            ],
+            "properties": {
+              "name": "家具",
+              "id": "26"
+            },
+            "elementId": "38"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 2391,
+        "labels": [
+          "Garbage"
+        ],
+        "properties": {
+          "name": "旧水槽",
+          "id": "2345"
+        },
+        "elementId": "2391"
+      },
+      "end": {
+        "identity": 38,
+        "labels": [
+          "Min_class"
+        ],
+        "properties": {
+          "name": "家具",
+          "id": "26"
+        },
+        "elementId": "38"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 2391,
+            "labels": [
+              "Garbage"
+            ],
+            "properties": {
+              "name": "旧水槽",
+              "id": "2345"
+            },
+            "elementId": "2391"
+          },
+          "relationship": {
+            "identity": 2345,
+            "start": 2391,
+            "end": 38,
+            "type": "BELONGS_TO",
+            "properties": {},
+            "elementId": "2345",
+            "startNodeElementId": "2391",
+            "endNodeElementId": "38"
+          },
+          "end": {
+            "identity": 38,
+            "labels": [
+              "Min_class"
+            ],
+            "properties": {
+              "name": "家具",
+              "id": "26"
+            },
+            "elementId": "38"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 3996,
+        "labels": [
+          "Garbage"
+        ],
+        "properties": {
+          "name": "大件垃圾",
+          "id": "3950"
+        },
+        "elementId": "3996"
+      },
+      "end": {
+        "identity": 38,
+        "labels": [
+          "Min_class"
+        ],
+        "properties": {
+          "name": "家具",
+          "id": "26"
+        },
+        "elementId": "38"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 3996,
+            "labels": [
+              "Garbage"
+            ],
+            "properties": {
+              "name": "大件垃圾",
+              "id": "3950"
+            },
+            "elementId": "3996"
+          },
+          "relationship": {
+            "identity": 3949,
+            "start": 3996,
+            "end": 38,
+            "type": "BELONGS_TO",
+            "properties": {},
+            "elementId": "3949",
+            "startNodeElementId": "3996",
+            "endNodeElementId": "38"
+          },
+          "end": {
+            "identity": 38,
+            "labels": [
+              "Min_class"
+            ],
+            "properties": {
+              "name": "家具",
+              "id": "26"
+            },
+            "elementId": "38"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 3123,
+        "labels": [
+          "Garbage"
+        ],
+        "properties": {
+          "name": "文件柜",
+          "id": "3077"
+        },
+        "elementId": "3123"
+      },
+      "end": {
+        "identity": 38,
+        "labels": [
+          "Min_class"
+        ],
+        "properties": {
+          "name": "家具",
+          "id": "26"
+        },
+        "elementId": "38"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 3123,
+            "labels": [
+              "Garbage"
+            ],
+            "properties": {
+              "name": "文件柜",
+              "id": "3077"
+            },
+            "elementId": "3123"
+          },
+          "relationship": {
+            "identity": 3077,
+            "start": 3123,
+            "end": 38,
+            "type": "BELONGS_TO",
+            "properties": {},
+            "elementId": "3077",
+            "startNodeElementId": "3123",
+            "endNodeElementId": "38"
+          },
+          "end": {
+            "identity": 38,
+            "labels": [
+              "Min_class"
+            ],
+            "properties": {
+              "name": "家具",
+              "id": "26"
+            },
+            "elementId": "38"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 4030,
+        "labels": [
+          "Garbage"
+        ],
+        "properties": {
+          "name": "桌子",
+          "id": "3984"
+        },
+        "elementId": "4030"
+      },
+      "end": {
+        "identity": 38,
+        "labels": [
+          "Min_class"
+        ],
+        "properties": {
+          "name": "家具",
+          "id": "26"
+        },
+        "elementId": "38"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 4030,
+            "labels": [
+              "Garbage"
+            ],
+            "properties": {
+              "name": "桌子",
+              "id": "3984"
+            },
+            "elementId": "4030"
+          },
+          "relationship": {
+            "identity": 3983,
+            "start": 4030,
+            "end": 38,
+            "type": "BELONGS_TO",
+            "properties": {},
+            "elementId": "3983",
+            "startNodeElementId": "4030",
+            "endNodeElementId": "38"
+          },
+          "end": {
+            "identity": 38,
+            "labels": [
+              "Min_class"
+            ],
+            "properties": {
+              "name": "家具",
+              "id": "26"
+            },
+            "elementId": "38"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 3991,
+        "labels": [
+          "Garbage"
+        ],
+        "properties": {
+          "name": "储物柜",
+          "id": "3945"
+        },
+        "elementId": "3991"
+      },
+      "end": {
+        "identity": 38,
+        "labels": [
+          "Min_class"
+        ],
+        "properties": {
+          "name": "家具",
+          "id": "26"
+        },
+        "elementId": "38"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 3991,
+            "labels": [
+              "Garbage"
+            ],
+            "properties": {
+              "name": "储物柜",
+              "id": "3945"
+            },
+            "elementId": "3991"
+          },
+          "relationship": {
+            "identity": 3944,
+            "start": 3991,
+            "end": 38,
+            "type": "BELONGS_TO",
+            "properties": {},
+            "elementId": "3944",
+            "startNodeElementId": "3991",
+            "endNodeElementId": "38"
+          },
+          "end": {
+            "identity": 38,
+            "labels": [
+              "Min_class"
+            ],
+            "properties": {
+              "name": "家具",
+              "id": "26"
+            },
+            "elementId": "38"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 3988,
+        "labels": [
+          "Garbage"
+        ],
+        "properties": {
+          "name": "板凳",
+          "id": "3942"
+        },
+        "elementId": "3988"
+      },
+      "end": {
+        "identity": 38,
+        "labels": [
+          "Min_class"
+        ],
+        "properties": {
+          "name": "家具",
+          "id": "26"
+        },
+        "elementId": "38"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 3988,
+            "labels": [
+              "Garbage"
+            ],
+            "properties": {
+              "name": "板凳",
+              "id": "3942"
+            },
+            "elementId": "3988"
+          },
+          "relationship": {
+            "identity": 3941,
+            "start": 3988,
+            "end": 38,
+            "type": "BELONGS_TO",
+            "properties": {},
+            "elementId": "3941",
+            "startNodeElementId": "3988",
+            "endNodeElementId": "38"
+          },
+          "end": {
+            "identity": 38,
+            "labels": [
+              "Min_class"
+            ],
+            "properties": {
+              "name": "家具",
+              "id": "26"
+            },
+            "elementId": "38"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 2390,
+        "labels": [
+          "Garbage"
+        ],
+        "properties": {
+          "name": "坏马桶",
+          "id": "2344"
+        },
+        "elementId": "2390"
+      },
+      "end": {
+        "identity": 38,
+        "labels": [
+          "Min_class"
+        ],
+        "properties": {
+          "name": "家具",
+          "id": "26"
+        },
+        "elementId": "38"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 2390,
+            "labels": [
+              "Garbage"
+            ],
+            "properties": {
+              "name": "坏马桶",
+              "id": "2344"
+            },
+            "elementId": "2390"
+          },
+          "relationship": {
+            "identity": 2344,
+            "start": 2390,
+            "end": 38,
+            "type": "BELONGS_TO",
+            "properties": {},
+            "elementId": "2344",
+            "startNodeElementId": "2390",
+            "endNodeElementId": "38"
+          },
+          "end": {
+            "identity": 38,
+            "labels": [
+              "Min_class"
+            ],
+            "properties": {
+              "name": "家具",
+              "id": "26"
+            },
+            "elementId": "38"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 3995,
+        "labels": [
+          "Garbage"
+        ],
+        "properties": {
+          "name": "柜子",
+          "id": "3949"
+        },
+        "elementId": "3995"
+      },
+      "end": {
+        "identity": 38,
+        "labels": [
+          "Min_class"
+        ],
+        "properties": {
+          "name": "家具",
+          "id": "26"
+        },
+        "elementId": "38"
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 3995,
+            "labels": [
+              "Garbage"
+            ],
+            "properties": {
+              "name": "柜子",
+              "id": "3949"
+            },
+            "elementId": "3995"
+          },
+          "relationship": {
+            "identity": 3948,
+            "start": 3995,
+            "end": 38,
+            "type": "BELONGS_TO",
+            "properties": {},
+            "elementId": "3948",
+            "startNodeElementId": "3995",
+            "endNodeElementId": "38"
+          },
+          "end": {
+            "identity": 38,
+            "labels": [
+              "Min_class"
+            ],
+            "properties": {
+              "name": "家具",
+              "id": "26"
+            },
+            "elementId": "38"
+          }
+        }
+      ],
+      "length": 1.0
+    }
+  }
+]

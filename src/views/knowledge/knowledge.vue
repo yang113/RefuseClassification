@@ -17,7 +17,11 @@
       <el-col :span="14">
         <el-card class="box-card" style="height: 550px">
           <div slot="header" class="clearfix">
-            <span style="font-weight: bold;color: #819d6a;font-size: large">垃圾分类图谱</span>
+              <button @click="loadGraphData1()" class="filter_button">可回收垃圾</button>
+              <button @click="loadGraphData2()" class="filter_button">有害垃圾</button>
+              <button @click="loadGraphData3()" class="filter_button">干垃圾</button>
+              <button @click="loadGraphData4()" class="filter_button">湿垃圾</button>
+              <button @click="loadGraphData5()" class="filter_button">大件垃圾</button>
           </div>
           <div>
             <div id="KG">
@@ -57,7 +61,11 @@
 <script>
 // import G6 from '@antv/g6';
 import * as d3 from 'd3';
-import graphData from '../../assets/records (2).json'; // 导入包含图表数据的 JSON 文件
+import graphData1 from '../../assets/records_can.json'; // 导入包含图表数据的 JSON 文件
+import graphData2 from '../../assets/records_cant.json'; // 导入包含图表数据的 JSON 文件
+import graphData3 from '../../assets/records_gan.json'; // 导入包含图表数据的 JSON 文件
+import graphData4 from '../../assets/records_shi.json'; // 导入包含图表数据的 JSON 文件
+import graphData5 from '../../assets/records_big.json'; // 导入包含图表数据的 JSON 文件
 
 export default {
   name: "knowledge",
@@ -129,41 +137,71 @@ export default {
     };
   },
   methods:{
-    // onClickSearch(e) {
-    //   console.log(e.target.id);
-    //   HttpUtils.post(ApiUtils.API_SEARCH_NODE, e.target.id)
-    //       .then((res) => {
-    //         console.log('返回结果:', res.node);
-    //         // console.log(res.node.properties)
-    //         // 更改参数
-    //         this.setState({
-    //           nodeinfo: {
-    //             id: res.node.id,
-    //             label: res.node.label,
-    //             properties: {
-    //               id: res.node.properties['id'],
-    //               name: res.node.properties['name'],
-    //               meaning: res.node.properties['meaning'],
-    //               link: res.node.properties['link'],
-    //             },
-    //           },
-    //         });
-    //         this.props.callback(this.state.nodeinfo); // 向父组件传递
-    //       })
-    //       .catch((error) => {
-    //         console.log('error: ' + error.message);
-    //       });
-    //
-    //   console.log('点击节点后', this.state.nodeinfo);
-    // },
+    loadGraphData1() {
+      // 清空已有的图谱数据
+      this.searchlinks = [];
+      this.searchnodes = [];
+      if (this.simulation) {
+        this.simulation.stop();
+      }
 
+      // 加载新的图谱数据
+      this.processGraphData(graphData1);
+    },
+    loadGraphData2() {
+      // 清空已有的图谱数据
+      this.searchlinks = [];
+      this.searchnodes = [];
+      if (this.simulation) {
+        this.simulation.stop();
+      }
+
+      // 加载新的图谱数据
+      this.processGraphData(graphData2);
+    },
+    loadGraphData3() {
+      // 清空已有的图谱数据
+      this.searchlinks = [];
+      this.searchnodes = [];
+      if (this.simulation) {
+        this.simulation.stop();
+      }
+
+      // 加载新的图谱数据
+      this.processGraphData(graphData3);
+    },
+    loadGraphData4() {
+      // 清空已有的图谱数据
+      this.searchlinks = [];
+      this.searchnodes = [];
+      if (this.simulation) {
+        this.simulation.stop();
+      }
+
+      // 加载新的图谱数据
+      this.processGraphData(graphData4);
+    },
+    loadGraphData5() {
+      // 清空已有的图谱数据
+      this.searchlinks = [];
+      this.searchnodes = [];
+      if (this.simulation) {
+        this.simulation.stop();
+      }
+
+      // 加载新的图谱数据
+      this.processGraphData(graphData5);
+    },
     draw() {
+      d3.select("#KG_svg").selectAll("*").remove();
+
       const ColorList = this.ColorList; // 获取颜色列表
       const width = this.width;
       const height = this.height;
       const r = this.r;
       const searchnodes = this.searchnodes;
       const searchlinks = this.searchlinks;
+
 
       const drag = (simulation) => {
         const dragstarted = (event) => {
@@ -200,11 +238,13 @@ export default {
           });
 
       const sim = d3.forceSimulation(searchnodes)
-          .alphaDecay(0.1)
+          .alphaDecay(0.5)
           .force('link', d3.forceLink(searchlinks).id((n) => n.id).distance(200))
           .force('center', d3.forceCenter(width / 2, height / 2))
           .force('collide', d3.forceCollide(50).iterations(10))
-          .force('charge', d3.forceManyBody().strength(-200));
+          .force('charge', d3.forceManyBody().strength(-200))
+          .force('x', d3.forceX(width / 3).strength(0.05)) // 设置x方向的吸引力
+          .force('y', d3.forceY(height / 3).strength(0.05)); // 设置y方向的吸引力
 
       const svg = d3.select('#KG_svg')
           .style('width', width)
@@ -281,146 +321,9 @@ export default {
       this.node = node;
       this.nodeText = nodeText;
       this.marker = marker;
+      this.addClickEventToNodes();
     },
-    // update_graph() {
-    //   function drag(simulation) {
-    //     function dragstarted(event) {
-    //       if (!event.active) simulation.alphaTarget(0.3).restart();
-    //       event.subject.fx = event.subject.x;
-    //       event.subject.fy = event.subject.y;
-    //     }
-    //
-    //     function dragged(event) {
-    //       event.subject.fx = event.x;
-    //       event.subject.fy = event.y;
-    //     }
-    //
-    //     function dragended(event) {
-    //       if (!event.active) simulation.alphaTarget(0);
-    //       event.subject.fx = null;
-    //       event.subject.fy = null;
-    //     }
-    //
-    //     return d3
-    //         .drag()
-    //         .on('start', dragstarted)
-    //         .on('drag', dragged)
-    //         .on('end', dragended);
-    //   }
-    //   const zoom = d3
-    //       .zoom()
-    //       .scaleExtent([0.2, 4]) // 设置最大缩放比例
-    //       .on('zoom', function (d) {
-    //         zoomed(d.transform);
-    //       });
-    //   console.log(this.searchnodes);
-    //
-    //   function zoomed(transform) {
-    //     g.attr('transform', transform);
-    //   }
-    //
-    //   const node = this.node
-    //       .selectAll('circle')
-    //       .data(this.searchnodes)
-    //       .enter()
-    //       .append('circle')
-    //       .attr('class', function (d) {
-    //         return d.label;
-    //       })
-    //       .attr('id', (d) => d.id)
-    //       // .attr('value', (d)=> d.title)
-    //       .attr('r', function (d) {
-    //         if (d.label == 'Xueke1') return 70;
-    //         else if (d.label == 'Xueke') return 50;
-    //         else return r;
-    //       })
-    //       .style('fill', function (d) {
-    //         return ColorList[d.label];
-    //       }) // 填充颜色
-    //       .style('stroke', 'white') // 边框颜色
-    //       .style('stroke-width', 2) // 边框粗细
-    //       // .on('click', this.onClickSearch.bind(this))
-    //       // .on('dblclick', null)
-    //       .call(drag(sim));
-    //
-    //   node.append('title').text(function (d) {
-    //     return d.properties.name;
-    //   });
-    //   const link = this.link
-    //       .selectAll('path')
-    //       .data(this.searchlinks)
-    //       .enter()
-    //       .append('path')
-    //       .attr('class', 'link')
-    //       .style('stroke', '#999')
-    //       .style('stroke-width', 2)
-    //       .attr('marker-end', 'url(#direction)');
-    //
-    //   const nodeText = this.nodeText
-    //       .selectAll('text')
-    //       .data(this.searchnodes)
-    //       .join('text')
-    //       .attr('dy', '.3em')
-    //       .attr('class', 'node-name')
-    //       .attr('text-anchor', 'middle')
-    //       .style('pointer-events', 'none')
-    //       // .attr('fill', '')
-    //       .text(function (d) {
-    //         return d.properties.name;
-    //       });
-    //   const marker = this.marker
-    //       .append('marker')
-    //       .attr('id', 'direction')
-    //       .attr('refX', 35)
-    //       .attr('refY', 0)
-    //       .attr('orient', 'auto')
-    //       .attr('stroke-width', 2)
-    //       .attr('markerUnits', 'strokeWidth')
-    //       .attr('markerUnits', 'userSpaceOnUse')
-    //       .attr('viewBox', '0 -5 10 10')
-    //       .attr('markerWidth', 12)
-    //       .attr('markerHeight', 12)
-    //       .append('path')
-    //       .attr('d', 'M 0 -5 L 10 0 L 0 5')
-    //       .attr('fill', '#999')
-    //       .attr('stroke-opacity', 0.6);
-    //
-    //   this.simulation.on('tick', function () {
-    //     link.attr(
-    //         'd',
-    //         (d) =>
-    //             ' M ' +
-    //             d.source.x +
-    //             ' ' +
-    //             d.source.y +
-    //             'L' +
-    //             d.target.x +
-    //             ' ' +
-    //             d.target.y,
-    //     );
-    //     node.attr('cx', (d) => d.x).attr('cy', (d) => d.y);
-    //
-    //     nodeText.attr('x', (d) => d.x).attr('y', (d) => d.y);
-    //   });
-    //   this.simulation.forceSimulation(this.searchnodes).alphaDecay(0.1);
-    //   this.simulation.force(
-    //       'link',
-    //       d3
-    //           .forceLink(this.searchlinks)
-    //           .id(function (n) {
-    //             return n.id;
-    //           })
-    //           .distance(200),
-    //   );
-    //   this.simulation.restart();
-    //
-    //   this.link = link;
-    //   this.node = node;
-    //   this.nodeText = nodeText;
-    //   this.marker = marker;
-    //
-    // },
-    processGraphData() {
+    processGraphData(graphData) {
       const nodes = [];
       const links = [];
       const nodeSet = [];
@@ -470,7 +373,7 @@ export default {
     },
     handleNodeClick(node) {
       // 在这里处理节点点击事件，可以将节点的详细信息传递给其他组件或进行其他操作
-      // console.log('Node clicked:', node);
+      console.log('Node clicked:', node);
       this.nodes.name = node.srcElement.__data__.properties.name;
       // 你可以在这里将节点的详细信息传递给其他组件或进行其他操作
     },
@@ -478,9 +381,10 @@ export default {
   mounted() {
     // this.initGraph();
     // this.loadDataAndInitChart();
-    this.processGraphData();
+    this.loadGraphData1(); // 初始加载第一个 JSON 文件
+    // this.processGraphData();
     this.addClickEventToNodes();
-  }
+  },
 }
 </script>
 
@@ -521,6 +425,9 @@ export default {
 .clearfix:after {
   clear: both
 }
+.clearfix{
+  padding-bottom: -5px;
+}
 
 .box-card {
   width: 100%;
@@ -551,6 +458,20 @@ export default {
 
 .data-detail{
   margin-top: 20px;
+}
+.filter_button{
+  margin-right: 15px;
+  background-color: #a3d48e;
+  height: 45px;
+  width: 150px;
+  border: #a3d48e;
+  border-radius: 30px;
+}
+.filter_button:hover{
+  background-color: #819d6a;
+}
+.el-card__header{
+  padding:10px 10px;
 }
 
 </style>
