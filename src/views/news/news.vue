@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <el-table
-        :data="filteredTableData"
+        :data="tableData"
         style="width: 100%">
       <el-table-column
           label="日期"
@@ -18,9 +18,12 @@
           prop="city">
       </el-table-column>
       <el-table-column
-          label="标题"
-          :title="tableData.title"
-          prop="title">
+          label="标题">
+        <template slot-scope="scope">
+          <el-tooltip :content="scope.row.title" placement="top">
+            <div class="title-cell">{{ scope.row.title }}</div>
+          </el-tooltip>
+        </template>
       </el-table-column>
       <el-table-column
           align="right">
@@ -28,7 +31,9 @@
           <el-input
               v-model="search"
               size="small"
-              placeholder="按城市搜索"/>
+              placeholder="按城市搜索"
+              @input="handleSearch"
+          />
         </template>
         <template slot-scope="scope">
           <el-button
@@ -77,6 +82,15 @@ export default {
         })
         this.tableData = res.records;
       })
+    },
+    handleSearch() {
+      console.log('hhh')
+      const filteredData = this.tableData.filter(data => {
+        return !this.search || data.city.toLowerCase().includes(this.search.toLowerCase());
+      });
+      const startIndex = (this.currentPage - 1) * this.pageSize;
+      const endIndex = startIndex + this.pageSize;
+      return filteredData.slice(startIndex, endIndex);
     }
   },
   data() {
@@ -92,6 +106,7 @@ export default {
   },
   computed: {
     filteredTableData() {
+      console.log('hhh')
       const filteredData = this.tableData.filter(data => {
         return !this.search || data.city.toLowerCase().includes(this.search.toLowerCase());
       });
@@ -150,5 +165,11 @@ export default {
 }
 .el-button:hover{
   border-color: #819d6a;
+}
+.title-cell {
+  max-width: 200px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 </style>

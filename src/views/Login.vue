@@ -5,6 +5,26 @@
       <el-button type="success" plain size="large" @click="login">游客入口</el-button>
       <el-button type="success" plain size="large" @click="manageLogin">管理入口</el-button>
     </div>
+    <el-dialog
+        title="登录"
+        :visible.sync="dialogVisible"
+        width="30%"
+        :before-close="handleClose">
+      <span>
+        <el-form status-icon label-width="80px">
+          <el-form-item label="账号" prop="name">
+            <el-input v-model="name" autocomplete="off"></el-input>
+          </el-form-item>
+          <el-form-item label="密码" prop="password">
+            <el-input type="password" v-model="password" autocomplete="off"></el-input>
+          </el-form-item>
+      </el-form>
+      </span>
+      <span slot="footer" class="dialog-footer">
+    <el-button @click="dialogVisible = false">取 消</el-button>
+    <el-button type="primary" @click="login2()" style="color:white;">确 定</el-button>
+  </span>
+    </el-dialog>
   </div>
 </template>
 
@@ -13,6 +33,13 @@ import request from "@/utils/request";
 import rain from "../rain";
 export default {
   name: "Login",
+  data(){
+    return {
+      dialogVisible: false,
+      name:'',
+      password:''
+    };
+  },
   components:{
     rain
   },
@@ -21,7 +48,23 @@ export default {
       this.$router.push('/employeeHome')
     },
     manageLogin() {
-      this.$router.push('/manageHome')
+      this.dialogVisible = true;
+    },
+    handleClose(done) {
+      this.$confirm('确认关闭？')
+          .then(_ => {
+            done();
+            this.dialogVisible = false;
+          })
+          .catch(_ => {});
+    },
+    login2(){
+      if(this.name === 'wang' && this.password === '123456'){
+        this.dialogVisible = false;
+        this.$router.push('/manageHome')
+      }else{
+        alert('账号或密码错误！')
+      }
     }
   }
 }

@@ -5,7 +5,7 @@
         <el-input size="small" v-model="addGarbage.classname" placeholder="请输入垃圾类别"></el-input>
       </el-form-item>
       <el-form-item label="垃圾小类">
-        <el-input size="small" v-model="addGarbage.minClass" placeholder="请输入垃圾小类"></el-input>
+        <el-input size="small" v-model="addGarbage.minClassNum" placeholder="请输入垃圾小类"></el-input>
       </el-form-item>
       <el-form-item label="具体垃圾">
         <el-input size="small" v-model="addGarbage.name" placeholder="请输入具体垃圾"></el-input>
@@ -35,7 +35,7 @@
           height="50">
       </el-table-column>
       <el-table-column
-          prop="minClass"
+          prop="minClassNum"
           label="垃圾小类"
           width="250"
           height="50">
@@ -104,7 +104,7 @@ export default {
     return {
       addGarbage:{
         classname:'',
-        minClass:'',
+        minClassNum:'',
         name:'',
         handle:''
       },
@@ -152,7 +152,7 @@ export default {
           pageNum:this.currentPage,
           pageSize: this.pageSize,
           name: this.addGarbage.name,
-          min_class: this.addGarbage.minClass,
+          min_class: this.addGarbage.minClassNum,
           classname: this.addGarbage.classname,
           handle: this.addGarbage.handle
         }
@@ -169,7 +169,7 @@ export default {
           pageNum:this.currentPage,
           pageSize: this.pageSize,
           name: this.addGarbage.name,
-          min_class: this.addGarbage.minClass,
+          min_class: this.addGarbage.minClassNum,
           classname: this.addGarbage.classname,
           handle: this.addGarbage.handle
         }
@@ -183,7 +183,7 @@ export default {
       this.dialogFormVisible = true;
       console.log('sha',row);
       this.form.classname = row.classname;
-      this.form.min_class = row.minClass;
+      this.form.min_classNum = row.minClassNum;
       this.form.name = row.name;
       this.form.handle = row.handle;
       this.form.id = row.id;
@@ -227,7 +227,7 @@ export default {
         this.$message.error("请输入垃圾类别")
         return
       }
-      if(this.addGarbage.minClass === ""){
+      if(this.addGarbage.minClassNum === ""){
         this.$message.error("请输入垃圾小类")
         return
       }
@@ -244,7 +244,7 @@ export default {
     resetRubbish(){
       this.addGarbage = {
         classname:'',
-        minClass:'',
+        minClassNum:'',
         name:'',
         handle:''
       }

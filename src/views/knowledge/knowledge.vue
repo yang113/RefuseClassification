@@ -39,17 +39,14 @@
             {{nodes.name}}
           </div>
           <el-form label-position="left" label-width="80px" :model="garbage_detail" class="data-detail">
-            <el-form-item label="结点id">
-              <el-input v-model="garbage_detail.id"></el-input>
-            </el-form-item>
             <el-form-item label="所属小类">
-              <el-input v-model="garbage_detail.link_name"></el-input>
+              <el-input v-model="garbage_detail.Min_class"></el-input>
             </el-form-item>
             <el-form-item label="垃圾类别">
-              <el-input v-model="garbage_detail.class_name"></el-input>
+              <el-input v-model="garbage_detail.Class"></el-input>
             </el-form-item>
             <el-form-item label="处理方式">
-              <el-input v-model="garbage_detail.way"></el-input>
+              <el-input v-model="garbage_detail.Way"></el-input>
             </el-form-item>
           </el-form>
         </el-card>
@@ -59,13 +56,13 @@
 </template>
 
 <script>
-// import G6 from '@antv/g6';
 import * as d3 from 'd3';
 import graphData1 from '../../assets/records_can.json'; // 导入包含图表数据的 JSON 文件
 import graphData2 from '../../assets/records_cant.json'; // 导入包含图表数据的 JSON 文件
 import graphData3 from '../../assets/records_gan.json'; // 导入包含图表数据的 JSON 文件
 import graphData4 from '../../assets/records_shi.json'; // 导入包含图表数据的 JSON 文件
-import graphData5 from '../../assets/records_big.json'; // 导入包含图表数据的 JSON 文件
+import graphData5 from '../../assets/records_big.json';
+import request from "@/utils/request"; // 导入包含图表数据的 JSON 文件
 
 export default {
   name: "knowledge",
@@ -94,11 +91,10 @@ export default {
         }
       ],
       garbage_detail:{
-        id:1,
-        link_id:3,
-        link_name:'塑料类',
-        class_name:'可回收垃圾',
-        way:'回收'
+        Min_class:'',
+        Class:'',
+        Way:'',
+        Garbage:''
       },
       nodes:{
         id:'',
@@ -116,7 +112,7 @@ export default {
       height: 520,
       width: 800,
       r: 30,
-      label: ['Xueke', 'Concept', 'Operation', 'Method'],
+      label: ['Class', 'Min_class', 'Garbage', 'Way'],
       searchnodes: [],
       searchlinks: [],
       simulation: null,
@@ -138,57 +134,23 @@ export default {
   },
   methods:{
     loadGraphData1() {
-      // 清空已有的图谱数据
-      this.searchlinks = [];
-      this.searchnodes = [];
-      if (this.simulation) {
-        this.simulation.stop();
-      }
-
+      console.log('我调用了');
       // 加载新的图谱数据
       this.processGraphData(graphData1);
     },
     loadGraphData2() {
-      // 清空已有的图谱数据
-      this.searchlinks = [];
-      this.searchnodes = [];
-      if (this.simulation) {
-        this.simulation.stop();
-      }
-
       // 加载新的图谱数据
       this.processGraphData(graphData2);
     },
     loadGraphData3() {
-      // 清空已有的图谱数据
-      this.searchlinks = [];
-      this.searchnodes = [];
-      if (this.simulation) {
-        this.simulation.stop();
-      }
-
       // 加载新的图谱数据
       this.processGraphData(graphData3);
     },
     loadGraphData4() {
-      // 清空已有的图谱数据
-      this.searchlinks = [];
-      this.searchnodes = [];
-      if (this.simulation) {
-        this.simulation.stop();
-      }
-
       // 加载新的图谱数据
       this.processGraphData(graphData4);
     },
     loadGraphData5() {
-      // 清空已有的图谱数据
-      this.searchlinks = [];
-      this.searchnodes = [];
-      if (this.simulation) {
-        this.simulation.stop();
-      }
-
       // 加载新的图谱数据
       this.processGraphData(graphData5);
     },
@@ -322,6 +284,7 @@ export default {
       this.nodeText = nodeText;
       this.marker = marker;
       this.addClickEventToNodes();
+
     },
     processGraphData(graphData) {
       const nodes = [];
@@ -374,15 +337,42 @@ export default {
     handleNodeClick(node) {
       // 在这里处理节点点击事件，可以将节点的详细信息传递给其他组件或进行其他操作
       console.log('Node clicked:', node);
+      this.garbage_detail.Garbage = '';
+      this.garbage_detail.Min_class = '';
+      this.garbage_detail.Class = '';
+      this.garbage_detail.Way = '';
       this.nodes.name = node.srcElement.__data__.properties.name;
-      // 你可以在这里将节点的详细信息传递给其他组件或进行其他操作
+      const type = node.srcElement.__data__.label;
+      if(type == 'Min_class'){
+        this.garbage_detail.Min_class = node.srcElement.__data__.properties.name;
+      }else if(type == 'Class'){
+        this.garbage_detail.Class = node.srcElement.__data__.properties.name;
+      }else if(type == 'Way'){
+        this.garbage_detail.Way = node.srcElement.__data__.properties.name;
+      }else{
+        this.garbage_detail.Garbage = node.srcElement.__data__.properties.name;
+      }
+      request.get("classification/getclass",{
+        params:{
+          pageNum:1,
+          pageSize: 8,
+          name: this.garbage_detail.Garbage,
+          min_class: this.garbage_detail.Min_class,
+          classname: this.garbage_detail.Class,
+          handle: this.garbage_detail.Way
+        }
+      }).then(res=>{
+        console.log('load',res)
+        if(res.records.length!=0){
+          this.garbage_detail.Way = res.records[0].handle;
+          this.garbage_detail.Class = res.records[0].classname;
+          this.garbage_detail.Min_class = res.records[0].minClassNum;
+        }
+      })
     },
   },
   mounted() {
-    // this.initGraph();
-    // this.loadDataAndInitChart();
     this.loadGraphData1(); // 初始加载第一个 JSON 文件
-    // this.processGraphData();
     this.addClickEventToNodes();
   },
 }
